@@ -2,6 +2,7 @@ const app = document.querySelector("#app");
 let state;
 let screen = "home";
 let index = 0;
+let queue = [];
 let flipped = false;
 let selectedOption = null;
 let submitted = false;
@@ -41,8 +42,8 @@ function render() {
   if (!state) return;
   if (state.generation.status === "generating" || state.generation.status === "repairing") return renderGenerating();
   if (!state.studySet || screen === "home") return renderHome();
+  if (screen === "quiz") return renderQuiz();
   if (screen === "flashcards") return renderFlashcard();
-  if (screen === "quiz" || screen === "review") return renderQuiz();
   return renderResults();
 }
 
@@ -53,7 +54,7 @@ function shell(content, progress = null) {
   return `<div class="shell">
     <header class="topbar">
       <div><p class="eyebrow">Knowledge Study</p><h1>${escapeHtml(state.knowledge.title)}</h1></div>
-      ${state.studySet ? `<button class="button" data-action="home">Overview</button>` : ""}
+      ${state.studySet ? `<button class="button" data-action="home">Capability map</button>` : ""}
     </header>
     ${progressMarkup}
     ${content}
@@ -63,35 +64,31 @@ function shell(content, progress = null) {
 function renderHome() {
   const hasSet = Boolean(state.studySet);
   const generationError = state.generation.error
-    ? `<div class="error"><strong>Generation needs attention</strong><p>${escapeHtml(state.generation.error)}</p></div>`
-    : "";
-  const pack = state.knowledge.pack;
-  const packMarkup = pack ? `
-    <p class="source"><strong>Knowledge Pack:</strong> ${escapeHtml(pack.title)}
-      ${pack.sourceSkill ? `<br><strong>Producer:</strong> ${escapeHtml(pack.sourceSkill)}` : ""}
-      <br><strong>Objectives:</strong> ${pack.learningObjectives.map(escapeHtml).join(" · ")}
-    </p>` : "";
+    ? `<div class="error"><strong>Generation needs attention</strong><p>${escapeHtml(state.generation.error)}</p></div>` : "";
   const counts = hasSet ? `
     <div class="metrics">
-      <div class="metric"><strong>${state.studySet.flashcards.length}</strong><span>Flashcards</span></div>
-      <div class="metric"><strong>${state.studySet.quizQuestions.length}</strong><span>Quiz questions</span></div>
+      <div class="metric"><strong>${state.mastery.concepts.filter((concept) => concept.status === "Mastered").length}/${state.mastery.concepts.length}</strong><span>Capabilities mastered</span></div>
       <div class="metric"><strong>${Math.round(state.mastery.overallScore * 100)}%</strong><span>Current mastery</span></div>
+      <div class="metric"><strong>${state.recommended?.questionIds.length || 0}</strong><span>Recommended questions</span></div>
     </div>` : "";
+  const recommendation = state.recommended;
+  const action = recommendation?.questionIds.length
+    ? `<button class="button primary" data-action="start-recommended">Start ${escapeHtml(recommendation.title)}</button>`
+    : "";
   app.innerHTML = shell(`
     <section class="card study-card">
-      <p class="source"><strong>Source:</strong> ${escapeHtml(state.knowledge.path)}<br>${state.knowledge.headings.length} Markdown headings detected</p>
-      ${packMarkup}
       ${generationError}
-      <h2>${hasSet ? "Continue learning" : "Build your grounded study set"}</h2>
+      <p class="source"><strong>Knowledge source:</strong> ${escapeHtml(state.knowledge.path)}<br>${state.knowledge.headings.length} knowledge sections</p>
+      <h2>${hasSet ? "Your next training session" : "Build your training pool"}</h2>
       <p>${hasSet
-        ? "Use flashcard confidence and objective quiz checks together. Weak concepts are automatically queued for review."
-        : "Copilot will create flashcards and multiple-choice questions using only this Markdown file. Every item must cite an exact source section."}</p>
+        ? escapeHtml(recommendation?.description || "Preparing your next training session.")
+        : "Copilot will create source-grounded diagnostic, practice, and challenge questions using only this knowledge material. Each capability receives questions in different scenarios."}</p>
       ${counts}
       <div class="actions">
-        ${hasSet ? `<button class="button primary" data-action="flashcards">Study flashcards</button>
-          <button class="button" data-action="quiz">Take quiz</button>
-          <button class="button" data-action="results">View mastery</button>` : ""}
-        <button class="button ${hasSet ? "" : "primary"}" data-action="generate">${hasSet ? "Regenerate" : "Generate study set"}</button>
+        ${action}
+        ${hasSet ? `<button class="button" data-action="results">View capability map</button>
+          <button class="button" data-action="flashcards">Review flashcards</button>` : ""}
+        <button class="button ${hasSet ? "" : "primary"}" data-action="generate">${hasSet ? "Generate new pool" : "Generate pool"}</button>
         ${hasSet ? `<button class="button danger" data-action="reset">Reset progress</button>` : ""}
       </div>
     </section>`);
@@ -102,61 +99,23 @@ function renderGenerating() {
   app.innerHTML = shell(`
     <section class="card loading">
       <div class="spinner" aria-hidden="true"></div>
-      <div><h2>${state.generation.status === "repairing" ? "Repairing generated questions" : "Generating grounded questions"}</h2>
-      <p>Copilot is checking the Markdown and will update this Canvas automatically.</p></div>
+      <div><h2>${state.generation.status === "repairing" ? "Repairing question quality" : "Generating training pool"}</h2>
+      <p>Copilot is checking for clear prompts, one best answer, and traceable sources.</p></div>
     </section>`);
   bindCommon();
 }
 
-function renderFlashcard() {
-  const cards = state.studySet.flashcards;
-  if (index >= cards.length) {
-    screen = "quiz";
-    index = 0;
-    resetQuestion();
-    return render();
-  }
-  const card = cards[index];
-  app.innerHTML = shell(`
-    <section class="card study-card">
-      <p class="eyebrow">${escapeHtml(card.difficulty)} · ${escapeHtml(conceptTitle(card.conceptId))}</p>
-      <div class="flash-face">
-        ${flipped
-          ? `<div class="answer"><h2>${escapeHtml(card.answer)}</h2><p>${escapeHtml(card.explanation)}</p>
-             <p class="source"><strong>${escapeHtml(card.source.heading)}</strong><br>${escapeHtml(card.source.excerpt)}</p></div>`
-          : `<div><h2>${escapeHtml(card.prompt)}</h2><p class="muted">Think of your answer, then reveal the back.</p></div>`}
-      </div>
-      <div class="actions center">
-        ${flipped
-          ? `<button class="button danger" data-rating="again">1 · Again</button>
-             <button class="button" data-rating="unsure">2 · Unsure</button>
-             <button class="button primary" data-rating="know">3 · Know</button>`
-          : `<button class="button primary" data-action="flip">Reveal answer <span class="muted">(Space)</span></button>`}
-      </div>
-    </section>`, { label: "Flashcards", current: index + 1, total: cards.length });
-  bindCommon();
-  document.querySelector("[data-action='flip']")?.addEventListener("click", () => {
-    flipped = true;
-    render();
-  });
-  document.querySelectorAll("[data-rating]").forEach((button) => button.addEventListener("click", () => rateCard(button.dataset.rating)));
-}
-
 function renderQuiz() {
-  const questions = screen === "review"
-    ? state.studySet.quizQuestions.filter((question) => state.mastery.weakConceptIds.includes(question.conceptId))
-    : state.studySet.quizQuestions;
-  if (!questions.length || index >= questions.length) {
+  if (!queue.length || index >= queue.length) {
     screen = "results";
     index = 0;
     resetQuestion();
     return render();
   }
-  const question = questions[index];
-  const existing = screen === "review" ? state.progress.retests[question.id] : state.progress.quiz[question.id];
-  if (existing && !submitted) {
-    selectedOption = existing.selectedIndex;
-    submitted = true;
+  const question = state.studySet.quizQuestions.find((item) => item.id === queue[index]);
+  if (!question) {
+    index += 1;
+    return render();
   }
   const optionMarkup = question.options.map((option, optionIndex) => {
     const classes = ["option"];
@@ -169,18 +128,18 @@ function renderQuiz() {
   }).join("");
   app.innerHTML = shell(`
     <section class="card study-card">
-      <p class="eyebrow">${screen === "review" ? "Weak-area retest" : "Knowledge check"} · ${escapeHtml(conceptTitle(question.conceptId))}</p>
+      <p class="eyebrow">${stageLabel(question.stage)} · ${escapeHtml(conceptTitle(question.conceptId))}</p>
       <h2>${escapeHtml(question.prompt)}</h2>
       <div class="options">${optionMarkup}</div>
-      ${submitted ? `<div class="feedback"><strong>${selectedOption === question.correctOption ? "Correct" : "Not yet"}</strong>
+      ${submitted ? `<div class="feedback"><strong>${selectedOption === question.correctOption ? "Correct" : "Needs reinforcement"}</strong>
         <p>${escapeHtml(question.rationale)}</p>
         <p class="source"><strong>${escapeHtml(question.source.heading)}</strong><br>${escapeHtml(question.source.excerpt)}</p></div>` : ""}
       <div class="actions">
         ${submitted
-          ? `<button class="button primary" data-action="next-question">${index + 1 === questions.length ? "See mastery" : "Next question"}</button>`
+          ? `<button class="button primary" data-action="next-question">${index + 1 === queue.length ? "View capability map" : "Next question"}</button>`
           : `<button class="button primary" data-action="submit-answer" ${selectedOption === null ? "disabled" : ""}>Check answer</button>`}
       </div>
-    </section>`, { label: screen === "review" ? "Review" : "Quiz", current: index + 1, total: questions.length });
+    </section>`, { label: stageLabel(question.stage), current: index + 1, total: queue.length });
   bindCommon();
   document.querySelectorAll("[data-option]").forEach((button) => button.addEventListener("click", () => {
     selectedOption = Number(button.dataset.option);
@@ -194,28 +153,58 @@ function renderQuiz() {
   });
 }
 
+function renderFlashcard() {
+  const cards = state.studySet.flashcards;
+  if (index >= cards.length) return changeScreen("home");
+  const card = cards[index];
+  app.innerHTML = shell(`
+    <section class="card study-card">
+      <p class="eyebrow">${escapeHtml(card.difficulty)} · ${escapeHtml(conceptTitle(card.conceptId))}</p>
+      <div class="flash-face">
+        ${flipped
+          ? `<div class="answer"><h2>${escapeHtml(card.answer)}</h2><p>${escapeHtml(card.explanation)}</p>
+             <p class="source"><strong>${escapeHtml(card.source.heading)}</strong><br>${escapeHtml(card.source.excerpt)}</p></div>`
+          : `<div><h2>${escapeHtml(card.prompt)}</h2><p class="muted">Recall your answer, then reveal the back.</p></div>`}
+      </div>
+      <div class="actions center">
+        ${flipped
+          ? `<button class="button danger" data-rating="again">1 · Again</button>
+             <button class="button" data-rating="unsure">2 · Unsure</button>
+             <button class="button primary" data-rating="know">3 · Know</button>`
+          : `<button class="button primary" data-action="flip">Reveal answer <span class="muted">(Space)</span></button>`}
+      </div>
+    </section>`, { label: "Flashcard review", current: index + 1, total: cards.length });
+  bindCommon();
+  document.querySelector("[data-action='flip']")?.addEventListener("click", () => {
+    flipped = true;
+    render();
+  });
+  document.querySelectorAll("[data-rating]").forEach((button) => button.addEventListener("click", () => rateCard(button.dataset.rating)));
+}
+
 function renderResults() {
   const rows = state.mastery.concepts.map((concept) => `
     <li class="concept-row">
       <strong>${escapeHtml(concept.title)}</strong>
-      <span>${Math.round(concept.score * 100)}%</span>
+      <span>${concept.correctCount}/${concept.requiredCorrect} 正确</span>
       <span class="status">${escapeHtml(concept.status)}</span>
     </li>`).join("");
-  const weakCount = state.mastery.weakConceptIds.length;
+  const recommendation = state.recommended;
   app.innerHTML = shell(`
     <section class="card study-card">
-      <p class="eyebrow">Mastery report</p>
-      <h2>${escapeHtml(state.mastery.status)}</h2>
+      <p class="eyebrow">Capability map</p>
+      <h2>${escapeHtml(recommendation?.title || state.mastery.status)}</h2>
+      <p>${escapeHtml(recommendation?.description || "继续训练以建立稳定掌握度。")}</p>
       <div class="metrics">
-        <div class="metric"><strong>${Math.round(state.mastery.overallScore * 100)}%</strong><span>Overall mastery</span></div>
-        <div class="metric"><strong>${state.mastery.concepts.length - weakCount}</strong><span>Mastered concepts</span></div>
-        <div class="metric"><strong>${weakCount}</strong><span>Review concepts</span></div>
+        <div class="metric"><strong>${Math.round(state.mastery.overallScore * 100)}%</strong><span>Current mastery</span></div>
+        <div class="metric"><strong>${state.mastery.concepts.filter((concept) => concept.status === "Mastered").length}</strong><span>Capabilities mastered</span></div>
+        <div class="metric"><strong>${state.mastery.weakConceptIds.length}</strong><span>Capabilities to reinforce</span></div>
       </div>
-      <p class="muted">Score = 40% flashcard confidence + 60% quiz. After a retest, quiz score uses 40% first attempt and 60% retest.</p>
       <ul class="concept-list">${rows}</ul>
       <div class="actions">
-        ${weakCount ? `<button class="button primary" data-action="review">Review weak concepts</button>` : ""}
-        <button class="button" data-action="flashcards">Study flashcards</button>
+        ${recommendation?.questionIds.length ? `<button class="button primary" data-action="start-recommended">Start ${escapeHtml(recommendation.title)}</button>` : ""}
+        <button class="button" data-action="flashcards">Review flashcards</button>
+        <button class="button" data-action="home">Back to overview</button>
       </div>
     </section>`);
   bindCommon();
@@ -223,17 +212,25 @@ function renderResults() {
 
 function bindCommon() {
   document.querySelector("[data-action='home']")?.addEventListener("click", () => changeScreen("home"));
-  document.querySelector("[data-action='flashcards']")?.addEventListener("click", () => changeScreen("flashcards"));
-  document.querySelector("[data-action='quiz']")?.addEventListener("click", () => changeScreen("quiz"));
-  document.querySelector("[data-action='review']")?.addEventListener("click", () => changeScreen("review"));
   document.querySelector("[data-action='results']")?.addEventListener("click", () => changeScreen("results"));
+  document.querySelector("[data-action='flashcards']")?.addEventListener("click", () => changeScreen("flashcards"));
+  document.querySelector("[data-action='start-recommended']")?.addEventListener("click", startRecommended);
   document.querySelector("[data-action='generate']")?.addEventListener("click", generate);
   document.querySelector("[data-action='reset']")?.addEventListener("click", resetProgress);
+}
+
+function startRecommended() {
+  queue = state.recommended?.questionIds || [];
+  index = 0;
+  resetQuestion();
+  screen = "quiz";
+  render();
 }
 
 function changeScreen(next) {
   screen = next;
   index = 0;
+  queue = [];
   flipped = false;
   resetQuestion();
   render();
@@ -251,11 +248,10 @@ async function generate() {
 }
 
 async function resetProgress() {
-  if (!window.confirm("Reset all ratings and quiz attempts for this study set?")) return;
+  if (!window.confirm("Reset all answers and flashcard ratings for this study set?")) return;
   const response = await fetch("/api/reset", { method: "POST" });
   state = await response.json();
-  screen = "home";
-  render();
+  changeScreen("home");
 }
 
 async function rateCard(rating) {
@@ -268,12 +264,7 @@ async function rateCard(rating) {
 
 async function submitQuiz(question) {
   if (selectedOption === null) return;
-  await postAttempt({
-    kind: "quiz",
-    itemId: question.id,
-    selectedIndex: selectedOption,
-    phase: screen === "review" ? "review" : "first",
-  });
+  await postAttempt({ kind: "quiz", itemId: question.id, selectedIndex: selectedOption });
   submitted = true;
   render();
 }
@@ -298,6 +289,10 @@ function resetQuestion() {
 
 function conceptTitle(conceptId) {
   return state.studySet.concepts.find((concept) => concept.id === conceptId)?.title || conceptId;
+}
+
+function stageLabel(stage) {
+  return ({ diagnostic: "Foundation diagnostic", practice: "Targeted practice", challenge: "Advanced challenge" })[stage] || stage;
 }
 
 function escapeHtml(value) {

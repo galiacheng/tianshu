@@ -8,7 +8,13 @@ import {
     joinSession,
 } from "@github/copilot-sdk/extension";
 import { requestGeneration } from "./lib/generator.mjs";
-import { calculateMastery, createDefaultProgress } from "./lib/mastery.mjs";
+import {
+    buildChallengeQueue,
+    buildDiagnosticQueue,
+    buildReviewQueue,
+    calculateMastery,
+    createDefaultProgress,
+} from "./lib/mastery.mjs";
 import { readKnowledge, readKnowledgePack, validateStudySet } from "./lib/schema.mjs";
 import {
     createStudyIdentity,
@@ -244,6 +250,8 @@ async function acceptGeneratedStudySet(instanceId, candidate) {
 async function getPublicState(instanceId) {
     const state = requireInstance(instanceId);
     const stored = await loadStudy(state.workspacePath, state.identity.studySetId);
+    const progress = stored?.progress || createDefaultProgress();
+    const mastery = calculateMastery(stored?.studySet, progress);
     return {
         studySetId: state.identity.studySetId,
         knowledge: {
@@ -261,8 +269,48 @@ async function getPublicState(instanceId) {
         },
         generation: state.generation,
         studySet: stored?.studySet || null,
-        progress: stored?.progress || createDefaultProgress(),
-        mastery: calculateMastery(stored?.studySet, stored?.progress),
+        progress,
+        mastery,
+        recommended: getRecommendedSession(stored?.studySet, progress, mastery),
+    };
+}
+
+function getRecommendedSession(studySet, progress, mastery) {
+    if (!studySet) return null;
+    const diagnostic = buildDiagnosticQueue(studySet, progress);
+    if (diagnostic.length) {
+        return {
+            kind: "diagnostic",
+            title: "Foundation diagnostic",
+            description: `${diagnostic.length} questions to establish your capability baseline.`,
+            questionIds: diagnostic.map((question) => question.id),
+        };
+    }
+    const review = buildReviewQueue(studySet, progress);
+    if (review.length) {
+        return {
+            kind: "practice",
+            title: "Targeted practice",
+            description: `${review.length} new scenario questions to strengthen weak capabilities.`,
+            questionIds: review.map((question) => question.id),
+        };
+    }
+    const challenge = buildChallengeQueue(studySet, progress);
+    if (challenge.length) {
+        return {
+            kind: "challenge",
+            title: "Advanced challenge",
+            description: `You have mastered the foundation. Use ${challenge.length} decision questions to validate transfer.`,
+            questionIds: challenge.map((question) => question.id),
+        };
+    }
+    return {
+        kind: "complete",
+        title: mastery.weakConceptIds.length ? "More practice questions needed" : "Training complete",
+        description: mastery.weakConceptIds.length
+            ? "The available question pool is exhausted. Generate a new pool for more practice scenarios."
+            : "All generated capabilities are mastered. Review later or generate a new question pool.",
+        questionIds: [],
     };
 }
 
