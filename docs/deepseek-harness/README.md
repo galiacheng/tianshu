@@ -70,7 +70,7 @@ flowchart TD
 
 ## Maintenance notes
 
-This revision was regenerated with Tianshu's `learn` Skill and revalidated against repository commit `27d8f9299dac96d629561f0ce33968e01d4256e9`. The technical baseline is DeepSeek Harness `v0.1.0-rc.7`, commit `99f6f02fecdb7dff40c3fbc9470f5907c29f74ca`. The project explicitly identifies itself as a developer preview with future breaking changes, so package names, default models, configuration layouts, API surfaces, and enterprise-readiness claims must be revalidated before reuse. Market indicators are snapshots retrieved on 2026-08-18 and must not be presented as current adoption figures after that date.
+This revision was regenerated with Tianshu's `learn` Skill and revalidated against repository commit `ede03b87a8ae284496cf53fbee839649ce63c0b3`. The technical baseline is DeepSeek Harness `v0.1.0-rc.7`, commit `99f6f02fecdb7dff40c3fbc9470f5907c29f74ca`. The project explicitly identifies itself as a developer preview with future breaking changes, so package names, default models, configuration layouts, API surfaces, and enterprise-readiness claims must be revalidated before reuse. Market indicators are snapshots retrieved on 2026-08-18 and must not be presented as current adoption figures after that date.
 
 ## Primary sources
 
