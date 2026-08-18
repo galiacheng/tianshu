@@ -32,7 +32,7 @@ Select the highest-scoring candidate. If another candidate is selected, record t
 | `accessibility` | Contrast, alt text, color encoding, and reading order are complete |
 | `asset_rights` | External origins, licenses, and credits are traceable; AI assets are disclosed and preserve their final prompts |
 | `source_traceability` | Content and summary slides reference valid `K-*` items and reserve space for citations |
-| `generation_readiness` | Layouts, assets, data mappings, and implementation constraints are complete enough for `pptx` |
+| `generation_readiness` | Layouts, assets, data mappings, and implementation constraints are complete enough for `ppt-master` |
 
 ## Issue severity
 
@@ -56,4 +56,5 @@ After generation, extract presentation text and render every slide, then verify:
 - Palette, typography, spacing, motif, image, and chart rules match `style-guide.json`.
 - External images and icons are watermark-free and have complete origin, license, and attribution records; AI assets match the design records.
 - The deck has no overflow, overlap, incorrect wrapping, low contrast, template placeholder, or distorted asset.
+- PPT Master's integrity gate, selected route/profile gates, final checker, postflight, and export all completed successfully.
 - Every generation-stage repair has been written back to the source design artifact rather than applied only in generator code.

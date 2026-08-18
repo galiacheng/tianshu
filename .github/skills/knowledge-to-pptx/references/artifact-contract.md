@@ -302,6 +302,12 @@ Required rules:
   "deck_id": "example-deck",
   "design_version": 1,
   "style_version": 1,
+  "generator": {
+    "skill": "ppt-master",
+    "version": "4.8.0",
+    "route": "generate-pptx",
+    "profile": "default"
+  },
   "pptx_path": "example-deck.pptx",
   "status": "pass",
   "checks": {
@@ -314,3 +320,5 @@ Required rules:
   "fixes": []
 }
 ```
+
+`generator.skill` must be `ppt-master`. Record the installed version and the route/profile actually used. `profile` must be `default` unless the user explicitly requested PPT Master's Quick Generate profile.
