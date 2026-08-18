@@ -7,6 +7,7 @@ from typing import Any
 
 
 SCRIPT_PATH = Path(__file__).parents[1] / "scripts" / "validate_design.py"
+SKILL_PATH = Path(__file__).parents[1] / "SKILL.md"
 SPEC = importlib.util.spec_from_file_location("validate_design", SCRIPT_PATH)
 if SPEC is None or SPEC.loader is None:
     raise RuntimeError(f"Unable to load validator from {SCRIPT_PATH}")
@@ -330,6 +331,14 @@ def _valid_documents() -> tuple[
 
 
 class ValidateDesignTests(unittest.TestCase):
+    def test_skill_bootstraps_ppt_master_from_official_source(self) -> None:
+        skill_text = SKILL_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("npx --yes skills add hugohe3/ppt-master", skill_text)
+        self.assertIn("https://github.com/hugohe3/ppt-master", skill_text)
+        self.assertIn("scripts/attribution_guard.py", skill_text)
+        self.assertNotIn("repository-provided installation", skill_text)
+
     def test_valid_artifacts_pass(self) -> None:
         result = VALIDATOR.validate_documents(*_valid_documents())
         self.assertEqual("pass", result["status"])

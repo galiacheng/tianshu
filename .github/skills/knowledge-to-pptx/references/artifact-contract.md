@@ -304,7 +304,9 @@ Required rules:
   "style_version": 1,
   "generator": {
     "skill": "ppt-master",
-    "version": "4.8.0",
+    "version": "<detected-installed-version>",
+    "source": "https://github.com/hugohe3/ppt-master",
+    "install_mode": "dynamic",
     "route": "generate-pptx",
     "profile": "default"
   },
@@ -321,4 +323,4 @@ Required rules:
 }
 ```
 
-`generator.skill` must be `ppt-master`. Record the installed version and the route/profile actually used. `profile` must be `default` unless the user explicitly requested PPT Master's Quick Generate profile.
+`generator.skill` must be `ppt-master` and `generator.source` must be the official repository shown above. Record the detected installed version and the route/profile actually used. `install_mode` must be `preinstalled` or `dynamic`. `profile` must be `default` unless the user explicitly requested PPT Master's Quick Generate profile.
