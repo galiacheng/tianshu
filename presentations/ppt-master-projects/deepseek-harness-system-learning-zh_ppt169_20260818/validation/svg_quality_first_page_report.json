@@ -1,0 +1,170 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "first-page",
+  "target": "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "a48c9ecb2f0459e0a436edc1f09cbcb13966276fc395092b43ef95aaec612b6c",
+    "file_count": 1,
+    "files": [
+      {
+        "file": "01_cover.svg",
+        "sha256": "31c26da60aae72b92e7c5056b2a35c00a54dd378915cc408219ed145bc17121b"
+      }
+    ]
+  },
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "warnings": 1,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 1,
+      "issues": [
+        {
+          "file": "01_cover.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace"
+        }
+      ]
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#A9B7D5": [
+        "01_cover.svg"
+      ],
+      "#B9F4F7": [
+        "01_cover.svg"
+      ]
+    },
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 1,
+    "totals": {
+      "text_elements": 18,
+      "image_placements": 0,
+      "icons": 9,
+      "svg_geometry_elements": 17,
+      "preset_shapes": 0,
+      "page_frame_elements": 3,
+      "marker_uses": 0
+    },
+    "pages_with": {
+      "images": 0,
+      "icons": 1,
+      "presets": 0,
+      "charts": 0,
+      "tables": 0,
+      "formulas": 0
+    },
+    "geometry_elements": {
+      "circle": 6,
+      "ellipse": 2,
+      "line": 6,
+      "path": 2,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 1
+    },
+    "preset_names": {},
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": []
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_cover.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818\\svg_output\\01_cover.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 9,
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 6,
+              "ellipse": 2,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Cascadia Mono, Consolas, monospace",
+          "Microsoft YaHei, Arial, sans-serif"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#A9B7D5",
+            "#B9F4F7"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "31c26da60aae72b92e7c5056b2a35c00a54dd378915cc408219ed145bc17121b"
+    }
+  ]
+}

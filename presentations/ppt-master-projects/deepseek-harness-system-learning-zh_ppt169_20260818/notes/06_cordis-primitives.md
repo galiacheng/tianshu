@@ -1,0 +1,1 @@
+Cordis 用五个 primitive 把插件化变成运行时规则。Context 建立可见性与边界，Service 提供稳定依赖契约，Event 负责协作与拦截，Effect 把注册动作变成带 disposer 的可清理效果，Scope 则决定资源何时激活、由谁拥有以及何时释放。它们共同形成一棵 Context tree，并通过 Effect 与 Scope 的关系管理生命周期。需要特别注意，可逆注册并不等于外部副作用自动回滚，已经写入的文件、发出的网络请求和启动的进程仍需要显式补偿。

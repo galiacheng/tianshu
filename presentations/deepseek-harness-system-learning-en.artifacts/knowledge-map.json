@@ -1,0 +1,508 @@
+{
+  "schema_version": "1.0",
+  "deck_id": "deepseek-harness-system-learning-en",
+  "objective": "Help engineering leaders, architects, and AI platform teams build an explainable mental model of DeepSeek Harness, assess its extension model and enterprise evidence boundaries, position it in global and China markets, and define a reproducible next step.",
+  "audience": "Engineering leaders, Agent platform architects, AI developers, and product strategists evaluating global and China markets",
+  "language": "en-US",
+  "estimated_minutes": 32,
+  "narrative": "Begin with Harness as the control plane between a model and the real environment; explain the barrier-controlled Agent loop, Cordis, standing Preset scope, Session events, projection checkpoints, interfaces, SDKs, and dynamic Plugins; then separate local runtime, data paths, and enterprise evidence before mapping three global and China competitive layers and closing with a reproducible comparative study.",
+  "key_messages": [
+    "DeepSeek Harness is not a Tool wrapper; it is a composable control plane across models, permissions, Tools, Sessions, and interfaces.",
+    "Everything is a Plugin depends on Cordis lifecycle, standing Preset scopes, reversible registrations, and capability seams—not plugin count.",
+    "The Session event stream is the source of truth, while the projection cache stores versioned unit state rather than persisted UI views.",
+    "Sandboxing, self-hosting, and local credentials address bounded risks; enterprise readiness also requires identity, tenancy, network, audit, lifecycle, and procurement evidence.",
+    "Competition spans runtime/framework, developer product/control surface, and enterprise platform layers; stars and forks cannot establish adoption, revenue, or SLA.",
+    "Architecture and market claims should be tested with frozen graders, unique run IDs, and complete evidence bundles."
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "label": "Tianshu DeepSeek Harness learning materials",
+      "location": "docs/deepseek-harness/",
+      "kind": "file"
+    },
+    {
+      "id": "SRC-002",
+      "label": "Fixed DeepSeek Harness source revision",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/tree/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-003",
+      "label": "DeepSeek Harness architecture.md",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/docs/architecture.md",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-004",
+      "label": "DeepSeek Harness development.md",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/docs/development.md",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-005",
+      "label": "Agent lifecycle and Tool-call ordering",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/docs/agent-lifecycle.md",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-006",
+      "label": "Session events and projection subsystem",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/docs/subsystems/session.md",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-007",
+      "label": "Typert subsystem",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/docs/subsystems/typert.md",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-008",
+      "label": "Dynamic Cordis Plugin development Skill",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/apps/cli/config/agent-presets/cordis/skills/cordis-plugin-development/SKILL.md",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-009",
+      "label": "Sandbox providers and platform limits",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/tree/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/packages/sandbox",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-010",
+      "label": "Credential, telemetry, Web, search, and persistence boundaries",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/tree/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/packages",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-011",
+      "label": "DeepSeek Harness GitHub repository metadata",
+      "location": "https://api.github.com/repos/deepseek-ai/deepseek-harness",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-012",
+      "label": "AgentScope repository",
+      "location": "https://github.com/agentscope-ai/agentscope",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-013",
+      "label": "Qwen Code repository",
+      "location": "https://github.com/QwenLM/qwen-code",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-014",
+      "label": "Kimi Code and Trae Agent repositories",
+      "location": "https://github.com/MoonshotAI/kimi-code ; https://github.com/bytedance/trae-agent",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-015",
+      "label": "Dify and Coze Studio repositories",
+      "location": "https://github.com/langgenius/dify ; https://github.com/coze-dev/coze-studio",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-016",
+      "label": "Alibaba Cloud Model Studio documentation",
+      "location": "https://help.aliyun.com/zh/model-studio/new-single-agent-application",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-017",
+      "label": "Tencent Agent Development Platform documentation",
+      "location": "https://cloud.tencent.com/document/product/1759/128512",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-018",
+      "label": "Global Agent framework documentation",
+      "location": "https://docs.langchain.com/oss/python/langgraph/overview ; https://openai.github.io/openai-agents-python/ ; https://adk.dev/ ; https://learn.microsoft.com/en-us/agent-framework/overview/",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-019",
+      "label": "China data and generative AI regulations",
+      "location": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm ; http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-020",
+      "label": "Evaluation methodology references",
+      "location": "https://www.swebench.com/SWE-bench/guides/evaluation/ ; https://github.com/SWE-bench/SWE-bench ; https://developers.openai.com/api/docs/guides/evals",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-021",
+      "label": "Agent Preset lifecycle and selection",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/packages/preset/agent-presets/README.md",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-022",
+      "label": "Client connection and SDK runtime boundaries",
+      "location": "https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/packages/client/connection/README.md ; https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/packages/sdk/README.md ; https://github.com/deepseek-ai/deepseek-harness/blob/99f6f02fecdb7dff40c3fbc9470f5907c29f74ca/python/README.md",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-023",
+      "label": "OpenHands Agent Canvas repository",
+      "location": "https://github.com/OpenHands/OpenHands",
+      "kind": "web"
+    },
+    {
+      "id": "SRC-024",
+      "label": "Tianshu latest presentation Skills",
+      "location": ".github/skills/knowledge-to-pptx/ ; .agents/skills/ppt-master/",
+      "kind": "file"
+    }
+  ],
+  "facts": [
+    {
+      "id": "K-001",
+      "statement": "DeepSeek Harness sits between the model and tools, permissions, Sessions, persistence, and interfaces, controlling execution and state.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-002",
+      "statement": "The Agent loop projects context, runs policy hooks, requests the model, classifies Tool calls by executionMode, enforces exclusive barriers, commits Tool results in model order, and decides whether to continue or stop.",
+      "source_refs": [
+        "SRC-003",
+        "SRC-005"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-003",
+      "statement": "Cordis uses Context, Service, Event, Effect, and Scope as the core primitives of its plugin runtime.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-004",
+      "statement": "Cordis reversible registrations clean up services, listeners, and mounts with their Scope, but do not automatically compensate external side effects that already occurred.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-005",
+      "statement": "Everything is a Plugin means Host, Agent Preset, Model, Tool, Sandbox, Session, UI, and policy compose through one lifecycle and dependency model.",
+      "source_refs": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-006",
+      "statement": "Each Agent Preset is mounted once per process as a standing scope; every Session Agent scope parents to its selected Preset, and switches are recorded through agent-preset/selected events.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-021"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-007",
+      "statement": "Effective Profile configuration layers bundles, profile patch, home patch, and CLI --patch in that order.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-004"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-008",
+      "statement": "The Session event stream is the source of truth; the projection cache stores versioned unit-state checkpoints with key, ver, seq, and val, then replays the event tail to build current views.",
+      "source_refs": [
+        "SRC-003",
+        "SRC-006"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-009",
+      "statement": "Model-visible means logged: every input or result that can affect the model's next decision must enter the Session event stream.",
+      "source_refs": [
+        "SRC-003",
+        "SRC-006"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-010",
+      "statement": "A complete capability seam has Definition, Provider, and Consumer roles; a seam may select one Provider or host multiple named Providers, as Subagent does.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-011",
+      "statement": "CLI, Web, headless, ACP, and SDK reuse the Agent, Session, and Tool core rather than implementing separate Agents.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-004"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-012",
+      "statement": "Web sends upstream work over HTTP POST and receives events over two downlink-only WebSockets, events.mux and events.host; both SDK families control out-of-process runtimes but have different runtime ownership.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-022"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-013",
+      "statement": "Typert extracts Remote, reflection, and Zod contracts from TypeScript during the Host build, then exposes them to the Client compiler face.",
+      "source_refs": [
+        "SRC-004",
+        "SRC-007"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-014",
+      "statement": "Dynamic Cordis Plugins use immutable Packages, independent Runs, explicit approval, update, diagnostics, and rollback; a Client half needs a connected page, and later rendering can fail after Run ok.",
+      "source_refs": [
+        "SRC-008",
+        "SRC-002"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-015",
+      "statement": "Dynamic Host and Client halves exchange lossless JSON through package-private handle/call and should not pass Context, Service, or live snapshots across the boundary.",
+      "source_refs": [
+        "SRC-008"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-016",
+      "statement": "Private deployment should be assessed as three separate layers: local runtime, localized model and data paths, and enterprise control readiness.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-009",
+        "SRC-010"
+      ],
+      "confidence": "high",
+      "kind": "inference"
+    },
+    {
+      "id": "K-017",
+      "statement": "The sandbox contract covers only file effects and same-world confinement; Windows ACL does not restrict reads, network, or process visibility, same-UID Tools can read local managed credentials, and enabled OTel can export broad content.",
+      "source_refs": [
+        "SRC-009",
+        "SRC-010"
+      ],
+      "confidence": "high",
+      "kind": "inference"
+    },
+    {
+      "id": "K-018",
+      "statement": "Reviewed public sources do not establish SSO/RBAC, tenant isolation, centralized network and secret governance, tamper-evident audit, LTS/SLA, or support contracts; this is an evidence gap, not proof of absolute absence.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-010"
+      ],
+      "confidence": "medium",
+      "kind": "inference"
+    },
+    {
+      "id": "K-019",
+      "statement": "The Agent market should be separated into runtime/framework, developer product/control surface, and enterprise platform layers.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-012",
+        "SRC-013",
+        "SRC-015",
+        "SRC-016",
+        "SRC-017",
+        "SRC-018"
+      ],
+      "confidence": "high",
+      "kind": "inference"
+    },
+    {
+      "id": "K-020",
+      "statement": "In the public snapshot retrieved on 2026-08-18, DeepSeek Harness had 157,324 stars and 16,338 forks; these metrics indicate public attention and experimentation only.",
+      "source_refs": [
+        "SRC-011"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-021",
+      "statement": "AgentScope is a close China-market runtime peer, with 29,019 stars and 3,369 forks in the snapshot, and public positioning around multi-model, multi-tenant/Session deployment, HITL, Tool review, and sandboxing.",
+      "source_refs": [
+        "SRC-012"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-022",
+      "statement": "Qwen Code distributes through terminal, headless, IDE, desktop, daemon, SDK, and China messaging entry points, strengthening its developer-product position.",
+      "source_refs": [
+        "SRC-013"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-023",
+      "statement": "Kimi Code and Trae Agent offer MCP, subagents, or trajectories, but operate at a different runtime/control-plane abstraction level from Harness.",
+      "source_refs": [
+        "SRC-014"
+      ],
+      "confidence": "high",
+      "kind": "inference"
+    },
+    {
+      "id": "K-024",
+      "statement": "Dify uses the Dify Open Source License with additional conditions; Coze Studio is Apache-2.0 but reserves some capabilities for commercial editions. Both compete mainly at the enterprise application platform layer.",
+      "source_refs": [
+        "SRC-015"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-025",
+      "statement": "Alibaba Cloud Model Studio and Tencent ADP enter enterprise procurement through cloud accounts, VPC, permissions, connectors, billing, and support.",
+      "source_refs": [
+        "SRC-016",
+        "SRC-017"
+      ],
+      "confidence": "high",
+      "kind": "inference"
+    },
+    {
+      "id": "K-026",
+      "statement": "LangGraph, OpenAI Agents SDK, Google ADK, and Microsoft Agent Framework compete globally for state orchestration, evaluation, integration, and vendor ecosystems.",
+      "source_refs": [
+        "SRC-018"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-027",
+      "statement": "Stars, forks, downloads, and plugin counts cannot establish retention, revenue, production SLA, or enterprise adoption.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-011"
+      ],
+      "confidence": "high",
+      "kind": "inference"
+    },
+    {
+      "id": "K-028",
+      "statement": "A reproducible comparison freezes the grader/evaluator, task, repository, model, tools, network, budget, and success criteria; patch changes require a new run_id, and the evidence bundle retains summary, report.json, test_output.txt, run_instance.log, eval.sh, and patch.diff.",
+      "source_refs": [
+        "SRC-020"
+      ],
+      "confidence": "high",
+      "kind": "inference"
+    },
+    {
+      "id": "K-029",
+      "statement": "A single successful demonstration supports a bounded case study, not a ranking across a market or every workload.",
+      "source_refs": [
+        "SRC-001",
+        "SRC-020"
+      ],
+      "confidence": "high",
+      "kind": "inference"
+    },
+    {
+      "id": "K-030",
+      "statement": "The technical assessment is fixed to DeepSeek Harness v0.1.0-rc.7 at commit 99f6f02; the deck uses knowledge-to-pptx and ppt-master integrated at Tianshu commit ede03b8.",
+      "source_refs": [
+        "SRC-002",
+        "SRC-024"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-031",
+      "statement": "DeepSeek Web search is enabled by default, while fetch and Session full-text search are disabled by default; DeepSeek requests send a stable anonymous user ID and an optional Session ID to the configured endpoint.",
+      "source_refs": [
+        "SRC-010"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-032",
+      "statement": "Append-only JSONL Session files are not deleted automatically; the Web Host/Origin fence is explicitly not authentication, and the bare Web server provides no TLS, authentication, or origin policy.",
+      "source_refs": [
+        "SRC-006",
+        "SRC-010"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    },
+    {
+      "id": "K-033",
+      "statement": "OpenHands currently positions itself as Agent Canvas and a coding-agent control surface, placing it in the developer product/control-surface layer rather than the enterprise application platform layer.",
+      "source_refs": [
+        "SRC-023"
+      ],
+      "confidence": "high",
+      "kind": "fact"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "CONFLICT-001",
+      "statement": "厂商或项目对 production-ready、私有化和数据主权的自述不能视为独立审计结论。",
+      "resolution": "PPT 将其标注为厂商定位或推断，不表述为已验证合规。"
+    }
+  ],
+  "open_questions": [
+    "公开证据未给出 DeepSeek Harness 的企业客户数、收入、生产 SLA 或留存。",
+    "未在真实构建中验证所有 Typert 生成物和增量重建路径。",
+    "尚未执行 Harness 与同层竞品的受控对比实验。"
+  ],
+  "omissions": [
+    "不提供未经验证的市场份额排名。",
+    "不把模型可用性表述为 DeepSeek Harness 的云平台集成。",
+    "不把本地运行表述为自动满足数据驻留或行业合规。"
+  ]
+}

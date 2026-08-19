@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"
+     data-pptx-page-role="content"
+     font-family="Aptos, Arial, sans-serif">
+  <rect id="background" data-pptx-role="background"
+        x="0" y="0" width="1280" height="720" fill="#F7FAFC"/>
+  <path id="engineering-grid" data-pptx-role="decoration"
+        d="M160 0V720 M320 0V720 M480 0V720 M640 0V720 M800 0V720 M960 0V720 M1120 0V720 M0 120H1280 M0 240H1280 M0 360H1280 M0 480H1280 M0 600H1280"
+        fill="none" stroke="#3448A8" stroke-width="1" stroke-opacity="0.07"/>
+
+  <g id="header" data-pptx-bounds="64 42 1152 108">
+    <text x="64" y="66" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8" letter-spacing="1">COMPOSITION FLOW / CORDIS</text>
+    <text x="64" y="122" font-family="Aptos Display, Arial, sans-serif"
+          font-size="42" font-weight="700" fill="#101B35">
+      Five primitives turn plugins into runtime rules
+    </text>
+  </g>
+
+  <g id="primitive-runtime-map" data-pptx-bounds="64 160 1152 440">
+    <circle cx="640" cy="368" r="184" fill="none" stroke="#3448A8"
+            stroke-width="2" stroke-dasharray="6 3"/>
+    <line x1="640" y1="368" x2="640" y2="184" stroke="#3448A8" stroke-width="2"/>
+    <line x1="640" y1="368" x2="815" y2="311" stroke="#3448A8" stroke-width="2"/>
+    <line x1="640" y1="368" x2="748" y2="518" stroke="#3448A8" stroke-width="2"/>
+    <line x1="640" y1="368" x2="532" y2="518" stroke="#00C2D7" stroke-width="4"/>
+    <line x1="640" y1="368" x2="465" y2="311" stroke="#3448A8" stroke-width="2"/>
+
+    <circle cx="640" cy="368" r="92" fill="#101B35" stroke="#00C2D7" stroke-width="4"/>
+    <use data-icon="tabler-outline/plug" x="614" y="304" width="52" height="52"
+         fill="#F7FAFC" stroke-width="2"/>
+    <text x="640" y="390" text-anchor="middle" font-size="32" font-weight="700"
+          fill="#F7FAFC">Plugin runtime</text>
+    <text x="640" y="422" text-anchor="middle"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#B9F4F7">ONE CONTEXT TREE</text>
+
+    <g>
+      <circle cx="640" cy="184" r="64" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+      <use data-icon="tabler-outline/network" x="620" y="144" width="40" height="40"
+           fill="#3448A8" stroke-width="2"/>
+      <text x="640" y="208" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Context</text>
+      <text x="640" y="236" text-anchor="middle" font-size="18" fill="#475467">visibility · boundary</text>
+    </g>
+    <g>
+      <circle cx="815" cy="311" r="64" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+      <use data-icon="tabler-outline/code" x="795" y="271" width="40" height="40"
+           fill="#3448A8" stroke-width="2"/>
+      <text x="815" y="335" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Service</text>
+      <text x="815" y="363" text-anchor="middle" font-size="18" fill="#475467">stable dependency</text>
+    </g>
+    <g>
+      <circle cx="748" cy="518" r="64" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+      <use data-icon="tabler-outline/timeline" x="728" y="478" width="40" height="40"
+           fill="#3448A8" stroke-width="2"/>
+      <text x="748" y="542" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Event</text>
+      <text x="748" y="570" text-anchor="middle" font-size="18" fill="#475467">collaborate · intercept</text>
+    </g>
+    <g>
+      <circle cx="532" cy="518" r="64" fill="#3448A8" stroke="#00C2D7" stroke-width="3"/>
+      <use data-icon="tabler-outline/tool" x="512" y="478" width="40" height="40"
+           fill="#F7FAFC" stroke-width="2"/>
+      <text x="532" y="542" text-anchor="middle" font-size="24" font-weight="700" fill="#F7FAFC">Effect</text>
+      <text x="532" y="570" text-anchor="middle" font-size="18" fill="#B9F4F7">register + disposer</text>
+    </g>
+    <g>
+      <circle cx="465" cy="311" r="64" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+      <use data-icon="tabler-outline/lock" x="445" y="271" width="40" height="40"
+           fill="#3448A8" stroke-width="2"/>
+      <text x="465" y="335" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Scope</text>
+      <text x="465" y="363" text-anchor="middle" font-size="18" fill="#475467">activation ownership</text>
+    </g>
+
+    <line x1="532" y1="582" x2="748" y2="582" stroke="#00C2D7" stroke-width="3"/>
+    <text x="640" y="592" text-anchor="middle"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">EFFECT ↔ SCOPE / LIFECYCLE</text>
+  </g>
+
+  <g id="boundary-warning" data-pptx-bounds="64 602 1152 38">
+    <use data-icon="tabler-outline/alert-triangle" x="64" y="604" width="28" height="28"
+         fill="#D97706" stroke-width="2"/>
+    <text x="104" y="628" font-size="18" font-weight="700" fill="#D97706">
+      Reversible registration ≠ automatic compensation for file, network, or process side effects.
+    </text>
+  </g>
+
+  <g id="footer" data-pptx-bounds="64 652 1152 40">
+    <text x="64" y="676" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#475467">K-003 · K-004  |  CONTEXT · SERVICE · EVENT · EFFECT · SCOPE</text>
+    <text x="1216" y="676" text-anchor="end"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">P06 / 24</text>
+  </g>
+</svg>

@@ -1,0 +1,1 @@
+阅读 DeepSeek Harness 时，不要从 package 数量开始，而要先看三条流。控制流解释一次 Turn 怎样从上下文走到执行结果，装配流解释能力怎样通过 Profile 和 Cordis 进入 Context，事件流解释 Session 状态怎样被记录、恢复和投影。三条流最终汇入同一个 Harness control plane，因此控制、组合和状态恢复不是三个孤立子系统。掌握这张地图后，后面的实现细节都会有明确归属。

@@ -1,0 +1,1 @@
+仓库中的 Sandbox 对 file effects 与 same-world execution 提供了有意义的控制，但它不是覆盖所有路径的通用安全边界。Host API access、Plugin loading、remote transport、credential residency、observability data 与 rollback 分别跨越不同边界，因此都需要自己的执行与复核机制。企业真正要问的不是有没有 Sandbox，而是它覆盖哪些流，以及哪些控制仍然必须由外部系统补齐。
