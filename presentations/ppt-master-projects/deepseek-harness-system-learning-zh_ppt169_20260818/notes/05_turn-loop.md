@@ -1,0 +1,1 @@
+一次 Turn 从 project context 和 policy hooks 开始，经过 model request、tool choice，再由 executionMode 决定如何执行。exclusive call 会建立 barrier，后续 call 必须在启动前重新分类；在允许的区域里，两个 Tool body 可以重叠运行，但并发并不改变提交顺序。post-processing 与 tool result 仍按模型看到的顺序写回 Session，循环再决定 Continue、Stop 或 Fail。这个保证只约束模型可见顺序，文件、进程或网络副作用的最终权威仍然位于 Tool execution 本身。

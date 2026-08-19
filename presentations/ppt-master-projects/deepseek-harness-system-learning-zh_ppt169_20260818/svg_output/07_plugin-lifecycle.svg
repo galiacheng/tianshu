@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"
+     data-pptx-page-role="content"
+     font-family="Microsoft YaHei, Arial, sans-serif">
+  <rect id="background" data-pptx-role="background"
+        x="0" y="0" width="1280" height="720" fill="#F7FAFC"/>
+  <path id="engineering-grid" data-pptx-role="decoration"
+        d="M160 0V720 M320 0V720 M480 0V720 M640 0V720 M800 0V720 M960 0V720 M1120 0V720 M0 120H1280 M0 240H1280 M0 360H1280 M0 480H1280 M0 600H1280"
+        fill="none" stroke="#3448A8" stroke-width="1" stroke-opacity="0.07"/>
+
+  <g id="header" data-pptx-bounds="64 42 1152 108">
+    <text x="64" y="66" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8" letter-spacing="1">PLUGIN MODEL / SHARED LIFECYCLE</text>
+    <text x="64" y="122" font-size="42" font-weight="700" fill="#101B35">
+      “Everything is a Plugin”统一的是生命周期
+    </text>
+  </g>
+
+  <g id="plugin-stack" data-pptx-bounds="64 166 930 454">
+    <rect x="126" y="498" width="820" height="86" fill="#101B35"/>
+    <rect x="158" y="416" width="756" height="82" fill="#26385E"/>
+    <rect x="190" y="334" width="692" height="82" fill="#3448A8"/>
+    <rect x="222" y="252" width="628" height="82" fill="#5668B8"/>
+    <rect x="254" y="170" width="564" height="82" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+
+    <use data-icon="tabler-outline/server" x="152" y="518" width="42" height="42"
+         fill="#F7FAFC" stroke-width="2"/>
+    <text x="218" y="540" font-size="24" font-weight="700" fill="#F7FAFC">Host 与启动表面</text>
+    <text x="218" y="570" font-size="18" fill="#D7E0F1">进程、配置、provider、外部系统</text>
+
+    <use data-icon="tabler-outline/cpu" x="184" y="436" width="42" height="42"
+         fill="#F7FAFC" stroke-width="2"/>
+    <text x="250" y="458" font-size="24" font-weight="700" fill="#F7FAFC">Agent Preset 与 Model</text>
+    <text x="250" y="488" font-size="18" fill="#D7E0F1">standing scope · model provider</text>
+
+    <use data-icon="tabler-outline/tool" x="216" y="354" width="42" height="42"
+         fill="#F7FAFC" stroke-width="2"/>
+    <text x="282" y="376" font-size="24" font-weight="700" fill="#F7FAFC">Tool · Policy · Sandbox</text>
+    <text x="282" y="406" font-size="18" fill="#D7E0F1">执行、审批、限制与观测</text>
+
+    <use data-icon="tabler-outline/database" x="248" y="272" width="42" height="42"
+         fill="#F7FAFC" stroke-width="2"/>
+    <text x="314" y="294" font-size="24" font-weight="700" fill="#F7FAFC">Session · Persistence · Projection</text>
+    <text x="314" y="324" font-size="18" fill="#D7E0F1">事件事实、checkpoint 与视图</text>
+
+    <use data-icon="tabler-outline/terminal-2" x="280" y="190" width="42" height="42"
+         fill="#3448A8" stroke-width="2"/>
+    <text x="346" y="212" font-size="24" font-weight="700" fill="#101B35">Web · CLI · ACP · SDK</text>
+    <text x="346" y="242" font-size="18" fill="#475467">接口 adapter 与 transport</text>
+  </g>
+
+  <g id="lifecycle-axis" data-pptx-bounds="1018 166 198 454">
+    <line x1="1068" y1="206" x2="1068" y2="552" stroke="#00C2D7" stroke-width="5"/>
+    <circle cx="1068" cy="226" r="18" fill="#101B35" stroke="#00C2D7" stroke-width="3"/>
+    <circle cx="1068" cy="378" r="18" fill="#3448A8" stroke="#00C2D7" stroke-width="3"/>
+    <circle cx="1068" cy="532" r="18" fill="#101B35" stroke="#00C2D7" stroke-width="3"/>
+    <text x="1110" y="234" font-size="24" font-weight="700" fill="#101B35">mount</text>
+    <text x="1110" y="386" font-size="24" font-weight="700" fill="#101B35">event</text>
+    <text x="1110" y="540" font-size="24" font-weight="700" fill="#101B35">dispose</text>
+    <text x="1117" y="578" text-anchor="middle" font-size="18" fill="#475467">
+      <tspan x="1117" dy="0">一条贯穿轴</tspan>
+      <tspan x="1117" dy="28">统一五层能力</tspan>
+    </text>
+  </g>
+
+  <g id="footer" data-pptx-bounds="64 652 1152 40">
+    <text x="64" y="676" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#475467">K-003 · K-005 · K-010  |  COMPOSE · DEPEND · EVENT · DISPOSE</text>
+    <text x="1216" y="676" text-anchor="end"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">P07 / 24</text>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"
+     data-pptx-page-role="content"
+     font-family="Aptos, Arial, sans-serif">
+  <rect id="background" data-pptx-role="background"
+        x="0" y="0" width="1280" height="720" fill="#F7FAFC"/>
+  <path id="engineering-grid" data-pptx-role="decoration"
+        d="M160 0V720 M320 0V720 M480 0V720 M640 0V720 M800 0V720 M960 0V720 M1120 0V720 M0 120H1280 M0 240H1280 M0 360H1280 M0 480H1280 M0 600H1280"
+        fill="none" stroke="#3448A8" stroke-width="1" stroke-opacity="0.07"/>
+
+  <g id="header" data-pptx-bounds="64 42 1152 112">
+    <text x="64" y="66" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8" letter-spacing="1">INTERFACE ADAPTERS / TRANSPORT + OWNERSHIP</text>
+    <text x="64" y="122" font-family="Aptos Display, Arial, sans-serif"
+          font-size="42" font-weight="700" fill="#101B35">
+      Five interfaces share Core, not process ownership
+    </text>
+  </g>
+
+  <g id="shared-core" data-pptx-bounds="430 238 420 238">
+    <rect x="478" y="260" width="324" height="192" rx="12"
+          fill="#101B35" stroke="#00C2D7" stroke-width="4"/>
+    <use data-icon="tabler-outline/cpu" x="610" y="286" width="60" height="60"
+         fill="#F7FAFC" stroke-width="2"/>
+    <text x="640" y="382" text-anchor="middle" font-size="24" font-weight="700"
+          fill="#F7FAFC">Agent · Session · Tools</text>
+    <text x="640" y="422" text-anchor="middle"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#B9F4F7">SHARED CORE SEMANTICS</text>
+  </g>
+
+  <g id="local-entry-points" data-pptx-bounds="64 176 340 420">
+    <line x1="404" y1="260" x2="478" y2="320" stroke="#3448A8" stroke-width="2"/>
+    <line x1="404" y1="480" x2="478" y2="392" stroke="#3448A8" stroke-width="2"/>
+    <rect x="86" y="196" width="318" height="128" rx="8"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <use data-icon="tabler-outline/terminal-2" x="110" y="220" width="42" height="42"
+         fill="#3448A8" stroke-width="2"/>
+    <text x="174" y="242" font-size="24" font-weight="700" fill="#101B35">CLI</text>
+    <text x="110" y="278" font-size="18" fill="#475467">
+      <tspan x="110" dy="0">interactive entry</tspan>
+      <tspan x="110" dy="26">local process</tspan>
+    </text>
+
+    <rect x="86" y="416" width="318" height="148" rx="8"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <use data-icon="tabler-outline/code" x="110" y="440" width="42" height="42"
+         fill="#3448A8" stroke-width="2"/>
+    <text x="174" y="462" font-size="24" font-weight="700" fill="#101B35">Headless / ACP</text>
+    <text x="110" y="506" font-size="18" fill="#475467">automation · stdio JSON-RPC</text>
+    <text x="110" y="526" font-size="18" fill="#475467">
+      <tspan x="110" dy="0">caller manages</tspan>
+      <tspan x="110" dy="26">connection + lifecycle</tspan>
+    </text>
+  </g>
+
+  <g id="web-transport" data-pptx-bounds="876 170 340 210">
+    <line x1="802" y1="320" x2="876" y2="276" stroke="#3448A8" stroke-width="2"/>
+    <rect x="876" y="188" width="320" height="174" rx="8"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <use data-icon="tabler-outline/network" x="900" y="212" width="42" height="42"
+         fill="#3448A8" stroke-width="2"/>
+    <text x="964" y="234" font-size="24" font-weight="700" fill="#101B35">Web</text>
+    <text x="900" y="278" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">HTTP POST ↑</text>
+    <text x="900" y="312" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">events.mux WS ↓</text>
+    <text x="900" y="344" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">events.host WS ↓</text>
+  </g>
+
+  <g id="sdk-ownership" data-pptx-bounds="876 394 340 216">
+    <line x1="802" y1="392" x2="876" y2="468" stroke="#3448A8" stroke-width="2"/>
+    <rect x="876" y="406" width="320" height="184" rx="8"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <use data-icon="tabler-outline/code" x="900" y="430" width="42" height="42"
+         fill="#3448A8" stroke-width="2"/>
+    <text x="964" y="452" font-size="24" font-weight="700" fill="#101B35">SDK ownership</text>
+    <line x1="900" y1="486" x2="1172" y2="486" stroke="#3448A8" stroke-width="1"/>
+    <text x="900" y="522" font-size="18" font-weight="700" fill="#101B35">TypeScript SDK</text>
+    <text x="1068" y="522" font-size="18" fill="#475467">caller runtime</text>
+    <text x="900" y="560" font-size="18" font-weight="700" fill="#101B35">Python SDK</text>
+    <text x="1068" y="560" font-size="18" fill="#475467">bundled process</text>
+  </g>
+
+  <g id="footer" data-pptx-bounds="64 652 1152 40">
+    <text x="64" y="676" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#475467">K-011 · K-012  |  SAME CORE ≠ SAME PROCESS BOUNDARY</text>
+    <text x="1216" y="676" text-anchor="end"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">P13 / 24</text>
+  </g>
+</svg>

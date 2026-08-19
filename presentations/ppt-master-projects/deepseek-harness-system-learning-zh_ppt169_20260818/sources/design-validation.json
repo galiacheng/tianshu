@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "deck_id": "deepseek-harness-system-learning-zh",
+  "design_version": 2,
+  "style_version": 1,
+  "status": "pass",
+  "checks": [
+    {
+      "id": "knowledge_fidelity",
+      "status": "pass",
+      "evidence": "S-01 至 S-24 的 source_refs 全部解析到 K-001 至 K-033；架构事实固定在 99f6f02，市场数字标注 2026-08-18，企业判断明确为 public-evidence assessment。"
+    },
+    {
+      "id": "narrative",
+      "status": "pass",
+      "evidence": "SEC-01 提出四个问题；SEC-02/03 解释控制、装配、事件、接口和插件边界；SEC-04 拆分安全原语与企业证据；SEC-05 分层市场；SEC-06 以复现实验收束。"
+    },
+    {
+      "id": "slide_purpose",
+      "status": "pass",
+      "evidence": "24 页均有唯一 purpose、takeaway 和结论式 title；S-04、S-12、S-16、S-20 只承担章节转场。"
+    },
+    {
+      "id": "content_density",
+      "status": "pass",
+      "evidence": "每页正文不超过 5 项，机制通过 diagram、state machine 或 table 空间编码；正文下限 17 pt，未以缩字解决过载。"
+    },
+    {
+      "id": "visual_plan",
+      "status": "pass",
+      "evidence": "每页 visual.kind 均可执行且非 none；13 页机制图、4 页章节构图、2 页矩阵和其他关系图都直接支持 takeaway。"
+    },
+    {
+      "id": "style_fit",
+      "status": "pass",
+      "evidence": "Circuit Atlas 94 分，高于 Open Source Editorial 86 和 Enterprise Blueprint 81；native diagram 最适合控制流、生命周期、安全边界与市场分层。"
+    },
+    {
+      "id": "style_consistency",
+      "status": "pass",
+      "evidence": "全部 slides 使用 style_version 1、定义过的 layout_id 和 light/dark/signal variant；设计版本统一为 2。"
+    },
+    {
+      "id": "readability",
+      "status": "pass",
+      "evidence": "16:9、0.55 in safe margin、12 栏 grid、0.36 in block gap；标题 30–42 pt、正文 17–23 pt、caption 9–12 pt。"
+    },
+    {
+      "id": "accessibility",
+      "status": "pass",
+      "evidence": "三种 variant 对比达到 validator 阈值；非装饰 visual 有 alt text；风险与状态同时用标签、形状与颜色编码。"
+    },
+    {
+      "id": "asset_rights",
+      "status": "pass",
+      "evidence": "两套设计只使用 native-shape、native-diagram 与 native table，不需要外部图片、icon、截图或 AI 资产。"
+    },
+    {
+      "id": "source_traceability",
+      "status": "pass",
+      "evidence": "所有 content 和 summary slide 引用有效 K-*；来源页脚、固定 commit、市场快照日期和证据限制均预留。"
+    },
+    {
+      "id": "generation_readiness",
+      "status": "pass",
+      "evidence": "21 个 layout、3 个 variant、完整视觉 token、每页 visual description、data refs、notes、citation 与 alt text 足以直接由 ppt-master 实现。"
+    }
+  ],
+  "blockers": [],
+  "issues": [
+    {
+      "id": "ISSUE-001",
+      "severity": "major",
+      "status": "resolved",
+      "resolution": "升级 S-05、S-08、S-10、S-13、S-15，修正 Tool 屏障、standing Preset scope、projection checkpoint、双 WebSocket/SDK ownership 和 post-settle render 边界。"
+    },
+    {
+      "id": "ISSUE-002",
+      "severity": "major",
+      "status": "resolved",
+      "resolution": "重写 S-17 至 S-19，将 sandbox、凭据、telemetry、outbound、JSONL 与 Web trust fence 的覆盖范围和 public evidence gap 明确分开。"
+    },
+    {
+      "id": "ISSUE-003",
+      "severity": "major",
+      "status": "resolved",
+      "resolution": "更新 2026-08-18 指标、OpenHands 分层、Dify/Coze license 边界，并在 S-23 加入 grader、unique run_id 与完整 evidence bundle。"
+    }
+  ]
+}

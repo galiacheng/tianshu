@@ -26,4 +26,15 @@ Tianshu is a set of skills running in GitHub Copilot app, helping you to
 | [`brainstorm`](.github/skills/brainstorm/SKILL.md) | Generate domain-grounded ideas and judge them against durable mental models. |
 | [`knowledge-to-pptx`](.github/skills/knowledge-to-pptx/SKILL.md) | Turn knowledge into a designed, validated PowerPoint with a consistent visual and motion system. |
 
+## Example
+
+The [DeepSeek Harness learning example](docs/deepseek-harness/README.md) demonstrates the complete knowledge-to-presentation workflow: source-backed research, quick and deep learning tracks, and bilingual slide decks.
+
+| Artifact | Link |
+| --- | --- |
+| Learning materials | [DeepSeek Harness curriculum](docs/deepseek-harness/README.md) |
+| Chinese presentation | [DeepSeek Harness system learning (Chinese)](presentations/deepseek-harness-system-learning-zh.pptx) |
+| English presentation | [DeepSeek Harness system learning (English)](presentations/deepseek-harness-system-learning-en.pptx) |
+| Editable presentation sources and QA | [PPT Master projects](presentations/ppt-master-projects/) |
+
 Learning is hard. Tianshu makes it delightful.

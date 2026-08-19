@@ -1,0 +1,1236 @@
+{
+  "schema_version": "1.0",
+  "deck_id": "deepseek-harness-system-learning-zh",
+  "design_version": 2,
+  "style_version": 1,
+  "objective": "帮助技术负责人、架构师与 AI 平台团队建立可解释的 DeepSeek Harness 心智模型，准确理解其共享 Preset scope、事件投影、接口边界、安全边界和国内外竞争位置，并形成可验证的下一步行动。",
+  "audience": "中国及国际市场中的技术负责人、Agent 平台架构师、AI 开发者和产品战略人员",
+  "narrative": "从 Harness 作为模型与真实环境之间的控制层切入，解释带并发屏障的 Agent loop、Cordis、共享 Preset scope、Session 事件与 versioned projection checkpoint；再展示多界面、SDK 和动态插件的真实边界；随后把本地运行、数据路径与企业控制面拆开评估，最后用全球与中国三层竞争图定位项目，并以可复现的对比研究结束。",
+  "estimated_minutes": 32,
+  "slide_count": 24,
+  "sections": [
+    {
+      "id": "SEC-01",
+      "title": "开场：为什么需要 Harness",
+      "slide_ids": [
+        "S-01",
+        "S-02",
+        "S-03"
+      ]
+    },
+    {
+      "id": "SEC-02",
+      "title": "架构：控制、装配与可恢复状态",
+      "slide_ids": [
+        "S-04",
+        "S-05",
+        "S-06",
+        "S-07",
+        "S-08",
+        "S-09",
+        "S-10",
+        "S-11"
+      ]
+    },
+    {
+      "id": "SEC-03",
+      "title": "扩展：多界面与动态插件",
+      "slide_ids": [
+        "S-12",
+        "S-13",
+        "S-14",
+        "S-15"
+      ]
+    },
+    {
+      "id": "SEC-04",
+      "title": "企业：安全原语不等于控制面",
+      "slide_ids": [
+        "S-16",
+        "S-17",
+        "S-18",
+        "S-19"
+      ]
+    },
+    {
+      "id": "SEC-05",
+      "title": "市场：全球与中国三层竞争",
+      "slide_ids": [
+        "S-20",
+        "S-21",
+        "S-22"
+      ]
+    },
+    {
+      "id": "SEC-06",
+      "title": "行动：用证据验证判断",
+      "slide_ids": [
+        "S-23",
+        "S-24"
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "id": "S-01",
+      "order": 1,
+      "role": "title",
+      "section_id": "SEC-01",
+      "purpose": "建立主题、版本边界和架构—企业—市场三重视角。",
+      "takeaway": "DeepSeek Harness 的核心价值是把 Agent 运行时变成可组合、可观察、可替换的控制层。",
+      "title": "DeepSeek Harness：Everything is a Plugin",
+      "content": {
+        "body": [
+          "从架构机制到企业边界与全球/中国竞争"
+        ],
+        "data_points": [
+          "基于 v0.1.0-rc.7 · commit 99f6f02",
+          "Tianshu ede03b8 · knowledge-to-pptx → ppt-master"
+        ],
+        "speaker_notes": "先给出双重版本边界：技术结论固定在 Harness 99f6f02，生成流程固定在 Tianshu ede03b8 的最新 Skills。右侧插件轨道建立视觉记忆：能力围绕 control plane 装配，而不是堆在单个 Agent 类里。",
+        "citation_line": "Source: K-001, K-005, K-030"
+      },
+      "source_refs": [
+        "K-001",
+        "K-005",
+        "K-030"
+      ],
+      "visual": {
+        "kind": "shape-composition",
+        "description": "右侧以中央 Harness control plane 节点为核心，Model、Tool、Session、Sandbox、UI 五个节点沿椭圆轨道分布；一条 signal path 依次连接节点。",
+        "selection_reason": "环绕构图直接把 Everything is a Plugin 表达为围绕控制层的可组合能力，而不是装饰性技术图案。",
+        "data_refs": [
+          "K-001",
+          "K-005"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-shape",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": true,
+        "alt_text": ""
+      },
+      "layout_id": "title-orbit",
+      "style_variant": "dark",
+      "style_version": 1
+    },
+    {
+      "id": "S-02",
+      "order": 2,
+      "role": "content",
+      "section_id": "SEC-01",
+      "purpose": "解释为什么现代 Agent 需要独立 Harness 层。",
+      "takeaway": "模型只提出下一步；Harness 才把建议变成受控、可记录、可恢复的现实操作。",
+      "title": "Agent 的难点不在“会想”，而在“安全地做完”",
+      "content": {
+        "body": [
+          "模型：生成下一步建议",
+          "Harness：组装上下文、选择工具、施加权限与策略",
+          "真实环境：文件、进程、网络、业务系统产生副作用",
+          "Session：把每次可见输入与结果变成可恢复证据"
+        ],
+        "data_points": [],
+        "speaker_notes": "强调控制责任的转移。模型 API 不拥有文件、Shell、审批或持久化语义；Harness 负责把这些能力编排为一条可追踪执行路径。右侧三层图中，箭头必须经过 Harness，不能让 Model 直接连接真实环境。",
+        "citation_line": "Source: K-001, K-002, K-008"
+      },
+      "source_refs": [
+        "K-001",
+        "K-002",
+        "K-008"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "三层垂直图：Model → Harness control plane → Environment；Harness 内含 Context、Policy、Tool、Session 四个小节点，副作用箭头从 Tool 进入 Environment，事件箭头回到 Session。",
+        "selection_reason": "空间上强制所有执行经过控制层，直接解释 Harness 与普通 API wrapper 的差别。",
+        "data_refs": [
+          "K-001",
+          "K-002",
+          "K-008"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Diagram synthesized from official architecture documentation",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "模型通过 Harness 的上下文、策略、工具和 Session 控制层与真实环境交互。"
+      },
+      "layout_id": "context-gap",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-03",
+      "order": 3,
+      "role": "content",
+      "section_id": "SEC-01",
+      "purpose": "给出整场演示的四个可复述问题。",
+      "takeaway": "理解项目只需回答四个问题：如何运行、如何扩展、能否治理、与谁竞争。",
+      "title": "用四个问题读懂 DeepSeek Harness",
+      "content": {
+        "body": [
+          "1 · Runtime：一次 Agent turn 如何被控制？",
+          "2 · Extensibility：Everything is a Plugin 如何成立？",
+          "3 · Enterprise：安全原语与采购控制面差多少？",
+          "4 · Market：全球与中国竞品处于哪一层？"
+        ],
+        "data_points": [],
+        "speaker_notes": "这不是目录页，而是认知路线。后续每一节都回到一个问题，并在最后用对比实验把四个答案变成可验证假设。",
+        "citation_line": "Source: K-002, K-005, K-018, K-019"
+      },
+      "source_refs": [
+        "K-002",
+        "K-005",
+        "K-018",
+        "K-019"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "四个编号节点沿左下至右上的 signal path：Runtime、Extensibility、Enterprise、Market；路径终点是 Evidence。",
+        "selection_reason": "上升路径将演示结构表达为逐层建立证据的学习旅程，而不是机械章节列表。",
+        "data_refs": [
+          "K-002",
+          "K-005",
+          "K-018",
+          "K-019"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Runtime、Extensibility、Enterprise 和 Market 四个问题依次通向 Evidence。"
+      },
+      "layout_id": "roadmap-four",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-04",
+      "order": 4,
+      "role": "section",
+      "section_id": "SEC-02",
+      "purpose": "切换到运行时架构，并提出本节结论。",
+      "takeaway": "架构的主线是控制流、装配流和事件流，而不是 package 数量。",
+      "title": "01 · 架构：三条流构成 Harness",
+      "content": {
+        "body": [
+          "Control flow · Composition flow · Event flow"
+        ],
+        "data_points": [],
+        "speaker_notes": "章节页只解释三条流：Agent loop 控制一次执行，Profile/Cordis 控制能力装配，Session event stream 控制可恢复状态。",
+        "citation_line": "Source: K-002, K-003, K-008"
+      },
+      "source_refs": [
+        "K-002",
+        "K-003",
+        "K-008"
+      ],
+      "visual": {
+        "kind": "shape-composition",
+        "description": "右侧三条不同高度的 signal path 分别标注 Control、Composition、Event，并在终点汇合为 Harness。",
+        "selection_reason": "三条汇合路径预告本节的因果结构，避免使用无信息量的章节图。",
+        "data_refs": [
+          "K-002",
+          "K-003",
+          "K-008"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-shape",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": true,
+        "alt_text": ""
+      },
+      "layout_id": "section-signal",
+      "style_variant": "dark",
+      "style_version": 1
+    },
+    {
+      "id": "S-05",
+      "order": 5,
+      "role": "content",
+      "section_id": "SEC-02",
+      "purpose": "解释 Agent loop 的实际控制阶段。",
+      "takeaway": "Agent loop 允许 Tool body 并发，但 exclusive barrier 与有序提交保证模型看到确定顺序。",
+      "title": "一次 Turn 不是一次请求，而是带屏障的控制闭环",
+      "content": {
+        "body": [
+          "Project context → Policy hooks → Model request",
+          "Tool choice → executionMode 分类 → exclusive barrier",
+          "Body 可重叠 → post-processing 与 tool/result 按模型顺序提交",
+          "Continue / stop / fail"
+        ],
+        "data_points": [
+          "副作用权威在 Tool execution；并发不等于乱序提交"
+        ],
+        "speaker_notes": "沿闭环说明并发边界。exclusive call 建立 barrier，后续 call 在启动前重新分类；只有 dispatch 与 Tool body 可重叠，post-processing 和 tool/result 仍按模型顺序写入 Session。",
+        "citation_line": "Source: K-002, K-008, K-009"
+      },
+      "source_refs": [
+        "K-002",
+        "K-008",
+        "K-009"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "七步闭环中加入 executionMode 分类与 exclusive barrier；并发 body 使用平行路径，随后在 ordered commit 节点重新合流。",
+        "selection_reason": "闭环比线性列表更准确地表达模型请求、工具副作用和 Session 状态之间的反馈。",
+        "data_refs": [
+          "K-002",
+          "K-008",
+          "K-009"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Diagram synthesized from Agent loop and Session documentation",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Agent loop 对 Tool 进行执行模式分类，以独占屏障限制并发，并按模型顺序提交结果。"
+      },
+      "layout_id": "loop-flow",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-06",
+      "order": 6,
+      "role": "content",
+      "section_id": "SEC-02",
+      "purpose": "建立 Cordis 插件运行时的五个原语。",
+      "takeaway": "Cordis 把能力、依赖、事件和生命周期装进同一个 Context 树。",
+      "title": "五个 Primitive 让插件化从“约定”变成“运行时”",
+      "content": {
+        "body": [
+          "Context：能力可见性与生命周期边界",
+          "Service：稳定依赖契约",
+          "Event：跨插件协作与拦截",
+          "Effect：带 disposer 的注册",
+          "Scope：一次激活的资源所有权"
+        ],
+        "data_points": [
+          "可逆注册 ≠ 外部副作用自动回滚"
+        ],
+        "speaker_notes": "用环形关系而不是五张卡。Context 是中心；Service 与 Event 在其上被发现；Effect 把注册变成可清理操作；Scope 决定所有资源何时释放。提醒听众：已经写入文件或发送网络请求的外部效果需要独立补偿。",
+        "citation_line": "Source: K-003, K-004"
+      },
+      "source_refs": [
+        "K-003",
+        "K-004"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "中央 Plugin runtime，外圈五个 primitive；Effect 与 Scope 之间用双向 lifecycle 箭头，底部橙色 callout 标出外部副作用不会自动回滚。",
+        "selection_reason": "环形图表达五个原语的协作关系，风险 callout 防止把可逆注册误解为事务。",
+        "data_refs": [
+          "K-003",
+          "K-004"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Context、Service、Event、Effect 和 Scope 围绕 Plugin runtime 协作。"
+      },
+      "layout_id": "primitive-ring",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-07",
+      "order": 7,
+      "role": "content",
+      "section_id": "SEC-02",
+      "purpose": "解释 Everything is a Plugin 的架构含义。",
+      "takeaway": "插件化的价值是所有能力共享装配、依赖、事件与回收语义，而不是把代码拆成更多包。",
+      "title": "“Everything is a Plugin”统一的是生命周期",
+      "content": {
+        "body": [
+          "Host 与启动表面",
+          "Agent Preset 与 Model",
+          "Tool、Policy 与 Sandbox",
+          "Session、Persistence 与 Projection",
+          "Web/CLI/ACP/SDK 界面"
+        ],
+        "data_points": [
+          "统一装配 · 显式依赖 · 可替换 Provider · 可回收 Scope"
+        ],
+        "speaker_notes": "从底到顶扫过插件栈。每层都可作为 Provider、Consumer 或 policy 组合，但都遵守 Cordis 的 Context 和 Scope。包多不代表插件化；跨层仍需稳定 seam 和依赖方向。",
+        "citation_line": "Source: K-003, K-005, K-010"
+      },
+      "source_refs": [
+        "K-003",
+        "K-005",
+        "K-010"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "五层插件栈，每层包含 2-3 个代表节点；右侧一条 lifecycle 轴贯穿所有层，标注 mount、event、dispose。",
+        "selection_reason": "分层栈与贯穿的生命周期轴同时表现广度与统一机制，避免把口号简化为插件市场。",
+        "data_refs": [
+          "K-003",
+          "K-005",
+          "K-010"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Architecture abstraction from fixed source commit",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Host、Agent、Tool、Session 和 Interface 五层插件共享 mount、event 与 dispose 生命周期。"
+      },
+      "layout_id": "ontology-stack",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-08",
+      "order": 8,
+      "role": "content",
+      "section_id": "SEC-02",
+      "purpose": "区分承载能力与每个 Session 暴露能力的两类配置。",
+      "takeaway": "Preset 每进程只挂载一次；Session Agent scope 通过 parent 关系加入所选能力，并用事件记录切换。",
+      "title": "Preset 是共享 standing scope，Session 才是运行实例",
+      "content": {
+        "body": [
+          "Host plane：Web、persistence、credential、sandbox、provider",
+          "Agent Preset：每进程一次 standing mount",
+          "Session Agent scope：parent → selected preset",
+          "切换：agent-preset/selected event，而不是改写创建 header"
+        ],
+        "data_points": [
+          "共享 Preset 中的可变状态必须按 Session 或显式 owner 分区"
+        ],
+        "speaker_notes": "纠正“每个 Session 重挂 Preset”的误解。standing preset scope 可被多个 Session Agent scope 共同继承，因此插件中的 mutable state 必须显式按 Session 分区。",
+        "citation_line": "Source: K-006"
+      },
+      "source_refs": [
+        "K-006",
+        "K-005"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "上方 Host plane；中部 standing Agent Preset scope；下方两个 Session Agent scope 以 parent 连接同一 Preset，并各自记录 selection event。",
+        "selection_reason": "上下分区明确表现“承载”与“暴露”是两个配置问题，中央门控展示 Session 级能力选择。",
+        "data_refs": [
+          "K-006"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "一个共享的 Agent Preset standing scope 被两个独立 Session Agent scope 通过 parent 关系继承。"
+      },
+      "layout_id": "dual-plane",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-09",
+      "order": 9,
+      "role": "content",
+      "section_id": "SEC-02",
+      "purpose": "说明 Profile 如何产生可复现的最终运行时。",
+      "takeaway": "Profile 是有顺序的配置叠层；越靠后的 patch 越接近当前用户与本次运行。",
+      "title": "最终能力来自四层叠加，而不是单个配置文件",
+      "content": {
+        "body": [
+          "1 · Bundles：可复用默认能力集合",
+          "2 · Profile patch：产品或角色选择",
+          "3 · Home patch：用户级长期覆盖",
+          "4 · --patch：本次运行临时覆盖"
+        ],
+        "data_points": [
+          "后层覆盖前层 · 顺序属于行为语义"
+        ],
+        "speaker_notes": "把四层想成透明片。调试配置时必须记录每层来源，不能只看最终 JSON；否则无法解释一个 Tool 为什么存在、一个 policy 为什么被覆盖。",
+        "citation_line": "Source: K-007"
+      },
+      "source_refs": [
+        "K-007"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "四张半透明配置叠片依次覆盖，最上层 --patch 使用 signal 边框；右侧输出 Effective runtime。",
+        "selection_reason": "叠片天然表达覆盖顺序和来源追踪，比四个并列卡片更接近配置机制。",
+        "data_refs": [
+          "K-007"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Bundles、Profile patch、Home patch 和 CLI patch 依次叠加形成最终运行时。"
+      },
+      "layout_id": "layer-stack",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-10",
+      "order": 10,
+      "role": "content",
+      "section_id": "SEC-02",
+      "purpose": "解释 Session event sourcing 与关键日志不变量。",
+      "takeaway": "Projection cache 保存 versioned checkpoint row，而不是持久化 UI 视图；当前视图来自 checkpoint 加 tail replay。",
+      "title": "Event 是事实，Cache 只保存可重放的 Unit State",
+      "content": {
+        "body": [
+          "Events：user、assistant、tool、approval、error",
+          "Request metadata：request/header · request/context",
+          "Checkpoint row：(key, ver, seq, val)",
+          "View：restore / re-view unit state + replay tail"
+        ],
+        "data_points": [
+          "Invariant · model-visible means logged"
+        ],
+        "speaker_notes": "顶部是事实事件带，包含 request/header 与 request/context。cache 只保存可版本化的 projection unit state；冷读时恢复该 state，再重放 seq 之后的事件生成 Conversation、Tasks 或 Usage 视图。",
+        "citation_line": "Source: K-008, K-009"
+      },
+      "source_refs": [
+        "K-008",
+        "K-009"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "顶部 append-only event stream；中部 versioned checkpoint row；底部以 tail replay 生成 Conversation、Tasks 与 Usage 三个当前视图。",
+        "selection_reason": "时间轴和下游投影准确表达 event sourcing，独立 callout 固化最关键的运行时不变量。",
+        "data_refs": [
+          "K-008",
+          "K-009"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Diagram synthesized from Session subsystem documentation",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "事件流与版本化 unit-state checkpoint 共同重放生成当前投影视图。"
+      },
+      "layout_id": "event-stream",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-11",
+      "order": 11,
+      "role": "content",
+      "section_id": "SEC-02",
+      "purpose": "说明 capability replacement 的稳定接缝。",
+      "takeaway": "可替换能力需要 Definition、Provider、Consumer 三个角色，Policy 在接缝上组合。",
+      "title": "Capability Seam 把 Agent 与具体实现隔离",
+      "content": {
+        "body": [
+          "Definition：稳定类型、方法与事件",
+          "Provider：单选实现或多命名 registry",
+          "Consumer：Tool、Agent loop、UI 或另一服务",
+          "例外边界：tool-fs-search 走 subprocess/ripgrep，而非 ctx.fs"
+        ],
+        "data_points": [
+          "Policy：approval · retry · timeout · observation"
+        ],
+        "speaker_notes": "三角色模型描述依赖方向，不强制 Provider 只有一个。Subagent 可以同时注册多个命名 Provider；tool-fs-search 虽属 filesystem Tool，却通过 subprocess 启动 packaged ripgrep，因此替换 ctx.fs 不会自动替换搜索语义。",
+        "citation_line": "Source: K-010"
+      },
+      "source_refs": [
+        "K-010",
+        "K-005"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "Definition → Provider → Consumer → Agent 横向链；上方 Policy wrappers 以垂直拦截线连接 Consumer；下方列出可替换 capability。",
+        "selection_reason": "调用链与拦截线同时展示依赖反转和横切策略，是 capability seam 的最小完整机制图。",
+        "data_refs": [
+          "K-010"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Service Definition、Provider、Consumer 和 Agent 形成能力接缝，Policy 在 Consumer 处拦截。"
+      },
+      "layout_id": "seam-flow",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-12",
+      "order": 12,
+      "role": "section",
+      "section_id": "SEC-03",
+      "purpose": "切换到多界面和动态扩展机制。",
+      "takeaway": "扩展性来自同一核心上的多 adapter 与可检查的插件发布流程。",
+      "title": "02 · 扩展：一个 Core，多种 Interface",
+      "content": {
+        "body": [
+          "CLI · Web · Headless · ACP · SDK · Dynamic Plugin"
+        ],
+        "data_points": [],
+        "speaker_notes": "本节回答两个问题：不同界面如何避免复制 Agent；动态插件如何安全地发现、定义、运行和修复。",
+        "citation_line": "Source: K-011, K-014"
+      },
+      "source_refs": [
+        "K-011",
+        "K-014"
+      ],
+      "visual": {
+        "kind": "shape-composition",
+        "description": "中央 core 节点向外辐射五个 interface 节点，底部一条 plugin lifecycle signal path。",
+        "selection_reason": "单中心辐射图预告 core reuse，生命周期路径预告动态 plugin 发布机制。",
+        "data_refs": [
+          "K-011",
+          "K-014"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-shape",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": true,
+        "alt_text": ""
+      },
+      "layout_id": "section-signal",
+      "style_variant": "dark",
+      "style_version": 1
+    },
+    {
+      "id": "S-13",
+      "order": 13,
+      "role": "content",
+      "section_id": "SEC-03",
+      "purpose": "说明不同产品入口如何复用核心能力。",
+      "takeaway": "界面共享 Agent/Session 语义，但 Web 与两类 SDK 的进程、连接与恢复边界不同。",
+      "title": "五个入口共享 Core，但 Transport 与 Runtime Ownership 不同",
+      "content": {
+        "body": [
+          "CLI：交互式产品入口",
+          "Web：HTTP POST up + events.mux / events.host WS down",
+          "Headless / ACP：自动化与 stdio JSON-RPC",
+          "TypeScript SDK：调用方提供 runtime",
+          "Python SDK：默认 bundled subprocess"
+        ],
+        "data_points": [],
+        "speaker_notes": "中央 Core 保留 Agent、Session、Tools 与 persistence。Web 有两条 downlink-only WebSocket；TypeScript 和 Python SDK 都是 out-of-process，但 runtime 的提供者与 transport 不同。",
+        "citation_line": "Source: K-011, K-012"
+      },
+      "source_refs": [
+        "K-011",
+        "K-012"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "中央 Agent/Session/Tools core，五个入口环绕；Web 拆成 HTTP POST、events.mux 和 events.host；SDK 分成 caller-supplied 与 bundled subprocess。",
+        "selection_reason": "Hub-and-spoke 图直接证明多入口共享核心，同时保留 Web 与 ACP 的不同 transport。",
+        "data_refs": [
+          "K-011",
+          "K-012"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "CLI、Web、Headless、ACP 和两类 SDK 通过不同 transport 连接同一 Agent 与 Session 核心。"
+      },
+      "layout_id": "interface-hub",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-14",
+      "order": 14,
+      "role": "content",
+      "section_id": "SEC-03",
+      "purpose": "解释 Host 与 Client 编译面如何共享远程契约。",
+      "takeaway": "Typert 把跨进程结构在 Host build 阶段冻结，再交给 Client 消费。",
+      "title": "Typert 让 Host / Client 契约只定义一次",
+      "content": {
+        "body": [
+          "Host TypeScript source",
+          "Analyzer → compiler-independent model → emitter",
+          "Remote metadata · reflection · Zod schemas",
+          "Loader / registry / gateway",
+          "Client compiler face"
+        ],
+        "data_points": [
+          "Build order：Host contracts → Client typecheck"
+        ],
+        "speaker_notes": "说明为什么不是简单共享一个 tsconfig：Host 和 Client 都扩展 Cordis Context，属于不同 compiler face。Typert 在 Host build 中提取结构，Client 只消费生成 contract。提醒：结构验证不替代 authentication、TLS 或授权。",
+        "citation_line": "Source: K-013"
+      },
+      "source_refs": [
+        "K-013"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "五段 pipeline 从 Host source 到 Client，Typert 段展开为 analyze、model、emit 三个子节点；底部 build-order 箭头单向前进。",
+        "selection_reason": "生成管线直观解释契约来源和不可逆 build order，比展示文件清单更能传达机制。",
+        "data_refs": [
+          "K-013"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Diagram synthesized from Typert subsystem documentation",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Host TypeScript 经 Typert 生成 Remote、reflection 和 Zod contract，随后由 registry 与 Client 消费。"
+      },
+      "layout_id": "contract-pipeline",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-15",
+      "order": 15,
+      "role": "content",
+      "section_id": "SEC-03",
+      "purpose": "将动态插件开发还原为可检查、可版本化的发布流程。",
+      "takeaway": "动态 Plugin 是页面参与的小型发布系统；激活、审批与后续渲染是不同成功边界。",
+      "title": "Run ok 不代表后续 Client Render 一定成功",
+      "content": {
+        "body": [
+          "Inspect：list → minimal query",
+          "Define：immutable Plugin / Package",
+          "Client half：等待匹配页面连接",
+          "Run：approval → starting → ok / failed",
+          "After settle：render diagnostics 仍可能失败"
+        ],
+        "data_points": [
+          "Repair = new Package · Rollback = explicit currentPackageId"
+        ],
+        "speaker_notes": "先 inspect live contract，再 define immutable Package。Client half 没有匹配页面会悬停；Run 返回 ok 后，后续 render 仍可能失败，因此需要同时检查 Run 与 render diagnostics。",
+        "citation_line": "Source: K-014, K-015"
+      },
+      "source_refs": [
+        "K-014",
+        "K-015"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "状态机增加 Waiting for page 与 Post-settle render 分支；Run ok 和 Render failed 作为两个独立结果节点。",
+        "selection_reason": "状态机对应真实生命周期，操作规则揭示不可变版本和显式回滚的设计后果。",
+        "data_refs": [
+          "K-014",
+          "K-015"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Diagram synthesized from official Cordis plugin Skill",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "动态插件在页面连接、审批和启动后可能成功激活，但后续 Client render 仍可独立失败。"
+      },
+      "layout_id": "lifecycle-state",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-16",
+      "order": 16,
+      "role": "section",
+      "section_id": "SEC-04",
+      "purpose": "切换到安全和企业就绪度评估。",
+      "takeaway": "安全原语降低局部风险；企业控制面决定能否规模化采购。",
+      "title": "03 · 企业：Local 不等于 Governed",
+      "content": {
+        "body": [
+          "Isolation primitives ≠ Enterprise control plane"
+        ],
+        "data_points": [],
+        "speaker_notes": "先拆掉最常见误区：开源、自托管、带 sandbox 和日志，不等于数据不外流，也不等于企业可采购。",
+        "citation_line": "Source: K-016, K-017, K-018"
+      },
+      "source_refs": [
+        "K-016",
+        "K-017",
+        "K-018"
+      ],
+      "visual": {
+        "kind": "shape-composition",
+        "description": "右侧三个递进门：Local runtime、Local data paths、Enterprise governance；只有最后一扇门通向 Production。",
+        "selection_reason": "递进门直接表达三个不同证明层级，避免把安全功能表误当成熟度结论。",
+        "data_refs": [
+          "K-016",
+          "K-017",
+          "K-018"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-shape",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": true,
+        "alt_text": ""
+      },
+      "layout_id": "section-signal",
+      "style_variant": "dark",
+      "style_version": 1
+    },
+    {
+      "id": "S-17",
+      "order": 17,
+      "role": "content",
+      "section_id": "SEC-04",
+      "purpose": "建立私有部署的三层判断。",
+      "takeaway": "私有部署必须分别证明运行位置、数据路径和组织控制。",
+      "title": "Self-hosted 只回答了三分之一的问题",
+      "content": {
+        "body": [
+          "Layer 1 · Runtime local：代码与进程在哪里？",
+          "Layer 2 · Data path：模型、搜索、Plugin、telemetry 去哪里？",
+          "Layer 3 · Control evidence：谁能访问、审批、审计、升级和负责？"
+        ],
+        "data_points": [
+          "Harness：Layer 1 有原语 · Layer 2 可配置 · Layer 3 公开证据不足"
+        ],
+        "speaker_notes": "按三层逐步追问。默认 DeepSeek Web search 会外连；启用 OTel 后数据面很宽。企业层公开来源未建立身份、租户、留存、支持与合同证据，但部署方可能额外提供。",
+        "citation_line": "Source: K-016, K-017, K-018"
+      },
+      "source_refs": [
+        "K-016",
+        "K-017",
+        "K-018",
+        "K-031"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "三个从左到右递进的容器，分别放置 process、data-flow、governance icon；每层底部标注当前判断 Strong、Configurable、Gap。",
+        "selection_reason": "递进容器把部署、数据和治理分开评估，并允许清楚标注当前成熟度而不混淆。",
+        "data_refs": [
+          "K-016",
+          "K-017",
+          "K-018"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Assessment inference from fixed source version",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "私有部署分为本地运行、数据路径本地化和企业控制面三个递进层。"
+      },
+      "layout_id": "three-layer",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-18",
+      "order": 18,
+      "role": "content",
+      "section_id": "SEC-04",
+      "purpose": "指出安全声明需要逐条限定的具体边界。",
+      "takeaway": "每个安全原语都有明确边界；不能从文件沙箱升级推导网络、进程、凭据、身份或审计结论。",
+      "title": "Sandbox 只约束 File Effects 与 Same-world",
+      "content": {
+        "body": [
+          "Sandbox：file effects + same-world；Windows 不限制 read/network/process",
+          "Credential：0700/0600 不阻止同 UID Tool",
+          "Telemetry：默认关；开启后可含 prompt、Tool、文件、命令与 cwd",
+          "Outbound：Web search 默认开；fetch 与 Session FTS 默认关",
+          "Persistence / Web：JSONL 不自动删；Host/Origin fence 不是 auth"
+        ],
+        "data_points": [
+          "Fail-closed ≠ full isolation · Append-only ≠ tamper-proof audit"
+        ],
+        "speaker_notes": "避免断言项目不安全。正确表述是原语解决某类风险，但合同没有覆盖其他边界。macOS 还依赖 deprecated sandbox-exec；bare Web server 不提供 TLS、authentication 或 origin policy。",
+        "citation_line": "Source: K-017"
+      },
+      "source_refs": [
+        "K-017",
+        "K-031",
+        "K-032"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "中央 Agent，外围 Sandbox、Credential、Telemetry、Outbound、Persistence、Web 六个边界；每条路径标出 covered 与 not covered。",
+        "selection_reason": "边界图把风险放在实际数据流而不是抽象 checklist 上，同时用文本补充颜色编码。",
+        "data_refs": [
+          "K-017"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Boundary synthesis from sandbox, credential, telemetry and Web READMEs",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Agent 周围六个边界分别标明文件沙箱、凭据、遥测、外连、持久化和 Web 信任边界的覆盖范围。"
+      },
+      "layout_id": "boundary-map",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-19",
+      "order": 19,
+      "role": "content",
+      "section_id": "SEC-04",
+      "purpose": "把企业差距压缩为可行动的控制面优先级。",
+      "takeaway": "企业决策需要验证身份、隔离、审计和生命周期；公开材料缺口不能自动变成绝对能力断言。",
+      "title": "企业 Gap 集中在公开证据与责任边界",
+      "content": {
+        "body": [
+          "Identity / tenancy：Host fence → SSO、RBAC、workspace isolation",
+          "Execution：file sandbox → network/process/remote isolation",
+          "Secrets / data：local file → Vault/KMS、DLP、residency evidence",
+          "Audit：Session log → redaction、retention、tamper evidence",
+          "Lifecycle：developer preview → LTS、SBOM、CVE、SLA、support"
+        ],
+        "data_points": [
+          "Priority：High · Evidence status：Public gap"
+        ],
+        "speaker_notes": "矩阵是基于公开材料的 gap assessment，不是合规判定。部署方可能加固，未来版本也会改变；采购时必须向实际产品与合同验证。",
+        "citation_line": "Source: K-018"
+      },
+      "source_refs": [
+        "K-017",
+        "K-018"
+      ],
+      "visual": {
+        "kind": "table",
+        "description": "五行三列表格：Dimension、Harness anchor、Enterprise target；最右增加文字 severity 标签 High 或 Blocking，Blocking 使用 risk 文本和 stop icon。",
+        "selection_reason": "矩阵适合在一页内比较当前原语与企业目标，并通过文字严重度形成采购优先级。",
+        "data_refs": [
+          "K-018"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-shape",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Assessment inference from public evidence",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "身份、执行、密钥、审计和生命周期五个企业维度的当前能力、目标与差距矩阵。"
+      },
+      "layout_id": "gap-matrix",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-20",
+      "order": 20,
+      "role": "section",
+      "section_id": "SEC-05",
+      "purpose": "切换到全球与中国市场定位。",
+      "takeaway": "先识别竞争层，再比较产品；否则同一排行榜混合了不同买家与商业模式。",
+      "title": "04 · 市场：Agent 不是一个市场",
+      "content": {
+        "body": [
+          "Runtime · Developer Product · Enterprise Platform"
+        ],
+        "data_points": [],
+        "speaker_notes": "章节页只做一个判断：所有带 Agent 标签的项目不是同类。下一页给三层，随后把中国竞争者放回各自层级。",
+        "citation_line": "Source: K-019, K-027"
+      },
+      "source_refs": [
+        "K-019",
+        "K-027"
+      ],
+      "visual": {
+        "kind": "shape-composition",
+        "description": "右侧三层阶梯，每层只有层名和 buyer：Builder、Developer、Enterprise buyer。",
+        "selection_reason": "阶梯让听众在看到任何品牌前先记住市场层级和购买者差异。",
+        "data_refs": [
+          "K-019"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-shape",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": true,
+        "alt_text": ""
+      },
+      "layout_id": "section-signal",
+      "style_variant": "dark",
+      "style_version": 1
+    },
+    {
+      "id": "S-21",
+      "order": 21,
+      "role": "content",
+      "section_id": "SEC-05",
+      "purpose": "建立全球与中国产品的三层竞争地图。",
+      "takeaway": "Harness 赢架构心智，开发者产品赢日常入口，企业平台赢治理与预算。",
+      "title": "三层分别争夺架构、习惯与预算",
+      "content": {
+        "body": [
+          "Runtime/framework：Harness · AgentScope · LangGraph · OpenAI SDK · ADK · Agent Framework",
+          "Developer/control surface：Claude Code · Codex · Copilot · OpenHands · Qwen · Kimi · Trae",
+          "Enterprise platform：Dify · Coze · Model Studio · Tencent ADP"
+        ],
+        "data_points": [
+          "切换成本：Capability contract → Workflow habit → IAM/VPC/SLA"
+        ],
+        "speaker_notes": "OpenHands 当前定位是 Agent Canvas 与 coding-agent control surface，应放在 developer product 层。产品可以跨层，但比较时仍需先锁定 buyer 与 job-to-be-done。",
+        "citation_line": "Source: K-019, K-021, K-022, K-024, K-025, K-026"
+      },
+      "source_refs": [
+        "K-019",
+        "K-026",
+        "K-033"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "三层市场阶梯：每层左侧是 buyer 与 value，右侧是代表产品；层间箭头分别标注 enables、habits、governance。",
+        "selection_reason": "阶梯把产品放回同层买家和切换成本，直接避免用统一 stars 榜单比较不同类别。",
+        "data_refs": [
+          "K-019",
+          "K-021",
+          "K-022",
+          "K-024",
+          "K-025",
+          "K-026"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Market-layer synthesis from official product sources",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "Runtime、Developer product 和 Enterprise platform 三层分别列出买家、价值和全球及中国产品。"
+      },
+      "layout_id": "market-layers",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-22",
+      "order": 22,
+      "role": "content",
+      "section_id": "SEC-05",
+      "purpose": "给出中国市场中的最近邻、开发者替代和企业预算替代。",
+      "takeaway": "中国市场中，AgentScope 争 runtime，Qwen Code 争开发者入口，云与低代码平台争企业预算。",
+      "title": "中国竞争不是一场，而是三场",
+      "content": {
+        "body": [
+          "Runtime 最近邻：AgentScope · 29,019 stars / 3,369 forks",
+          "开发者入口：Qwen Code · 27,144 / 2,877；其次 Kimi、Trae",
+          "企业预算：Dify · 152,784 / 24,135；Coze、Model Studio、ADP",
+          "Harness：157,324 / 16,338；优势是公开 plugin runtime",
+          "License 边界：Dify 有附加条件；Coze 部分能力仅商业版"
+        ],
+        "data_points": [
+          "2026-08-18 snapshot · Attention ≠ Adoption ≠ Revenue"
+        ],
+        "speaker_notes": "Stars/forks 只作为公开关注锚点。AgentScope 与 Harness 在 runtime 层最接近；Qwen Code 更贴近日常工作流；云与低代码平台在治理、账户、账单和支持环节更接近企业交易。",
+        "citation_line": "Source: K-020, K-021, K-022, K-023, K-024, K-025, K-027"
+      },
+      "source_refs": [
+        "K-020",
+        "K-021",
+        "K-022",
+        "K-024",
+        "K-025",
+        "K-027"
+      ],
+      "visual": {
+        "kind": "table",
+        "description": "三列竞争矩阵列出 Layer、China peers 与 winning mechanism；底部 Attention → Experimentation → Adoption → Revenue 使用断裂箭头。",
+        "selection_reason": "矩阵给出同层比较，底部断裂结论轴主动限制 stars 等数据的解释范围。",
+        "data_refs": [
+          "K-020",
+          "K-021",
+          "K-022",
+          "K-023",
+          "K-024",
+          "K-025",
+          "K-027"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-shape",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "GitHub and official product sources; snapshot 2026-08-18",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "中国 runtime、开发者产品与企业平台三层的代表项目、快照指标、许可边界和制胜机制。"
+      },
+      "layout_id": "competitor-map",
+      "style_variant": "light",
+      "style_version": 1
+    },
+    {
+      "id": "S-23",
+      "order": 23,
+      "role": "content",
+      "section_id": "SEC-06",
+      "purpose": "把架构和市场判断转化为可重复的对比研究。",
+      "takeaway": "真正的比较不仅冻结输入，还要冻结 evaluator，并防止缓存复用旧 patch 结果。",
+      "title": "冻结 Grader、Run ID 与 Evidence Bundle 才能复现",
+      "content": {
+        "body": [
+          "Choose：同层竞品 + 确定性任务",
+          "Freeze：commit、model、tools、network、budget、grader",
+          "Run：patch 改变即使用新 run_id",
+          "Capture：summary + report.json + test_output.txt + run_instance.log + eval.sh + patch.diff",
+          "Score：outcome、recovery、safety、effort、efficiency"
+        ],
+        "data_points": [
+          "一次成功 = case study；重复任务才接近 benchmark"
+        ],
+        "speaker_notes": "建议用 AgentScope 做 runtime 架构对比，用 Qwen Code 做开发者流程对比。冻结 grader 定义和数据源；SWE-bench 风格重跑如果 patch 变化必须换 run_id，避免缓存返回旧结果。",
+        "citation_line": "Source: K-028, K-029"
+      },
+      "source_refs": [
+        "K-028",
+        "K-029"
+      ],
+      "visual": {
+        "kind": "diagram",
+        "description": "Choose 与 Freeze 后分成两个系统；在 Run 之前加入 unique run_id gate，合流到 Evidence bundle、Shared rubric、Explain 与 Repeat。",
+        "selection_reason": "双路实验图明确表示同一输入、独立运行、共享评分和重复验证，是可执行而非抽象的下一步。",
+        "data_refs": [
+          "K-028",
+          "K-029"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-diagram",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "Evaluation protocol synthesized from curriculum and evaluation guidance",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "冻结任务与 grader 后，用唯一 run ID 运行两个系统，并保存完整 evidence bundle 进行共享评分与重复实验。"
+      },
+      "layout_id": "study-loop",
+      "style_variant": "signal",
+      "style_version": 1
+    },
+    {
+      "id": "S-24",
+      "order": 24,
+      "role": "summary",
+      "section_id": "SEC-06",
+      "purpose": "收束架构、企业和市场结论，并给出 30/60/90 天行动。",
+      "takeaway": "Harness 值得学习的是控制层设计；是否值得采用，要靠企业控制面补齐与真实任务证据。",
+      "title": "结论：先把架构优势变成可验证的采用优势",
+      "content": {
+        "body": [
+          "30 天：复现 Profile、Session 和 capability seam",
+          "60 天：完成安全数据流与企业 gap 设计",
+          "90 天：与 AgentScope / Qwen Code 做受控对比",
+          "决策门：通过证据选择嵌入、扩展、合作或观望"
+        ],
+        "data_points": [
+          "Architecture attention → Reproducible evidence → Governed adoption"
+        ],
+        "speaker_notes": "回到主线：项目差异化是可组合 control plane 与事件驱动状态；风险是企业控制证据和产品化路径。不要用 stars 作购买决策，用 90 天证据计划将技术兴趣转成可审查结论。",
+        "citation_line": "Source: K-001, K-010, K-018, K-019, K-028"
+      },
+      "source_refs": [
+        "K-001",
+        "K-010",
+        "K-018",
+        "K-019",
+        "K-028"
+      ],
+      "visual": {
+        "kind": "shape-composition",
+        "description": "左侧一个结论节点连接 Architecture、Governance、Evidence 三个支点；右侧 30/60/90 天阶梯，终点为 Decision gate。",
+        "selection_reason": "支点与阶梯把核心判断和行动计划放在同一视觉闭环中，适合作为可执行收束。",
+        "data_refs": [
+          "K-001",
+          "K-010",
+          "K-018",
+          "K-019",
+          "K-028"
+        ],
+        "asset_requirements": [],
+        "source": {
+          "source_type": "native-shape",
+          "uri": "",
+          "license": "not-applicable",
+          "credit": "",
+          "generation_prompt": ""
+        },
+        "decorative": false,
+        "alt_text": "架构、治理和证据三个支点连接 30、60、90 天行动阶梯和最终决策门。"
+      },
+      "layout_id": "closing-actions",
+      "style_variant": "dark",
+      "style_version": 1
+    }
+  ]
+}

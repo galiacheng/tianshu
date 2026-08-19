@@ -1,0 +1,1 @@
+这张矩阵把当前公开证据与企业采用仍需证明的能力并列起来。Identity 需要 tenant mapping 和 runtime authorization，execution 需要 policy enforcement 与 approval record，data 需要 transport、redaction、retention 和 residency 控制，audit 需要持久导出与对账，lifecycle 则需要签名制品、canary、rollback 和运营责任。这些是证据与责任缺口，不等于架构不可用，但它们定义了严肃试点必须补上的 control shell。

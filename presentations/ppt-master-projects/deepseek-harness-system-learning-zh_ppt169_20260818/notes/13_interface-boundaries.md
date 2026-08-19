@@ -1,0 +1,1 @@
+CLI 是本地交互式入口，Headless 和 ACP 面向自动化并通过 stdio JSON-RPC 由调用方管理连接与生命周期。Web 使用 HTTP POST 上行，并通过 events.mux 和 events.host 两条只下行的 WebSocket 传递事件。TypeScript SDK 与 Python SDK 都是 out-of-process，但前者通常由调用方提供 runtime，后者默认可启动 bundled process。它们共享 Agent、Session 与 Tools 的核心语义，却不共享 transport ownership，因此部署、故障和安全边界必须按入口分别判断。
