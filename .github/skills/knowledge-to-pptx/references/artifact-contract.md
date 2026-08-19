@@ -495,7 +495,7 @@ Persist the exact validated PPT Master sidecar inside this provenance wrapper:
   "generator": {
     "skill": "ppt-master",
     "version": "<detected-installed-version>",
-    "source": "https://github.com/shizhMSFT/tianshu/tree/relearn-deepseek-harness",
+    "source": "https://github.com/hugohe3/ppt-master",
     "install_mode": "dynamic",
     "route": "generate-pptx",
     "profile": "default"
@@ -524,4 +524,4 @@ Persist the exact validated PPT Master sidecar inside this provenance wrapper:
 }
 ```
 
-`generator.skill` must be `ppt-master` and `generator.source` must be the required repository branch shown above. Record the detected installed revision or version and the route/profile actually used. `install_mode` must be `preinstalled` or `dynamic`. `profile` must be `default` unless the user explicitly requested PPT Master's Quick Generate profile. Motion QA must record sidecar validation, native package/postflight read-back, and playback evidence. Use `not-applicable` paths and statuses only when no custom sidecar or reduced-motion variant is required.
+`generator.skill` must be `ppt-master` and `generator.source` must be the official repository shown above. Record the detected installed revision or version and the route/profile actually used. `install_mode` must be `preinstalled` or `dynamic`. `profile` must be `default` unless the user explicitly requested PPT Master's Quick Generate profile. Motion QA must record sidecar validation, native package/postflight read-back, and playback evidence. Use `not-applicable` paths and statuses only when no custom sidecar or reduced-motion variant is required.
