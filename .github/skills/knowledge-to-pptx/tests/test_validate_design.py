@@ -435,12 +435,18 @@ def _valid_documents() -> tuple[
 
 
 class ValidateDesignTests(unittest.TestCase):
-    def test_skill_bootstraps_ppt_master_from_official_source(self) -> None:
+    def test_skill_bootstraps_ppt_master_from_required_branch(self) -> None:
         skill_text = SKILL_PATH.read_text(encoding="utf-8")
 
-        self.assertIn("npx --yes skills add hugohe3/ppt-master", skill_text)
-        self.assertIn("https://github.com/hugohe3/ppt-master", skill_text)
+        self.assertIn(
+            "npx --yes skills add "
+            "https://github.com/shizhMSFT/tianshu/tree/relearn-deepseek-harness "
+            "--skill ppt-master --agent github-copilot -y --copy --full-depth",
+            skill_text,
+        )
         self.assertIn("scripts/attribution_guard.py", skill_text)
+        self.assertIn("scripts/project_manager.py --help", skill_text)
+        self.assertNotIn("https://github.com/hugohe3/ppt-master", skill_text)
         self.assertNotIn("repository-provided installation", skill_text)
 
     def test_valid_artifacts_pass(self) -> None:

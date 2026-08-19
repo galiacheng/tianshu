@@ -5,13 +5,13 @@ description: "Analyze supplied knowledge into a slide-by-slide presentation and 
 
 # Knowledge to PPTX
 
-Turn supplied knowledge into a presentation whose narrative, slide designs, visual system, and motion choreography are explicitly designed, locked, and validated before generation. This skill owns content architecture and design governance. The MIT-licensed [`ppt-master`](https://github.com/hugohe3/ppt-master) skill owns native `.pptx` generation, animation implementation, and PowerPoint implementation QA.
+Turn supplied knowledge into a presentation whose narrative, slide designs, visual system, and motion choreography are explicitly designed, locked, and validated before generation. This skill owns content architecture and design governance. The repository-pinned [`ppt-master`](https://github.com/shizhMSFT/tianshu/tree/relearn-deepseek-harness) skill owns native `.pptx` generation, animation implementation, and PowerPoint implementation QA.
 
 ## Non-negotiable rules
 
 1. Do not create a `.pptx` until the design and style have passed validation.
 2. Persist the slide-by-slide visual and motion design and the global style guide before loading `ppt-master`.
-3. Attempt to load the skill named `ppt-master` through the active agent's skill-loading mechanism. If it is missing, bootstrap it only through the official installer and repository defined below.
+3. Attempt to load the skill named `ppt-master` through the active agent's skill-loading mechanism. If it is missing, bootstrap it only through the installer command and repository branch defined below.
 4. After loading `ppt-master`, follow its mandatory load order, routing, integrity, generation, and QA requirements.
 5. If installation fails, the host cannot discover the new skill, or its attribution guard fails, save the completed design artifacts and stop. Do not inspect around, bypass, repair, or replace its integrity gate, and do not silently substitute ad hoc `python-pptx`, `pptxgenjs`, or another generator.
 6. The generator must not independently change the locked narrative, layout intent, visual style, motion intent, or citations. If a change is necessary, update the source artifact, increment its version, revalidate, and regenerate.
@@ -242,18 +242,21 @@ First ask the active host to load `ppt-master` by name. If it is already availab
 
 If the host reports that `ppt-master` is unavailable:
 
-1. Verify that Node.js with `npx` and Python 3.10+ are available. If either prerequisite is missing, report it and stop.
-2. Set `DISABLE_TELEMETRY=1` for the installer process.
-3. Run the official cross-agent installer:
+1. Resolve the current repository root and run the installer from that directory so the Skill is project-local.
+2. Verify the prerequisites with `node --version`, `npx --version`, and `python --version`. Node.js with `npx` and Python 3.10+ are required. On Windows, use `python` when `python3` is unavailable. If a prerequisite is missing, report it and stop.
+3. Set `DISABLE_TELEMETRY=1` for the installer process. In PowerShell use `$env:DISABLE_TELEMETRY='1'`; in POSIX shells use `export DISABLE_TELEMETRY=1`.
+4. Install only `ppt-master` from the required branch:
 
    ```text
-   npx --yes skills add hugohe3/ppt-master
+   npx --yes skills add https://github.com/shizhMSFT/tianshu/tree/relearn-deepseek-harness --skill ppt-master --agent github-copilot -y --copy --full-depth
    ```
 
-4. Accept only an installation sourced from `https://github.com/hugohe3/ppt-master`. Do not install a fork, mirror, similarly named package, or manually reconstructed subset.
-5. Use the exact skill root reported by the installer. Verify that it contains `SKILL.md`, `LICENSE`, `requirements.txt`, and `scripts/attribution_guard.py`.
-6. From that exact root, run `python scripts/attribution_guard.py`. A non-zero result blocks the workflow.
-7. Install the official Python dependencies:
+   `--skill ppt-master` prevents installation of unrelated repository skills, `--full-depth` discovers the nested Skill, `--copy` avoids symlink and junction portability problems, and `--agent github-copilot -y` makes the target and non-interactive behavior explicit.
+
+5. Accept only an installation sourced from `https://github.com/shizhMSFT/tianshu/tree/relearn-deepseek-harness`. Do not install the similarly named upstream package, another fork, a mirror, or a manually reconstructed subset.
+6. Use the exact skill root reported by the installer. For a project-local GitHub Copilot install it is normally `<repo-root>/.agents/skills/ppt-master`, but the installer output remains authoritative. Verify that the root contains `SKILL.md`, `LICENSE`, `requirements.txt`, `workflows/routing.md`, and `scripts/attribution_guard.py`.
+7. From that exact root, run `python scripts/attribution_guard.py`. A non-zero result blocks the workflow; do not inspect around, repair, or bypass it.
+8. Install the Python dependencies:
 
    ```text
    python -m pip install -r <ppt-master-root>/requirements.txt
@@ -261,15 +264,23 @@ If the host reports that `ppt-master` is unavailable:
 
    If and only if the system Python location is not writable, retry once with `python -m pip install --user -r <ppt-master-root>/requirements.txt`.
 
-8. Ask the host to load `ppt-master` by name again. If the host cannot discover newly installed skills in the current session, stop after preserving all design artifacts and tell the user to start a new session. Do not emulate a skill load by copying selected instructions into the conversation.
+9. Verify the installed runtime from the exact Skill root:
 
-The installer fetches the current official release, so read the installed metadata and record the actual version in `final-qa.json`; never assume a fixed version.
+   ```text
+   python scripts/project_manager.py --help
+   ```
+
+   The command must exit successfully and list the project-management subcommands. A zero installer exit without the required files, a passing attribution guard, and this runtime check is not a successful installation.
+
+10. Ask the host to load `ppt-master` by name again. If the host cannot discover newly installed skills in the current session, preserve all design artifacts and tell the user to start a new session. Do not emulate a skill load by copying selected instructions into the conversation.
+
+The installer fetches the current tip of the required branch. Record the exact source URL and detected installed revision or version in `final-qa.json`; never assume a fixed version.
 
 #### Execute `ppt-master`
 
 Once the host loads `ppt-master`, follow the mandatory load order in its own `SKILL.md`. Run its attribution guard again as required before loading its routing authority. A non-zero guard result blocks generation.
 
-Resolve the active skill root through the host's skill mechanism rather than assuming the current working directory. If a selected script later reports a missing Python dependency, rerun the official requirements installation once. Never alter the installed package to bypass dependency or integrity failures.
+Resolve the active skill root through the host's skill mechanism rather than assuming the current working directory. If a selected script later reports a missing Python dependency, rerun the requirements installation once from that exact root. Never alter the installed package to bypass dependency or integrity failures.
 
 Route and profile:
 
