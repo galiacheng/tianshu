@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"
+     data-pptx-page-role="content"
+     font-family="Microsoft YaHei, Arial, sans-serif">
+  <defs>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#00C2D7"/>
+    </marker>
+  </defs>
+  <rect id="background" data-pptx-role="background"
+        x="0" y="0" width="1280" height="720" fill="#F7FAFC"/>
+  <path id="engineering-grid" data-pptx-role="decoration"
+        d="M160 0V720 M320 0V720 M480 0V720 M640 0V720 M800 0V720 M960 0V720 M1120 0V720 M0 120H1280 M0 240H1280 M0 360H1280 M0 480H1280 M0 600H1280"
+        fill="none" stroke="#3448A8" stroke-width="1" stroke-opacity="0.07"/>
+
+  <g id="header" data-pptx-bounds="64 42 1152 108">
+    <text x="64" y="66" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8" letter-spacing="1">DYNAMIC PLUGIN / RELEASE STATE MACHINE</text>
+    <text x="64" y="122" font-size="42" font-weight="700" fill="#101B35">
+      Run ok 不代表后续 Client Render 一定成功
+    </text>
+  </g>
+
+  <g id="plugin-state-machine" data-pptx-bounds="56 172 1160 344">
+    <line x1="236" y1="272" x2="262" y2="272" stroke="#00C2D7" stroke-width="3"
+          marker-end="url(#arrow-cyan)"/>
+    <line x1="430" y1="272" x2="456" y2="272" stroke="#00C2D7" stroke-width="3"
+          marker-end="url(#arrow-cyan)"/>
+    <line x1="624" y1="272" x2="650" y2="272" stroke="#00C2D7" stroke-width="3"
+          marker-end="url(#arrow-cyan)"/>
+    <line x1="818" y1="272" x2="844" y2="272" stroke="#00C2D7" stroke-width="3"
+          marker-end="url(#arrow-cyan)"/>
+    <line x1="1012" y1="272" x2="1038" y2="272" stroke="#00C2D7" stroke-width="3"
+          marker-end="url(#arrow-cyan)"/>
+
+    <rect x="68" y="216" width="168" height="112" rx="7" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <rect x="262" y="216" width="168" height="112" rx="7" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <rect x="456" y="216" width="168" height="112" rx="7" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <rect x="650" y="216" width="168" height="112" rx="7" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <rect x="844" y="216" width="168" height="112" rx="7" fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <rect x="1038" y="216" width="174" height="112" rx="7" fill="#101B35" stroke="#00C2D7" stroke-width="3"/>
+
+    <text x="152" y="256" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Inspect</text>
+    <text x="152" y="290" text-anchor="middle" font-size="18" fill="#475467">list → minimal query</text>
+    <text x="346" y="256" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Define</text>
+    <text x="346" y="290" text-anchor="middle" font-size="18" fill="#475467">immutable Plugin</text>
+    <text x="346" y="316" text-anchor="middle" font-size="18" fill="#475467">+ Package</text>
+    <text x="540" y="256" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Wait for page</text>
+    <text x="540" y="290" text-anchor="middle" font-size="18" fill="#475467">matching Client half</text>
+    <text x="734" y="256" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Approval</text>
+    <text x="734" y="290" text-anchor="middle" font-size="18" fill="#475467">explicit gate</text>
+    <text x="928" y="256" text-anchor="middle" font-size="24" font-weight="700" fill="#101B35">Starting</text>
+    <text x="928" y="290" text-anchor="middle" font-size="18" fill="#475467">runtime activation</text>
+    <text x="1125" y="256" text-anchor="middle" font-size="24" font-weight="700" fill="#F7FAFC">Run result</text>
+    <text x="1125" y="292" text-anchor="middle" font-size="18" fill="#B9F4F7">ok / failed</text>
+
+    <line x1="1125" y1="328" x2="1125" y2="390" stroke="#00C2D7" stroke-width="3"/>
+    <line x1="1125" y1="390" x2="996" y2="430" stroke="#00C2D7" stroke-width="3"
+          marker-end="url(#arrow-cyan)"/>
+    <line x1="1125" y1="390" x2="1182" y2="430" stroke="#C2415B" stroke-width="3"/>
+    <rect x="852" y="430" width="250" height="78" rx="7"
+          fill="#E8F7ED" stroke="#15803D" stroke-width="2"/>
+    <rect x="1108" y="430" width="104" height="78" rx="7"
+          fill="#FFF0F2" stroke="#C2415B" stroke-width="2"/>
+    <text x="977" y="466" text-anchor="middle" font-size="24" font-weight="700" fill="#15803D">Render ok</text>
+    <text x="977" y="494" text-anchor="middle" font-size="18" fill="#475467">client settled</text>
+    <text x="1160" y="462" text-anchor="middle" font-size="18" font-weight="700" fill="#C2415B">Render</text>
+    <text x="1160" y="490" text-anchor="middle" font-size="18" font-weight="700" fill="#C2415B">failed</text>
+  </g>
+
+  <g id="package-version-rules" data-pptx-bounds="64 538 1152 86">
+    <rect x="72" y="548" width="532" height="68" rx="7"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <rect x="628" y="548" width="584" height="68" rx="7"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <text x="96" y="590" font-size="18" font-weight="700" fill="#101B35">
+      Repair = new Package
+    </text>
+    <text x="302" y="590" font-size="18" fill="#475467">不修改已运行版本</text>
+    <text x="652" y="590" font-size="18" font-weight="700" fill="#101B35">
+      Rollback = explicit currentPackageId
+    </text>
+    <text x="1016" y="590" font-size="18" fill="#475467">版本状态属于 Package</text>
+  </g>
+
+  <g id="footer" data-pptx-bounds="64 652 1152 40">
+    <text x="64" y="676" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#475467">K-014 · K-015  |  ACTIVATION SUCCESS ≠ RENDER SUCCESS</text>
+    <text x="1216" y="676" text-anchor="end"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">P15 / 24</text>
+  </g>
+</svg>

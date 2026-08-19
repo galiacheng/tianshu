@@ -1,0 +1,1 @@
+“Everything is a Plugin”真正统一的不是目录形式，而是从 mount、event 到 dispose 的生命周期。最底层是 Host、启动配置、provider 与外部系统，其上依次是 Agent Preset 与 Model，Tool、Policy 与 Sandbox，Session、Persistence 与 Projection，最上层则是 Web、CLI、ACP 和 SDK 等接口适配器。每层都可以作为 Provider、Consumer 或 policy 参与组合，但必须遵守相同的 Context 和 Scope 规则。只有稳定的 capability seam 和清晰的依赖方向，才能让大量 package 形成一个可替换系统，而不是一组偶然拼接的模块。

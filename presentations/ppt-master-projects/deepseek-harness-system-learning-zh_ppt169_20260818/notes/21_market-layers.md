@@ -1,0 +1,1 @@
+在 runtime 层，Harness 与 AgentScope 围绕 Plugin 接缝、生命周期语义和执行控制争夺架构位置。在 developer-entry 层，Qwen Code、Kimi、Trae 等产品争夺可重复的工作习惯。在 enterprise-platform 层，Dify、Coze、Model Studio 与 Tencent ADP 争夺治理预算，同时带来身份、网络、SLA 与采购上的高切换成本。因此，有效的竞争分析必须一次只比较同一层。

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"
+     data-pptx-page-role="content"
+     font-family="Aptos, Arial, sans-serif">
+  <defs>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#00C2D7"/>
+    </marker>
+  </defs>
+  <rect id="background" data-pptx-role="background"
+        x="0" y="0" width="1280" height="720" fill="#F7FAFC"/>
+  <path id="engineering-grid" data-pptx-role="decoration"
+        d="M160 0V720 M320 0V720 M480 0V720 M640 0V720 M800 0V720 M960 0V720 M1120 0V720 M0 120H1280 M0 240H1280 M0 360H1280 M0 480H1280 M0 600H1280"
+        fill="none" stroke="#3448A8" stroke-width="1" stroke-opacity="0.07"/>
+
+  <g id="header" data-pptx-bounds="64 42 1152 108">
+    <text x="64" y="66" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8" letter-spacing="1">CAPABILITY CONTRACT / DEPENDENCY INVERSION</text>
+    <text x="64" y="122" font-family="Aptos Display, Arial, sans-serif"
+          font-size="42" font-weight="700" fill="#101B35">
+      Capability seams decouple Agents from Providers
+    </text>
+  </g>
+
+  <g id="capability-chain" data-pptx-bounds="64 182 1152 280">
+    <line x1="288" y1="324" x2="360" y2="324" stroke="#00C2D7" stroke-width="4"
+          marker-end="url(#arrow-cyan)"/>
+    <line x1="602" y1="324" x2="674" y2="324" stroke="#00C2D7" stroke-width="4"
+          marker-end="url(#arrow-cyan)"/>
+    <line x1="916" y1="324" x2="988" y2="324" stroke="#00C2D7" stroke-width="4"
+          marker-end="url(#arrow-cyan)"/>
+
+    <rect x="72" y="246" width="216" height="156" rx="8"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <!-- icon: tabler-outline/code -->
+  <g transform="translate(96, 270) scale(1.66667)" fill="none" stroke="#3448A8" stroke-width="2">
+    <path d="M7 8l-4 4l4 4" />
+    <path d="M17 8l4 4l-4 4" />
+    <path d="M14 4l-4 16" />
+  </g>
+    <text x="152" y="292" font-size="24" font-weight="700" fill="#101B35">Definition</text>
+    <text x="96" y="338" font-size="18" fill="#475467">stable types · methods · events</text>
+    <text x="96" y="370" font-size="18" fill="#475467">contract before implementation</text>
+
+    <rect x="360" y="246" width="242" height="156" rx="8"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <!-- icon: tabler-outline/plug -->
+  <g transform="translate(384, 270) scale(1.66667)" fill="none" stroke="#3448A8" stroke-width="2">
+    <path d="M9.785 6l8.215 8.215l-2.054 2.054a5.81 5.81 0 1 1 -8.215 -8.215l2.054 -2.054" />
+    <path d="M4 20l3.5 -3.5" />
+    <path d="M15 4l-3.5 3.5" />
+    <path d="M20 9l-3.5 3.5" />
+  </g>
+    <text x="440" y="292" font-size="24" font-weight="700" fill="#101B35">Provider registry</text>
+    <text x="384" y="338" font-size="18" fill="#475467">one implementation or named set</text>
+    <text x="384" y="370" font-size="18" fill="#475467">replaceable Provider</text>
+
+    <rect x="674" y="246" width="242" height="156" rx="8"
+          fill="#101B35" stroke="#00C2D7" stroke-width="3"/>
+    <!-- icon: tabler-outline/tool -->
+  <g transform="translate(698, 270) scale(1.66667)" fill="none" stroke="#F7FAFC" stroke-width="2">
+    <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" />
+  </g>
+    <text x="754" y="292" font-size="24" font-weight="700" fill="#F7FAFC">Consumer</text>
+    <text x="698" y="338" font-size="18" fill="#D7E0F1">Tool · Agent loop · UI · Service</text>
+    <text x="698" y="370" font-size="18" fill="#B9F4F7">Policy composes at the seam</text>
+
+    <rect x="988" y="246" width="220" height="156" rx="8"
+          fill="#E8EEF7" stroke="#3448A8" stroke-width="2"/>
+    <!-- icon: tabler-outline/cpu -->
+  <g transform="translate(1012, 270) scale(1.66667)" fill="none" stroke="#3448A8" stroke-width="2">
+    <path d="M5 6a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1l0 -12" />
+    <path d="M9 9h6v6h-6l0 -6" />
+    <path d="M3 10h2" />
+    <path d="M3 14h2" />
+    <path d="M10 3v2" />
+    <path d="M14 3v2" />
+    <path d="M21 10h-2" />
+    <path d="M21 14h-2" />
+    <path d="M14 21v-2" />
+    <path d="M10 21v-2" />
+  </g>
+    <text x="1068" y="292" font-size="24" font-weight="700" fill="#101B35">Agent</text>
+    <text x="1012" y="338" font-size="18" fill="#475467">depends on capability</text>
+    <text x="1012" y="370" font-size="18" fill="#475467">not implementation</text>
+  </g>
+
+  <g id="policy-interceptors" data-pptx-bounds="500 164 588 72">
+    <line x1="795" y1="226" x2="795" y2="246" stroke="#D97706" stroke-width="4"/>
+    <rect x="520" y="170" width="550" height="56" rx="6"
+          fill="#FFF3E0" stroke="#D97706" stroke-width="2"/>
+    <text x="795" y="205" text-anchor="middle" font-size="18" font-weight="700"
+          fill="#D97706">POLICY · approval · retry · timeout · observation</text>
+  </g>
+
+  <g id="boundary-exception" data-pptx-bounds="190 490 900 122">
+    <path d="M214 544H1066" fill="none" stroke="#C2415B" stroke-width="3"
+          stroke-dasharray="8 4"/>
+    <!-- icon: tabler-outline/terminal-2 -->
+  <g transform="translate(214, 514) scale(1.66667)" fill="none" stroke="#C2415B" stroke-width="2">
+    <path d="M8 9l3 3l-3 3" />
+    <path d="M13 15l3 0" />
+    <path d="M3 6a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2l0 -12" />
+  </g>
+    <text x="276" y="540" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" font-weight="700" fill="#C2415B">BOUNDARY EXCEPTION</text>
+    <text x="276" y="578" font-size="24" font-weight="700" fill="#101B35">
+      tool-fs-search → subprocess / ripgrep
+    </text>
+    <text x="756" y="578" font-size="18" fill="#475467">bypasses ctx.fs</text>
+  </g>
+
+  <g id="footer" data-pptx-bounds="64 652 1152 40">
+    <text x="64" y="676" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#475467">K-005 · K-010  |  DEFINITION → PROVIDER → CONSUMER → AGENT</text>
+    <text x="1216" y="676" text-anchor="end"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#3448A8">P11 / 24</text>
+  </g>
+</svg>

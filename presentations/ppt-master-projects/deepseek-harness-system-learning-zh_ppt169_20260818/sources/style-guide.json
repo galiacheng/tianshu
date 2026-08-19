@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0",
+  "deck_id": "deepseek-harness-system-learning-zh",
+  "style_version": 1,
+  "selection": {
+    "selected_name": "Circuit Atlas",
+    "rationale": "该方案以可编辑的 native diagram 和 data visual 为主，最能承载架构因果链、状态机、分层市场与企业差距；深海军蓝与电光青来自 control plane、event stream 和 plugin graph 的主题，而不是套用通用企业模板。它在技术受众适配、信息密度和资产可获得性上得分最高。",
+    "candidates": [
+      {
+        "name": "Circuit Atlas",
+        "fit_score": 94,
+        "selected": true,
+        "rationale": "Audience 5/5、Topic 5/5、Brand 4/5、Density 5/5、Assets 5/5、Accessibility 5/5；加权为 94。以深色章节页、浅色机制页、青色信号线和模块化节点表达运行时控制与事件流。"
+      },
+      {
+        "name": "Open Source Editorial",
+        "fit_score": 86,
+        "selected": false,
+        "rationale": "Audience 4/5、Topic 4/5、Brand 5/5、Density 4/5、Assets 5/5、Accessibility 4/5；加权为 86。米白、墨黑和朱红更有人文阅读感，但对多层架构和状态关系的编码能力弱于 Circuit Atlas。"
+      },
+      {
+        "name": "Enterprise Blueprint",
+        "fit_score": 81,
+        "selected": false,
+        "rationale": "Audience 4/5、Topic 4/5、Brand 3/5、Density 4/5、Assets 5/5、Accessibility 5/5；加权为 81。传统蓝白企业设计易读，但容易把实验性开源项目误呈现为成熟采购方案。"
+      }
+    ]
+  },
+  "canvas": {
+    "aspect_ratio": "16:9",
+    "width_in": 13.333,
+    "height_in": 7.5,
+    "safe_margin_in": 0.55
+  },
+  "grid": {
+    "columns": 12,
+    "gutter_in": 0.22
+  },
+  "palette": {
+    "background": "F7FAFC",
+    "surface": "E8EEF7",
+    "text": "101828",
+    "muted": "475467",
+    "primary": "101B35",
+    "secondary": "3448A8",
+    "accent": "007F8F",
+    "signal": "00C2D7",
+    "warning": "D97706",
+    "risk": "C2415B",
+    "success": "15803D",
+    "white": "FFFFFF"
+  },
+  "typography": {
+    "title": {
+      "font_face": "Microsoft YaHei",
+      "fallback_font": "Arial",
+      "min_pt": 30,
+      "max_pt": 42,
+      "weight": "bold",
+      "fit_slack_percent": 15
+    },
+    "body": {
+      "font_face": "Microsoft YaHei",
+      "fallback_font": "Arial",
+      "min_pt": 17,
+      "max_pt": 23,
+      "weight": "regular",
+      "fit_slack_percent": 15
+    },
+    "caption": {
+      "font_face": "Microsoft YaHei",
+      "fallback_font": "Arial",
+      "min_pt": 9,
+      "max_pt": 12,
+      "weight": "regular",
+      "fit_slack_percent": 15
+    }
+  },
+  "spacing": {
+    "unit_in": 0.1,
+    "block_gap_in": 0.36
+  },
+  "motif": {
+    "name": "Signal path",
+    "description": "用 2-3 pt 电光青信号线连接深蓝圆角节点；每页最多一个强调节点使用 signal 填充或描边，表达事件、能力或控制在系统中的流动。",
+    "rules": [
+      "信号线只表示因果、数据或控制关系，不作纯装饰。",
+      "强调节点每页最多一个，避免整页发光或霓虹效果。",
+      "章节页使用深色背景和一条由左下向右上的路径，内容页只保留局部节点连接。"
+    ]
+  },
+  "image_style": {
+    "description": "本 Deck 不依赖外部摄影；主媒体语言是 PowerPoint native diagram、editable shape composition、table 和 number callout。若后续必须加入截图，只把界面本身作为证据。",
+    "dominant_media": "native-diagram-and-data-visualization",
+    "source_priority": [
+      "provided",
+      "native-diagram",
+      "native-chart",
+      "native-shape",
+      "open-license",
+      "ai-generated"
+    ],
+    "crop_rule": "截图使用 16:9 或 4:3 裁切，保留关键界面上下文，不拉伸。",
+    "treatment_rule": "截图统一使用 0.08 in 圆角、1 pt surface 边框和无阴影处理；图表与 diagram 保持可编辑 native objects。",
+    "credit_rule": "外部资产在页脚以 9 pt 记录来源与许可；native assets 标注 Source: deck synthesis 或官方数据来源。",
+    "ai_generation_rule": "默认不使用 AI 图片；如概念必须使用，固定为深海蓝 technical cutaway illustration，不生成文字、数据、Logo、商标或界面，并保存完整 prompt 与服务条款。"
+  },
+  "icon_style": {
+    "description": "仅使用 PowerPoint basic geometry 组合的 line icon；2 pt stroke、无渐变、24-32 px 等效尺寸、深蓝或青色，统一置于 0.42 in 圆角容器内。"
+  },
+  "chart_style": {
+    "description": "优先直接标注结论，不使用图例迷宫；主系列 secondary，关键系列 accent，风险 risk；网格线仅使用 surface，数据标签至少 12 pt，零基线适用时必须保留。"
+  },
+  "table_style": {
+    "description": "表头 primary/white，主体 background/text，隔行 surface；只保留必要横线，不用垂直边框；数值右对齐，结论列左对齐，关键缺口使用 risk 文本而非仅靠底色。"
+  },
+  "layouts": [
+    {
+      "id": "title-orbit",
+      "description": "左侧 6 列标题与版本信息，右侧 6 列使用插件节点围绕 control plane 的 native-shape hero。",
+      "purpose": [
+        "title"
+      ]
+    },
+    {
+      "id": "context-gap",
+      "description": "左侧因果陈述，右侧模型—Harness—真实环境三层控制图。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "roadmap-four",
+      "description": "四个问题节点沿一条上升 signal path 排列。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "section-signal",
+      "description": "深色章节页，大号章节编号与一句结论，右侧单一抽象 native-shape 构图。",
+      "purpose": [
+        "section"
+      ]
+    },
+    {
+      "id": "loop-flow",
+      "description": "横向七步闭环，当前关键环节使用 signal 高亮，底部保留不变量。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "primitive-ring",
+      "description": "五个 Cordis primitive 围绕 Plugin runtime，右侧显示 lifecycle 结论。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "ontology-stack",
+      "description": "从 Host 到 UI 的分层插件栈，左侧为层，右侧为统一 lifecycle 轴。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "dual-plane",
+      "description": "Host plane 与 Agent Preset plane 上下分区，中间以 Session 边界连接。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "layer-stack",
+      "description": "四层半透明叠片从左下到右上，右侧显示后层覆盖前层。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "event-stream",
+      "description": "顶部 append-only event stream，底部三个 projection；右侧 model-visible means logged callout。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "seam-flow",
+      "description": "Definition—Provider—Consumer—Agent 横向链，policy wrappers 从上方拦截。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "interface-hub",
+      "description": "Agent/Session core 在中央，CLI、Web、headless、ACP、SDK 五个接口环绕。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "contract-pipeline",
+      "description": "Host source—Typert—metadata—registry—Client 五段 pipeline，底部标出 build order。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "lifecycle-state",
+      "description": "Plugin immutable Package 与 Run 状态机，右侧显示 update/repair/rollback 三条操作规则。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "three-layer",
+      "description": "本地运行、数据本地、企业控制三个递进容器，结论置于最右。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "boundary-map",
+      "description": "中央 Agent，外围 model、search、tool、credential、telemetry、web 六个数据边界节点。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "gap-matrix",
+      "description": "五行企业差距矩阵，已有原语、企业目标与 gap 严重度三列。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "market-layers",
+      "description": "三层市场阶梯，runtime、developer product、enterprise platform 各自列出代表产品与购买者。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "competitor-map",
+      "description": "三列竞争矩阵配一条 Attention ≠ Adoption ≠ Revenue 结论轴。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "study-loop",
+      "description": "冻结输入—双路运行—捕获证据—共享评分—解释机制的闭环。",
+      "purpose": [
+        "content"
+      ]
+    },
+    {
+      "id": "closing-actions",
+      "description": "左侧战略判断，右侧 30/60/90 天三步行动，底部保留版本与证据边界。",
+      "purpose": [
+        "summary",
+        "closing"
+      ]
+    }
+  ],
+  "variants": {
+    "light": {
+      "background_token": "background",
+      "text_token": "text"
+    },
+    "dark": {
+      "background_token": "primary",
+      "text_token": "background"
+    },
+    "signal": {
+      "background_token": "surface",
+      "text_token": "text"
+    }
+  },
+  "rules": {
+    "do": [
+      "每页只有一个可复述结论，标题优先写成结论。",
+      "主要图形必须由 native shapes、charts 或 tables 构成并保持可编辑。",
+      "每个因果箭头必须有语义，使用空间关系替代段落说明。",
+      "页脚以 9 pt 保留固定 commit、来源缩写和市场数据日期。",
+      "风险和状态同时使用文字、形状与颜色编码，避免仅依赖色彩。"
+    ],
+    "dont": [
+      "不要使用装饰性彩条、标题下划线、无意义渐变、玻璃拟态或发光阴影。",
+      "不要用通用握手、灯泡、拼图或机器人 stock image 填充空白。",
+      "不要连续三页使用相同构图，也不要把所有内容塞进卡片墙。",
+      "不要把 stars、forks 或厂商自述呈现为企业采用、收入或合规证据。",
+      "不要小于 17 pt 显示正文，也不要用缩小字体解决内容过载。"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="section" font-family="Microsoft YaHei, Arial, sans-serif">
+  <rect id="background" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#101B35" />
+  <path id="engineering-grid" data-pptx-role="decoration" d="M128 0V720 M256 0V720 M384 0V720 M512 0V720 M640 0V720 M768 0V720 M896 0V720 M1024 0V720 M1152 0V720 M0 120H1280 M0 240H1280 M0 360H1280 M0 480H1280 M0 600H1280" fill="none" stroke="#3448A8" stroke-width="1" stroke-opacity="0.16" />
+  <path id="chapter-axis" data-pptx-role="decoration" d="M602 72V638" fill="none" stroke="#3448A8" stroke-width="1.5" stroke-dasharray="6 3" />
+
+  <g id="chapter-title" data-pptx-bounds="64 78 488 470">
+    <text x="64" y="110" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#00C2D7" letter-spacing="2">CHAPTER 01 / ARCHITECTURE</text>
+    <text font-size="42" fill="#F7FAFC" font-weight="700" x="64" y="188">
+      <tspan>三条流构成</tspan>
+      </text><text font-size="42" fill="#F7FAFC" font-weight="700" x="64" y="242"><tspan>DeepSeek Harness</tspan>
+    </text><text x="64" y="338" font-size="32" font-weight="700" fill="#B9F4F7">
+      不按 package 数量读架构
+    </text>
+    <text font-size="24" fill="#D7E0F1" x="64" y="394">
+      <tspan>控制流解释一次 Turn</tspan>
+      </text><text font-size="24" fill="#D7E0F1" x="64" y="432"><tspan>装配流解释能力如何进入 Context</tspan>
+      </text><text font-size="24" fill="#D7E0F1" x="64" y="470"><tspan>事件流解释状态如何恢复与投影</tspan>
+    </text></g>
+
+  <g id="three-flows" data-pptx-bounds="650 122 566 456">
+    <path d="M686 210H920L1096 356" fill="none" stroke="#3448A8" stroke-width="6" />
+    <path d="M686 356H1096" fill="none" stroke="#3448A8" stroke-width="6" />
+    <path d="M686 502H920L1096 356" fill="none" stroke="#3448A8" stroke-width="6" />
+    <circle cx="686" cy="210" r="30" fill="#101B35" stroke="#3448A8" stroke-width="3" />
+    <circle cx="686" cy="356" r="30" fill="#101B35" stroke="#3448A8" stroke-width="3" />
+    <circle cx="686" cy="502" r="30" fill="#101B35" stroke="#3448A8" stroke-width="3" />
+
+  <g transform="translate(668, 192) scale(1.5)" fill="none" stroke="#F7FAFC" stroke-width="2">
+    <path d="M3 12h4l3 8l4 -16l3 8h4" />
+  </g>
+
+  <g transform="translate(668, 338) scale(1.5)" fill="none" stroke="#F7FAFC" stroke-width="2">
+    <path d="M9.785 6l8.215 8.215l-2.054 2.054a5.81 5.81 0 1 1 -8.215 -8.215l2.054 -2.054" />
+    <path d="M4 20l3.5 -3.5" />
+    <path d="M15 4l-3.5 3.5" />
+    <path d="M20 9l-3.5 3.5" />
+  </g>
+
+  <g transform="translate(668, 484) scale(1.5)" fill="none" stroke="#F7FAFC" stroke-width="2">
+    <path d="M4 16l6 -7l5 5l5 -6" />
+    <path d="M14 14a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+    <path d="M9 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+    <path d="M3 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+    <path d="M19 8a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  </g>
+    <text x="742" y="218" font-size="24" font-weight="700" fill="#F7FAFC">Control flow</text>
+    <text x="742" y="364" font-size="24" font-weight="700" fill="#F7FAFC">Composition flow</text>
+    <text x="742" y="510" font-size="24" font-weight="700" fill="#F7FAFC">Event flow</text>
+    <circle cx="1096" cy="356" r="88" fill="#3448A8" stroke="#00C2D7" stroke-width="4" />
+
+  <g transform="translate(1068, 288) scale(2.33333)" fill="none" stroke="#F7FAFC" stroke-width="2">
+    <path d="M9.785 6l8.215 8.215l-2.054 2.054a5.81 5.81 0 1 1 -8.215 -8.215l2.054 -2.054" />
+    <path d="M4 20l3.5 -3.5" />
+    <path d="M15 4l-3.5 3.5" />
+    <path d="M20 9l-3.5 3.5" />
+  </g>
+    <text x="1096" y="382" text-anchor="middle" font-size="32" font-weight="700" fill="#F7FAFC">HARNESS</text>
+    <text x="1096" y="414" text-anchor="middle" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#B9F4F7">ONE CONTROL PLANE</text>
+  </g>
+
+  <g id="footer" data-pptx-bounds="64 652 1152 40">
+    <text x="64" y="676" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#A9B7D5">K-002 · K-003 · K-008  |  CONTROL · COMPOSITION · EVENT</text>
+    <text x="1216" y="676" text-anchor="end" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#00C2D7">P04 / 24</text>
+  </g>
+</svg>

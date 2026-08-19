@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" data-pptx-page-role="content" font-family="Aptos, Arial, sans-serif">
+  <rect id="background" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#F7FAFC" />
+  <path id="engineering-grid" data-pptx-role="decoration" d="M160 0V720 M320 0V720 M480 0V720 M640 0V720 M800 0V720 M960 0V720 M1120 0V720 M0 120H1280 M0 240H1280 M0 360H1280 M0 480H1280 M0 600H1280" fill="none" stroke="#D7E0F1" stroke-width="1" stroke-opacity="0.65" />
+
+  <g id="header" data-pptx-bounds="64 34 1152 132">
+    <text x="64" y="68" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#3448A8" letter-spacing="1">THREE COMPETITIVE LAYERS</text>
+    <text font-weight="700" font-size="42" fill="#101B35" x="64" y="106">
+      <tspan>Three layers compete for architecture,</tspan>
+      </text><text font-weight="700" font-size="42" fill="#101B35" x="64" y="150"><tspan>habits, and budget</tspan>
+    </text></g>
+
+  <g id="market-layer-staircase" data-pptx-bounds="64 170 1152 450">
+    <rect x="616" y="178" width="600" height="132" rx="10" fill="#E8EEF7" stroke="#3448A8" stroke-width="2" />
+
+  <g transform="translate(640, 202) scale(1.66667)" fill="none" stroke="#3448A8" stroke-width="2">
+    <path d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878" />
+  </g>
+    <text x="700" y="228" font-size="24" font-weight="700" fill="#101B35">Enterprise platform</text>
+    <text x="640" y="264" font-size="16" fill="#475467">ENTERPRISE BUYER · GOVERNANCE BUDGET · IAM / VPC / SLA</text>
+    <text x="640" y="294" font-size="16" fill="#101B35">Dify · Coze · Model Studio · Tencent ADP</text>
+
+    <line x1="894" y1="322" x2="894" y2="310" stroke="#D97706" stroke-width="3" />
+    <text x="914" y="330" font-family="Cascadia Mono, Consolas, monospace" font-size="16" font-weight="700" fill="#D97706">GOVERNANCE</text>
+
+    <rect x="340" y="322" width="700" height="132" rx="10" fill="#26385E" stroke="#00C2D7" stroke-width="3" />
+
+  <g transform="translate(364, 346) scale(1.66667)" fill="none" stroke="#F7FAFC" stroke-width="2">
+    <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" />
+  </g>
+    <text x="424" y="372" font-size="24" font-weight="700" fill="#F7FAFC">Developer product / control surface</text>
+    <text x="364" y="408" font-size="16" fill="#B9F4F7">BUYER · Developer   |   WINS · workflow habit   |   SWITCHING · daily workflow</text>
+    <text x="364" y="438" font-size="16" fill="#F7FAFC">Claude Code · Codex · Copilot · OpenHands · Qwen · Kimi · Trae</text>
+
+    <line x1="618" y1="466" x2="618" y2="454" stroke="#D97706" stroke-width="3" />
+    <text x="638" y="474" font-family="Cascadia Mono, Consolas, monospace" font-size="16" font-weight="700" fill="#D97706">HABITS</text>
+
+    <rect x="64" y="466" width="600" height="132" rx="10" fill="#101B35" stroke="#3448A8" stroke-width="2" />
+
+  <g transform="translate(88, 490) scale(1.66667)" fill="none" stroke="#00C2D7" stroke-width="2">
+    <path d="M7 8l-4 4l4 4" />
+    <path d="M17 8l4 4l-4 4" />
+    <path d="M14 4l-4 16" />
+  </g>
+    <text x="148" y="516" font-size="24" font-weight="700" fill="#F7FAFC">Runtime / framework</text>
+    <text x="88" y="552" font-size="16" fill="#B9F4F7">BUYER · Builder   |   WINS · architecture   |   SWITCHING · capability contract</text>
+    <text x="88" y="582" font-size="16" fill="#F7FAFC">Harness · AgentScope · LangGraph · OpenAI SDK · ADK · Agent Framework</text>
+  </g>
+
+  <g id="footer" data-pptx-bounds="64 652 1152 40">
+    <text x="64" y="676" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#475467">K-019 · K-021 · K-022 · K-024 · K-025 · K-026 · K-033</text>
+    <text x="1216" y="676" text-anchor="end" font-family="Cascadia Mono, Consolas, monospace" font-size="18" fill="#3448A8">P21 / 24</text>
+  </g>
+</svg>

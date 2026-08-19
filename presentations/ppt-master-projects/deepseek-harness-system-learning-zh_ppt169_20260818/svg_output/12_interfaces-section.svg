@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"
+     data-pptx-page-role="section"
+     font-family="Microsoft YaHei, Arial, sans-serif">
+  <defs>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#00C2D7"/>
+    </marker>
+  </defs>
+  <rect id="background" data-pptx-role="background"
+        x="0" y="0" width="1280" height="720" fill="#101B35"/>
+  <path id="engineering-grid" data-pptx-role="decoration"
+        d="M128 0V720 M256 0V720 M384 0V720 M512 0V720 M640 0V720 M768 0V720 M896 0V720 M1024 0V720 M1152 0V720 M0 120H1280 M0 240H1280 M0 360H1280 M0 480H1280 M0 600H1280"
+        fill="none" stroke="#3448A8" stroke-width="1" stroke-opacity="0.16"/>
+
+  <g id="chapter-title" data-pptx-bounds="64 76 430 466">
+    <text x="64" y="108" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#00C2D7" letter-spacing="2">CHAPTER 02 / EXTENSION</text>
+    <text x="64" y="188" font-size="42" font-weight="700" fill="#F7FAFC">
+      <tspan x="64" dy="0">一个 Core</tspan>
+      <tspan x="64" dy="54">多种 Interface</tspan>
+    </text>
+    <text x="64" y="336" font-size="32" font-weight="700" fill="#B9F4F7">
+      Adapter 不等于复制核心
+    </text>
+    <text x="64" y="392" font-size="24" fill="#D7E0F1">
+      <tspan x="64" dy="0">共享 Agent / Session 语义</tspan>
+      <tspan x="64" dy="38">保留各自 transport 与 ownership</tspan>
+      <tspan x="64" dy="38">Plugin 仍经过可检查生命周期</tspan>
+    </text>
+  </g>
+
+  <g id="core-interface-radial" data-pptx-bounds="510 98 706 428">
+    <line x1="846" y1="312" x2="846" y2="154" stroke="#3448A8" stroke-width="2"/>
+    <line x1="846" y1="312" x2="1072" y2="226" stroke="#3448A8" stroke-width="2"/>
+    <line x1="846" y1="312" x2="1072" y2="416" stroke="#3448A8" stroke-width="2"/>
+    <line x1="846" y1="312" x2="620" y2="416" stroke="#3448A8" stroke-width="2"/>
+    <line x1="846" y1="312" x2="620" y2="226" stroke="#3448A8" stroke-width="2"/>
+    <circle cx="846" cy="312" r="92" fill="#3448A8" stroke="#00C2D7" stroke-width="4"/>
+    <use data-icon="tabler-outline/cpu" x="820" y="246" width="52" height="52"
+         fill="#F7FAFC" stroke-width="2"/>
+    <text x="846" y="334" text-anchor="middle" font-size="32" font-weight="700" fill="#F7FAFC">CORE</text>
+    <text x="846" y="366" text-anchor="middle" font-size="18" fill="#B9F4F7">Agent · Session · Tools</text>
+
+    <circle cx="846" cy="154" r="54" fill="#101B35" stroke="#3448A8" stroke-width="2"/>
+    <text x="846" y="162" text-anchor="middle" font-size="24" font-weight="700" fill="#F7FAFC">CLI</text>
+    <circle cx="1072" cy="226" r="54" fill="#101B35" stroke="#3448A8" stroke-width="2"/>
+    <text x="1072" y="234" text-anchor="middle" font-size="24" font-weight="700" fill="#F7FAFC">Web</text>
+    <circle cx="1072" cy="416" r="54" fill="#101B35" stroke="#3448A8" stroke-width="2"/>
+    <text x="1072" y="410" text-anchor="middle" font-size="24" font-weight="700" fill="#F7FAFC">SDK</text>
+    <text x="1072" y="438" text-anchor="middle" font-size="18" fill="#A9B7D5">TS · Python</text>
+    <circle cx="620" cy="416" r="54" fill="#101B35" stroke="#3448A8" stroke-width="2"/>
+    <text x="620" y="410" text-anchor="middle" font-size="24" font-weight="700" fill="#F7FAFC">Headless</text>
+    <text x="620" y="438" text-anchor="middle" font-size="18" fill="#A9B7D5">ACP</text>
+    <circle cx="620" cy="226" r="54" fill="#101B35" stroke="#3448A8" stroke-width="2"/>
+    <text x="620" y="220" text-anchor="middle" font-size="24" font-weight="700" fill="#F7FAFC">Dynamic</text>
+    <text x="620" y="248" text-anchor="middle" font-size="18" fill="#A9B7D5">Plugin</text>
+  </g>
+
+  <g id="plugin-lifecycle-preview" data-pptx-bounds="510 548 706 72">
+    <line x1="552" y1="576" x2="1162" y2="576" stroke="#00C2D7" stroke-width="4"
+          marker-end="url(#arrow-cyan)"/>
+    <text x="552" y="614" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#B9F4F7">inspect → define → run → diagnose → repair</text>
+  </g>
+
+  <g id="footer" data-pptx-bounds="64 652 1152 40">
+    <text x="64" y="676" font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#A9B7D5">K-011 · K-014  |  ONE CORE · MANY ADAPTERS</text>
+    <text x="1216" y="676" text-anchor="end"
+          font-family="Cascadia Mono, Consolas, monospace"
+          font-size="18" fill="#00C2D7">P12 / 24</text>
+  </g>
+</svg>
