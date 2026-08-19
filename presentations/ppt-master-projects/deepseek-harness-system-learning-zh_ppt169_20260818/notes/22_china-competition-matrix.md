@@ -1,1 +1,0 @@
-中国市场快照把 runtime、developer entry 与 enterprise budget 分开，而不是压成一张总榜。以 2026 年 8 月 18 日为截点，公开 stars 与 forks 只能锚定关注度，不能证明 experimentation、adoption 或 revenue，所以图中的推断链被故意断开。许可边界也必须纳入判断：AgentScope 是 Apache 2.0，Dify 带有附加条件，Coze 的部分能力只在商业版提供。真正的决策问题，是每一层靠什么机制获胜，而不是谁拥有最大的标题数字。

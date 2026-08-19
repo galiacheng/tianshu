@@ -35,6 +35,5 @@ The [DeepSeek Harness learning example](docs/deepseek-harness/README.md) demonst
 | Learning materials | [DeepSeek Harness curriculum](docs/deepseek-harness/README.md) |
 | Chinese presentation | [DeepSeek Harness system learning (Chinese)](presentations/deepseek-harness-system-learning-zh.pptx) |
 | English presentation | [DeepSeek Harness system learning (English)](presentations/deepseek-harness-system-learning-en.pptx) |
-| Editable presentation sources and QA | [PPT Master projects](presentations/ppt-master-projects/) |
 
 Learning is hard. Tianshu makes it delightful.

@@ -1,1 +1,0 @@
-扩展层的核心判断是，Adapter 不应该复制 Agent 与 Session 语义。CLI、Web、TypeScript 和 Python SDK、Headless、ACP 以及 Dynamic Plugin 都围绕同一个 Agent、Session 和 Tools Core，但各自保留明确的 transport 与 runtime ownership。动态插件也仍然服从可检查的生命周期，从 inspect、define、run 到 diagnose 和 repair。下一步需要进一步区分，共享 Core 并不意味着这些入口运行在同一个进程边界里。

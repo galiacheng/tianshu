@@ -1,1 +1,0 @@
-动态 Plugin 的发布从 Inspect 开始，通过最小查询确认 live contract，然后 Define 一个不可变的 Plugin 和 Package。如果存在 Client half，运行时可能需要等待匹配页面和显式 approval，之后才进入 Starting、Run result 与 Render settle。Run 返回 ok 只说明激活阶段成功，后续 Client render 仍可能独立失败，因此诊断必须同时覆盖 Run 和 render。修复应创建新的 Package，而不是修改已经运行的版本；回滚则通过显式 currentPackageId 选择已知版本。
