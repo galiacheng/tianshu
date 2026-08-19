@@ -1,1 +1,0 @@
-有效运行时由四层有序 overlay 形成。Bundles 提供可复用的默认模型、Tool 和策略集合，Profile patch 面向产品或角色做工作流级覆盖，Home patch 保存跨运行的用户级偏好，命令行的 --patch 则最接近当前用户和当前任务。后层覆盖前层，因此顺序本身就是行为语义。调试时不能只保留最终 JSON，还必须保存四层 provenance，才能解释一个 Tool 为什么存在或某条 policy 为什么被覆盖。

@@ -1,1 +1,0 @@
-第一个企业问题是 runtime 在哪里执行。第二个问题是 prompt、output、credential、event 与 artifact 实际流向何处，包括远程 model、tool 和 client。第三个问题是控制与证据能否识别行动者、执行策略、保留可审计记录并支持复核。Self-hosted 可以回答第一个问题，却仍然让后两个问题保持开放。

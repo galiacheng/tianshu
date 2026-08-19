@@ -1,1 +1,0 @@
-Host plane 持有 Web、持久化、凭据、Sandbox 和 provider 等进程级能力。Agent Preset 通常在每个进程中只做一次 standing mount，然后由多个 Session 的 Agent scope 共同继承，而不是为每个 Session 重挂一次。Session A 和 Session B 各自拥有事件与运行状态，但它们可以指向同一个共享 Preset 节点。由此产生的工程规则是，Preset 内部的可变状态必须按 Session 或其他显式 owner 分区，否则共享能力会变成跨会话状态泄漏。

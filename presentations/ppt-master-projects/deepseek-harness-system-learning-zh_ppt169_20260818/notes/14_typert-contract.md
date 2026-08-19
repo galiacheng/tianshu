@@ -1,1 +1,0 @@
-Typert 从 Host 侧的 TypeScript source 开始，经过 Analyze、Model 和 Emit，形成与编译器无关的结构模型。这个模型再生成 remote metadata、reflection 信息和 Zod schemas，由 registry 或 gateway 的 loader、routing 与 remote face 对外发布，Client 只消费生成后的 compiler face。构建顺序因此必须先完成 Host contracts，再做 Client typecheck。这个流程解决跨进程结构契约的一致性，但 authentication、TLS 与 authorization 仍然位于 schema generation 之外。
