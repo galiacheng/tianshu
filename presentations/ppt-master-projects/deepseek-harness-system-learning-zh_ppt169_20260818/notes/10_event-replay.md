@@ -1,1 +1,0 @@
-Session event stream 记录 request header、request context、user、assistant、tool、approval 与 error 等按序事实。Cache 保存的是带 key、version、sequence 和 value 的 projection checkpoint，而不是另一本事实账本。冷读时先恢复这个可版本化 unit state，再重放 checkpoint 之后的 tail events，分别得到 Conversation、Tasks 或 Usage 等独立视图。关键不变量是，模型可见的信息必须被记录；这样 cache 即使丢失，事实仍可重放，视图也可以重新生成。

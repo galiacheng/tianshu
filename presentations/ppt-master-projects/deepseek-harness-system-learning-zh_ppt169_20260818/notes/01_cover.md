@@ -1,1 +1,0 @@
-这套二十四页教程把 DeepSeek Harness 视为一个 Agent control plane，而不只是另一个对话框架。它的核心价值，是让模型、Tool、Session、Sandbox 与 Interface 围绕同一控制层进行组合、观察和替换。所有技术判断固定在 Harness v0.1.0-rc.7、提交 99f6f02，材料生成则固定在 Tianshu ede03b8 的 knowledge-to-pptx 与 ppt-master Skills。接下来我们会从架构机制、企业边界以及全球和中国市场三个视角建立完整认知。
