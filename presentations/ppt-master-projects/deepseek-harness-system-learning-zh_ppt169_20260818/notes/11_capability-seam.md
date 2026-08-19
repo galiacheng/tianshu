@@ -1,0 +1,1 @@
+Capability seam 先定义稳定的类型、方法与事件，再由 provider registry 绑定单个实现或一组命名实现，Tool、Agent loop、UI 和 Service 只消费这个契约。Approval、retry、timeout 与 observation 等 policy 可以在接缝上组合，因此 Agent 依赖能力而不是依赖具体 provider。这个三角色模型描述的是依赖方向，并不要求 provider 只有一个。也要识别接缝之外的例外，例如 tool-fs-search 通过 subprocess 启动 packaged ripgrep，它不会自动遵循 ctx.fs 的替换语义。

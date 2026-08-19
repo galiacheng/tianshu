@@ -1,0 +1,2003 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "final",
+  "target": "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "691039db72131fb765d5fb376cb1a6e915a8d63bc836362193956f734b121e65",
+    "file_count": 24,
+    "files": [
+      {
+        "file": "01_cover.svg",
+        "sha256": "1de636628050b0cd55051d0bfe0d8cd9f7610af2de5806c68dac87994a4b0a0d"
+      },
+      {
+        "file": "02_safe-action.svg",
+        "sha256": "ea57f131b9f7cc65e031bcd5325766a8f0adce61454fa4e778c0d34d0dfaa2f6"
+      },
+      {
+        "file": "03_four-questions.svg",
+        "sha256": "fa0215280646fa7c9bdd2c90b4a9d5795ebc82285c68feeb51be44c43e24cc6e"
+      },
+      {
+        "file": "04_architecture-flows.svg",
+        "sha256": "80a4a073283c3db1c734a48d05ef076636be6f961f0d2b19215e440586cee36e"
+      },
+      {
+        "file": "05_turn-loop.svg",
+        "sha256": "cecd72b8920ffbf555973782afd14d5bc12c03de841b2fcd05ead5c2b343a5c8"
+      },
+      {
+        "file": "06_cordis-primitives.svg",
+        "sha256": "0adca2e9ae54e69fbfa0069bc69035599ccbf80e20a056065460e49fc4e8304e"
+      },
+      {
+        "file": "07_plugin-lifecycle.svg",
+        "sha256": "c720842d06d646d04089d528a13895476a7ad05ed564b8f701bfd8b4abf44da9"
+      },
+      {
+        "file": "08_preset-session.svg",
+        "sha256": "b6d8a14681f20fcc7606336e34ba5d9b3bb40e51d0d8e36b0803e99d6981e5a7"
+      },
+      {
+        "file": "09_profile-overlays.svg",
+        "sha256": "5b867323cd9833b00fd343f4b0bf2d2962fcbb0bad7046ea5288c3610cf17c22"
+      },
+      {
+        "file": "10_event-replay.svg",
+        "sha256": "bf0be6a9767c650f975736613785152343d641ab6231e0a3473ce9209ca2f26f"
+      },
+      {
+        "file": "11_capability-seam.svg",
+        "sha256": "40466e6aeaa72d6c9664e64a72dbdd627e0436dab049f4a913bdff77dce40454"
+      },
+      {
+        "file": "12_interfaces-section.svg",
+        "sha256": "b02ba708fd59ac259e22f160f82eea7c54d1a05910f7f016cdff075925d44bf2"
+      },
+      {
+        "file": "13_interface-boundaries.svg",
+        "sha256": "b2f8b2f77a8de8067e2f9570e5f73a5567645920e39b781d17b221c37ba0db15"
+      },
+      {
+        "file": "14_typert-contract.svg",
+        "sha256": "206915980fcd24513bf08cb66816c943c1b3d12986d8208e3b0fcd3b7dcc0fbd"
+      },
+      {
+        "file": "15_plugin-release.svg",
+        "sha256": "198855e879c9e2824ada9be9d801167d805b6ff5627b99bd0909af7b7be57c9d"
+      },
+      {
+        "file": "16_enterprise-section.svg",
+        "sha256": "5359f7ca44a327daced8d3723c8122eb07d204a224139168261d06a4ee970461"
+      },
+      {
+        "file": "17_three-truth-layers.svg",
+        "sha256": "986cea47c8faee8ac4ebf9031fa953b5590f446b5d24d5784f9475c50880309a"
+      },
+      {
+        "file": "18_security-boundaries.svg",
+        "sha256": "0957d0555bbb3bc61f61b0922c5468c89cecf34ff3da76a7adca2a47154edcd6"
+      },
+      {
+        "file": "19_enterprise-gap-matrix.svg",
+        "sha256": "88481f1b1842cce453b3a0d494cc59be8bae402f34b3abb81624d1f39f6a53c7"
+      },
+      {
+        "file": "20_market-section.svg",
+        "sha256": "915af1763d88cd699be7bcbf3a5d6bd8ac7b7316454372d1b93556fb2524f31c"
+      },
+      {
+        "file": "21_market-layers.svg",
+        "sha256": "24248f768a09e3a06d37e9b9ba92ce67c32e9b7e43f713561aa7685ee996d6c3"
+      },
+      {
+        "file": "22_china-competition-matrix.svg",
+        "sha256": "f5c165499ad2655559574850b6a2a61cb54d323e5dfdad6faee246ba9bc6d45a"
+      },
+      {
+        "file": "23_reproducible-experiment.svg",
+        "sha256": "bd58a9e92c599b6cfcb38412a174647ec8e8a10cbf44f6a2d6757fd3e80b4adb"
+      },
+      {
+        "file": "24_roadmap.svg",
+        "sha256": "3442b0fb9684e724b8e13157ab0c0444f4572306a21c35ec79844bd302e1fe86"
+      }
+    ]
+  },
+  "summary": {
+    "total": 24,
+    "passed": 0,
+    "warnings": 24,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 30,
+      "issues": [
+        {
+          "file": "01_cover.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "02_safe-action.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "03_four-questions.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "04_architecture-flows.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "05_turn-loop.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "06_cordis-primitives.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "07_plugin-lifecycle.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "08_preset-session.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "09_profile-overlays.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "10_event-replay.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "11_capability-seam.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "11_capability-seam.svg",
+          "message": "Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id=\"capability-chain\"> x=96.0, y=338.0..370.0, 2 lines; <g id=\"capability-chain\"> x=384.0, y=338.0..370.0, 2 lines; <g id=\"capability-chain\"> x=1012.0, y=338.0..370.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "12_interfaces-section.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "12_interfaces-section.svg",
+          "message": "<text> (x=64, y=392; text='Share Agent + Sessio…') exceeds <g id=\"chapter-title\"> data-pptx-bounds on the horizontal axis: content (64.0, 371.6)-(501.1, 476.4), container (64.0, 76.0)-(494.0, 542.0), overflow horizontal 1.7%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        },
+        {
+          "file": "13_interface-boundaries.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "13_interface-boundaries.svg",
+          "message": "<text> (x=64, y=122; text='Five interfaces shar…') exceeds <g id=\"header\"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1231.1, 136.7), container (64.0, 42.0)-(1216.0, 154.0), overflow horizontal 1.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        },
+        {
+          "file": "13_interface-boundaries.svg",
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"web-transport\"> x=900.0, y=278.0..344.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "14_typert-contract.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "15_plugin-release.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "16_enterprise-section.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "17_three-truth-layers.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "18_security-boundaries.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "19_enterprise-gap-matrix.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "20_market-section.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "21_market-layers.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "22_china-competition-matrix.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "23_reproducible-experiment.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "23_reproducible-experiment.svg",
+          "message": "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"trial-pipeline\"> x=84.0, y=288.0..340.0, 3 lines; <g id=\"trial-pipeline\"> x=738.0, y=290.0..342.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "24_roadmap.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+        },
+        {
+          "file": "24_roadmap.svg",
+          "message": "Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id=\"roadmap-staircase\"> x=476.0, y=496.0..544.0, 3 lines; <g id=\"roadmap-staircase\"> x=718.0, y=398.0..476.0, 4 lines; <g id=\"roadmap-staircase\"> x=960.0, y=300.0..378.0, 4 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        }
+      ]
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#008CA0": [
+        "23_reproducible-experiment.svg"
+      ],
+      "#172746": [
+        "16_enterprise-section.svg",
+        "20_market-section.svg"
+      ],
+      "#182747": [
+        "24_roadmap.svg"
+      ],
+      "#1C2A4A": [
+        "02_safe-action.svg",
+        "16_enterprise-section.svg"
+      ],
+      "#22345B": [
+        "24_roadmap.svg"
+      ],
+      "#26385E": [
+        "07_plugin-lifecycle.svg",
+        "14_typert-contract.svg",
+        "20_market-section.svg",
+        "21_market-layers.svg"
+      ],
+      "#5668B8": [
+        "07_plugin-lifecycle.svg"
+      ],
+      "#60739F": [
+        "24_roadmap.svg"
+      ],
+      "#65C77A": [
+        "24_roadmap.svg"
+      ],
+      "#6EE7F0": [
+        "23_reproducible-experiment.svg",
+        "24_roadmap.svg"
+      ],
+      "#86E49B": [
+        "24_roadmap.svg"
+      ],
+      "#9A4D00": [
+        "19_enterprise-gap-matrix.svg",
+        "22_china-competition-matrix.svg",
+        "23_reproducible-experiment.svg",
+        "24_roadmap.svg"
+      ],
+      "#A9B7D5": [
+        "01_cover.svg",
+        "04_architecture-flows.svg",
+        "12_interfaces-section.svg",
+        "16_enterprise-section.svg",
+        "17_three-truth-layers.svg",
+        "19_enterprise-gap-matrix.svg",
+        "20_market-section.svg",
+        "22_china-competition-matrix.svg",
+        "23_reproducible-experiment.svg",
+        "24_roadmap.svg"
+      ],
+      "#AAB9E3": [
+        "09_profile-overlays.svg"
+      ],
+      "#B9F4F7": [
+        "01_cover.svg",
+        "02_safe-action.svg",
+        "04_architecture-flows.svg",
+        "05_turn-loop.svg",
+        "06_cordis-primitives.svg",
+        "08_preset-session.svg",
+        "10_event-replay.svg",
+        "11_capability-seam.svg",
+        "12_interfaces-section.svg",
+        "13_interface-boundaries.svg",
+        "14_typert-contract.svg",
+        "15_plugin-release.svg",
+        "16_enterprise-section.svg",
+        "17_three-truth-layers.svg",
+        "18_security-boundaries.svg",
+        "20_market-section.svg",
+        "21_market-layers.svg"
+      ],
+      "#C7D2E8": [
+        "24_roadmap.svg"
+      ],
+      "#C9D5F0": [
+        "09_profile-overlays.svg"
+      ],
+      "#D7E0F1": [
+        "04_architecture-flows.svg",
+        "07_plugin-lifecycle.svg",
+        "08_preset-session.svg",
+        "11_capability-seam.svg",
+        "12_interfaces-section.svg",
+        "17_three-truth-layers.svg",
+        "18_security-boundaries.svg",
+        "19_enterprise-gap-matrix.svg",
+        "21_market-layers.svg",
+        "22_china-competition-matrix.svg",
+        "23_reproducible-experiment.svg"
+      ],
+      "#DCE5F6": [
+        "23_reproducible-experiment.svg"
+      ],
+      "#DFF5E5": [
+        "23_reproducible-experiment.svg"
+      ],
+      "#E5F7EA": [
+        "24_roadmap.svg"
+      ],
+      "#E6FAFC": [
+        "23_reproducible-experiment.svg"
+      ],
+      "#E8F7ED": [
+        "15_plugin-release.svg",
+        "16_enterprise-section.svg",
+        "18_security-boundaries.svg"
+      ],
+      "#E9A3AF": [
+        "17_three-truth-layers.svg"
+      ],
+      "#F8C56D": [
+        "24_roadmap.svg"
+      ],
+      "#FCE8ED": [
+        "23_reproducible-experiment.svg",
+        "24_roadmap.svg"
+      ],
+      "#FFB4C0": [
+        "16_enterprise-section.svg"
+      ],
+      "#FFE8C2": [
+        "19_enterprise-gap-matrix.svg",
+        "22_china-competition-matrix.svg"
+      ],
+      "#FFF0F2": [
+        "14_typert-contract.svg",
+        "15_plugin-release.svg",
+        "17_three-truth-layers.svg",
+        "18_security-boundaries.svg",
+        "19_enterprise-gap-matrix.svg"
+      ],
+      "#FFF3E0": [
+        "11_capability-seam.svg",
+        "18_security-boundaries.svg"
+      ],
+      "#FFF6E8": [
+        "19_enterprise-gap-matrix.svg",
+        "22_china-competition-matrix.svg",
+        "23_reproducible-experiment.svg",
+        "24_roadmap.svg"
+      ],
+      "#FFFFFF": [
+        "19_enterprise-gap-matrix.svg",
+        "22_china-competition-matrix.svg",
+        "23_reproducible-experiment.svg",
+        "24_roadmap.svg"
+      ]
+    },
+    "fonts": {},
+    "sizes": {
+      "128": [
+        "03_four-questions.svg"
+      ],
+      "21": [
+        "17_three-truth-layers.svg"
+      ]
+    }
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 24,
+    "totals": {
+      "text_elements": 509,
+      "image_placements": 0,
+      "icons": 72,
+      "svg_geometry_elements": 341,
+      "preset_shapes": 0,
+      "page_frame_elements": 49,
+      "marker_uses": 29
+    },
+    "pages_with": {
+      "images": 0,
+      "icons": 19,
+      "presets": 0,
+      "charts": 0,
+      "tables": 2,
+      "formulas": 0
+    },
+    "geometry_elements": {
+      "circle": 43,
+      "ellipse": 2,
+      "line": 74,
+      "path": 48,
+      "polygon": 7,
+      "polyline": 0,
+      "rect": 167
+    },
+    "preset_names": {},
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 2
+    },
+    "image_page_max_frame_share_range": []
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_cover.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\01_cover.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 9,
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 6,
+              "ellipse": 2,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#A9B7D5",
+            "#B9F4F7"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "1de636628050b0cd55051d0bfe0d8cd9f7610af2de5806c68dac87994a4b0a0d"
+    },
+    {
+      "file": "02_safe-action.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\02_safe-action.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 16,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 2,
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 3
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 16,
+        "tspan_elements": 7,
+        "contextual_values": {
+          "colors": [
+            "#1C2A4A",
+            "#B9F4F7"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "ea57f131b9f7cc65e031bcd5325766a8f0adce61454fa4e778c0d34d0dfaa2f6"
+    },
+    {
+      "file": "03_four-questions.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\03_four-questions.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 19,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 1,
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 1
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 19,
+        "tspan_elements": 0,
+        "sparse_typography_sizes": {
+          "128": 1
+        }
+      },
+      "passed": true,
+      "source_sha256": "fa0215280646fa7c9bdd2c90b4a9d5795ebc82285c68feeb51be44c43e24cc6e"
+    },
+    {
+      "file": "04_architecture-flows.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\04_architecture-flows.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 4,
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 4,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 5
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 5,
+        "contextual_values": {
+          "colors": [
+            "#A9B7D5",
+            "#B9F4F7",
+            "#D7E0F1"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "80a4a073283c3db1c734a48d05ef076636be6f961f0d2b19215e440586cee36e"
+    },
+    {
+      "file": "05_turn-loop.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\05_turn-loop.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 24,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 2,
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 4
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 3
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 24,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#B9F4F7"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "cecd72b8920ffbf555973782afd14d5bc12c03de841b2fcd05ead5c2b343a5c8"
+    },
+    {
+      "file": "06_cordis-primitives.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\06_cordis-primitives.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 7,
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 7,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#B9F4F7"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "0adca2e9ae54e69fbfa0069bc69035599ccbf80e20a056065460e49fc4e8304e"
+    },
+    {
+      "file": "07_plugin-lifecycle.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\07_plugin-lifecycle.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 5,
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#26385E",
+            "#5668B8",
+            "#D7E0F1"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "c720842d06d646d04089d528a13895476a7ad05ed564b8f701bfd8b4abf44da9"
+    },
+    {
+      "file": "08_preset-session.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\08_preset-session.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 17,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 4,
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 2
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 17,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#B9F4F7",
+            "#D7E0F1"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "b6d8a14681f20fcc7606336e34ba5d9b3bb40e51d0d8e36b0803e99d6981e5a7"
+    },
+    {
+      "file": "09_profile-overlays.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\09_profile-overlays.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 21,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 2,
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 1
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 21,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#AAB9E3",
+            "#C9D5F0"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "5b867323cd9833b00fd343f4b0bf2d2962fcbb0bad7046ea5288c3610cf17c22"
+    },
+    {
+      "file": "10_event-replay.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\10_event-replay.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 21,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 1,
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 7,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 4
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 4
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 21,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#B9F4F7"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "bf0be6a9767c650f975736613785152343d641ab6231e0a3473ce9209ca2f26f"
+    },
+    {
+      "file": "11_capability-seam.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\11_capability-seam.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif",
+        "Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id=\"capability-chain\"> x=96.0, y=338.0..370.0, 2 lines; <g id=\"capability-chain\"> x=384.0, y=338.0..370.0, 2 lines; <g id=\"capability-chain\"> x=1012.0, y=338.0..370.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 20,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 5,
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 3
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 20,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#B9F4F7",
+            "#D7E0F1",
+            "#FFF3E0"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "40466e6aeaa72d6c9664e64a72dbdd627e0436dab049f4a913bdff77dce40454"
+    },
+    {
+      "file": "12_interfaces-section.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\12_interfaces-section.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif",
+        "<text> (x=64, y=392; text='Share Agent + Sessio…') exceeds <g id=\"chapter-title\"> data-pptx-bounds on the horizontal axis: content (64.0, 371.6)-(501.1, 476.4), container (64.0, 76.0)-(494.0, 542.0), overflow horizontal 1.7%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 17,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 1,
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 6,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 1
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 17,
+        "tspan_elements": 5,
+        "contextual_values": {
+          "colors": [
+            "#A9B7D5",
+            "#B9F4F7",
+            "#D7E0F1"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "b02ba708fd59ac259e22f160f82eea7c54d1a05910f7f016cdff075925d44bf2"
+    },
+    {
+      "file": "13_interface-boundaries.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\13_interface-boundaries.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif",
+        "<text> (x=64, y=122; text='Five interfaces shar…') exceeds <g id=\"header\"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1231.1, 136.7), container (64.0, 42.0)-(1216.0, 154.0), overflow horizontal 1.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"web-transport\"> x=900.0, y=278.0..344.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 20,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 5,
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 20,
+        "tspan_elements": 4,
+        "contextual_values": {
+          "colors": [
+            "#B9F4F7"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "b2f8b2f77a8de8067e2f9570e5f73a5567645920e39b781d17b221c37ba0db15"
+    },
+    {
+      "file": "14_typert-contract.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\14_typert-contract.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 22,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 4,
+          "geometry": {
+            "svg_elements": {
+              "rect": 10,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 5
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 22,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#26385E",
+            "#B9F4F7",
+            "#FFF0F2"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "206915980fcd24513bf08cb66816c943c1b3d12986d8208e3b0fcd3b7dcc0fbd"
+    },
+    {
+      "file": "15_plugin-release.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\15_plugin-release.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 25,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "geometry": {
+            "svg_elements": {
+              "rect": 11,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 8,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 6
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos Display, Arial, sans-serif",
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 25,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#B9F4F7",
+            "#E8F7ED",
+            "#FFF0F2"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "198855e879c9e2824ada9be9d801167d805b6ff5627b99bd0909af7b7be57c9d"
+    },
+    {
+      "file": "16_enterprise-section.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\16_enterprise-section.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 17,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 4,
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 3,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 17,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#172746",
+            "#1C2A4A",
+            "#A9B7D5",
+            "#B9F4F7",
+            "#E8F7ED",
+            "#FFB4C0"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "5359f7ca44a327daced8d3723c8122eb07d204a224139168261d06a4ee970461"
+    },
+    {
+      "file": "17_three-truth-layers.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\17_three-truth-layers.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 19,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 3,
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 2,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 19,
+        "tspan_elements": 7,
+        "contextual_values": {
+          "colors": [
+            "#A9B7D5",
+            "#B9F4F7",
+            "#D7E0F1",
+            "#E9A3AF",
+            "#FFF0F2"
+          ]
+        },
+        "sparse_typography_sizes": {
+          "21": 1
+        }
+      },
+      "passed": true,
+      "source_sha256": "986cea47c8faee8ac4ebf9031fa953b5590f446b5d24d5784f9475c50880309a"
+    },
+    {
+      "file": "18_security-boundaries.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\18_security-boundaries.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 25,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 7,
+          "geometry": {
+            "svg_elements": {
+              "rect": 9,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 25,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#B9F4F7",
+            "#D7E0F1",
+            "#E8F7ED",
+            "#FFF0F2",
+            "#FFF3E0"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "0957d0555bbb3bc61f61b0922c5468c89cecf34ff3da76a7adca2a47154edcd6"
+    },
+    {
+      "file": "19_enterprise-gap-matrix.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\19_enterprise-gap-matrix.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 30,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "geometry": {
+            "svg_elements": {
+              "rect": 25,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 30,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#9A4D00",
+            "#A9B7D5",
+            "#D7E0F1",
+            "#FFE8C2",
+            "#FFF0F2",
+            "#FFF6E8",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "88481f1b1842cce453b3a0d494cc59be8bae402f34b3abb81624d1f39f6a53c7"
+    },
+    {
+      "file": "20_market-section.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\20_market-section.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 17,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 3,
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 2,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 17,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#172746",
+            "#26385E",
+            "#A9B7D5",
+            "#B9F4F7"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "915af1763d88cd699be7bcbf3a5d6bd8ac7b7316454372d1b93556fb2524f31c"
+    },
+    {
+      "file": "21_market-layers.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\21_market-layers.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 3,
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 2,
+        "contextual_values": {
+          "colors": [
+            "#26385E",
+            "#B9F4F7",
+            "#D7E0F1"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "24248f768a09e3a06d37e9b9ba92ce67c32e9b7e43f713561aa7685ee996d6c3"
+    },
+    {
+      "file": "22_china-competition-matrix.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\22_china-competition-matrix.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 30,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "geometry": {
+            "svg_elements": {
+              "rect": 17,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 30,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#9A4D00",
+            "#A9B7D5",
+            "#D7E0F1",
+            "#FFE8C2",
+            "#FFF6E8",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "f5c165499ad2655559574850b6a2a61cb54d323e5dfdad6faee246ba9bc6d45a"
+    },
+    {
+      "file": "23_reproducible-experiment.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\23_reproducible-experiment.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif",
+        "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"trial-pipeline\"> x=84.0, y=288.0..340.0, 3 lines; <g id=\"trial-pipeline\"> x=738.0, y=290.0..342.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 34,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "geometry": {
+            "svg_elements": {
+              "rect": 15,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 10
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 34,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#008CA0",
+            "#6EE7F0",
+            "#9A4D00",
+            "#A9B7D5",
+            "#D7E0F1",
+            "#DCE5F6",
+            "#DFF5E5",
+            "#E6FAFC",
+            "#FCE8ED",
+            "#FFF6E8",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "bd58a9e92c599b6cfcb38412a174647ec8e8a10cbf44f6a2d6757fd3e80b4adb"
+    },
+    {
+      "file": "24_roadmap.svg",
+      "path": "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\svg_output\\24_roadmap.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif",
+        "Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id=\"roadmap-staircase\"> x=476.0, y=496.0..544.0, 3 lines; <g id=\"roadmap-staircase\"> x=718.0, y=398.0..476.0, 4 lines; <g id=\"roadmap-staircase\"> x=960.0, y=300.0..378.0, 4 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 35,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "geometry": {
+            "svg_elements": {
+              "rect": 10,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Aptos, Arial, sans-serif",
+          "Cascadia Mono, Consolas, monospace"
+        ],
+        "text_elements": 35,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#182747",
+            "#22345B",
+            "#60739F",
+            "#65C77A",
+            "#6EE7F0",
+            "#86E49B",
+            "#9A4D00",
+            "#A9B7D5",
+            "#C7D2E8",
+            "#E5F7EA",
+            "#F8C56D",
+            "#FCE8ED",
+            "#FFF6E8",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "3442b0fb9684e724b8e13157ab0c0444f4572306a21c35ec79844bd302e1fe86"
+    }
+  ]
+}

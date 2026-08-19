@@ -1,0 +1,1 @@
+Agent 产品在不同台阶上竞争。Runtime 或 framework 面向 builder，卖的是执行语义与可扩展性；developer product 依靠工作习惯和任务适配获胜；enterprise platform 则通过治理、采购与支持拿到预算。Harness 可以沿这些层级向上移动，但每上一个台阶，购买者、替代物和所需证据都会改变。

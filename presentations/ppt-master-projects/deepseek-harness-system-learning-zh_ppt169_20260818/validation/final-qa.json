@@ -1,0 +1,63 @@
+{
+  "schema": "tianshu.presentation-final-qa.v1",
+  "status": "passed-with-font-advisories",
+  "checked_at": "2026-08-19T07:56:23+08:00",
+  "deck": {
+    "language": "zh",
+    "pptx": "../../../deepseek-harness-system-learning-zh.pptx",
+    "sha256": "ccaebaa30b2ce7f299d15877cf92051b7277f1d46d4c671abb682ad8e72bfdde",
+    "bytes": 154224
+  },
+  "gates": {
+    "svg_quality": {
+      "status": "passed",
+      "slides": 24,
+      "blocking_findings": 0,
+      "report": "svg_quality_report.json"
+    },
+    "self_contained_svg_preview": {
+      "status": "passed",
+      "slides": 24
+    },
+    "native_pptx_export": {
+      "status": "passed",
+      "slides": 24,
+      "speaker_notes": 24,
+      "masters": 1,
+      "layouts": 1,
+      "native_tables": 2,
+      "native_table_slides": [19, 22],
+      "native_table_names": [
+        "enterprise-gap-matrix",
+        "china-competition-matrix"
+      ],
+      "fade_transitions": 24
+    },
+    "powerpoint_round_trip": {
+      "status": "passed",
+      "rendered_slides": 24,
+      "visual_review": "passed"
+    },
+    "visible_text_parity": {
+      "status": "passed",
+      "source_text_elements": 509,
+      "missing_in_pptx": 0
+    },
+    "speaker_note_parity": {
+      "status": "passed",
+      "missing_or_mismatched": 0
+    },
+    "package_integrity": {
+      "status": "passed",
+      "zip_integrity": "passed",
+      "relationship_problems": 0,
+      "duplicate_parts": 0
+    }
+  },
+  "advisories": [
+    {
+      "code": "font_portability",
+      "faces": ["Cascadia Mono"]
+    }
+  ]
+}

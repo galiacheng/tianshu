@@ -1,0 +1,662 @@
+
+=== 2026-08-18T12:23:48.226Z NOTE id=cd2b711042f8 ===
+Project initialized: profile=default; canvas=ppt169; path=presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818
+
+=== 2026-08-18T12:23:57.663Z PYTHON run=6fe1d61dfbc7 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\project_manager.py", "import-sources", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "docs\\deepseek-harness", "presentations\\deepseek-harness-system-learning-en.artifacts"]
+stdout:
+  [OK] Imported sources into: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818
+=== 2026-08-18T12:23:58.829Z END run=6fe1d61dfbc7 elapsed_ms=1166 output_lines=20 retained=1 omitted=19 ===
+
+=== 2026-08-18T12:23:59.161Z PYTHON run=1c2413eb124c ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\project_manager.py", "import-sources", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\quick\\01-agent-harness-mental-model.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\quick\\02-everything-is-a-plugin.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\quick\\03-session-driven-runtime.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\quick\\04-market-lens.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\01-agent-runtime-foundations.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\02-cordis-plugin-model.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\03-profiles-bundles-presets.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\04-agent-loop-and-session-events.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\05-capability-seams.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\06-interfaces-and-typert.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\07-plugin-development-workflow.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\08-security-and-enterprise-readiness.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\09-global-and-china-competition.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\10-hands-on-comparative-study.md"]
+stdout:
+  [OK] Imported sources into: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818
+=== 2026-08-18T12:24:00.723Z END run=1c2413eb124c elapsed_ms=1562 output_lines=31 retained=1 omitted=30 ===
+
+=== 2026-08-18T12:44:11.718Z PYTHON run=680233beaad3 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\icon_sync.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "tabler-outline/cpu", "tabler-outline/tool", "tabler-outline/database", "tabler-outline/shield-lock", "tabler-outline/network", "tabler-outline/terminal-2", "tabler-outline/world", "tabler-outline/plug", "tabler-outline/code", "tabler-outline/timeline", "tabler-outline/server", "tabler-outline/key", "tabler-outline/file-code", "tabler-outline/git-branch", "tabler-outline/chart-bar", "tabler-outline/activity", "tabler-outline/alert-triangle", "tabler-outline/arrow-right", "tabler-outline/check", "tabler-outline/cloud", "tabler-outline/lock", "tabler-outline/settings", "tabler-outline/x"]
+stderr:
+  [OK] 23 icon(s) in presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\icons:
+       + tabler-outline/cpu
+       + tabler-outline/tool
+       + tabler-outline/database
+       + tabler-outline/shield-lock
+       + tabler-outline/network
+       + tabler-outline/terminal-2
+       + tabler-outline/world
+       + tabler-outline/plug
+stderr-tail:
+       + tabler-outline/cloud
+       + tabler-outline/lock
+       + tabler-outline/settings
+       + tabler-outline/x
+=== 2026-08-18T12:44:11.773Z END run=680233beaad3 elapsed_ms=54 output_lines=24 retained=13 omitted=11 ===
+
+=== 2026-08-18T12:48:01.194Z PYTHON run=2fa66fd9e420 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\project_manager.py", "validate", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818"]
+stdout:
+  [WARN]
+  [OK] Project structure is valid, with warnings.
+=== 2026-08-18T12:48:02.694Z END run=2fa66fd9e420 elapsed_ms=1500 output_lines=5 retained=2 omitted=3 ===
+
+=== 2026-08-18T12:49:47.638Z PYTHON run=1ca9c2ffdf6f ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_editor\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--live", "--daemon"]
+stderr:
+  [20:50:03] [ERROR] svg_editor: live preview did not become ready at http://127.0.0.1:6060/api/health within 15s (last error: health response belongs to another service or project)
+  [20:50:03] [ERROR] svg_editor: live preview failed to become reachable: http://127.0.0.1:6060 (log: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme\presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\live_preview\server.log)
+=== 2026-08-18T12:50:03.062Z END run=1ca9c2ffdf6f elapsed_ms=15423 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-08-18T12:50:14.681Z PYTHON run=f8152df57ffc ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_editor\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--live", "--daemon"]
+stderr:
+  [20:50:29] [ERROR] svg_editor: live preview did not become ready at http://127.0.0.1:6060/api/health within 15s (last error: health response belongs to another service or project)
+  [20:50:29] [ERROR] svg_editor: live preview failed to become reachable: http://127.0.0.1:6060 (log: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme\presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\live_preview\server.log)
+=== 2026-08-18T12:50:29.843Z END run=f8152df57ffc elapsed_ms=15161 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-08-18T12:50:38.236Z PYTHON run=ea5e8e496a51 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_editor\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--live", "--daemon", "--port", "6061"]
+stderr:
+  [20:50:39] [INFO] svg_editor: started live preview in background: http://127.0.0.1:6061 (pid=30848)
+  [20:50:39] [INFO] svg_editor: log: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme\presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\live_preview\server.log
+=== 2026-08-18T12:50:39.797Z END run=ea5e8e496a51 elapsed_ms=1561 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-08-18T12:52:00.926Z PYTHON run=933b12de2da0 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "first-page", "--json"]
+stdout:
+  [ERROR] 01_cover.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=676; text='ARCHITECTURE · ENTER…') exceeds <g id="footer"> data-pptx-bounds on the vertical axis: content (64.0, 660.7)-(565.0, 682.3), container (64.0, 652.0)-(1216.0, 680.0), overflow horizontal 0.0%, vertical 8.2%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=1216, y=676; text='P01 / 24') exceeds <g id="footer"> data-pptx-bounds on the vertical axis: content (1137.4, 660.7)-(1216.0, 682.3), container (64.0, 652.0)-(1216.0, 680.0), overflow horizontal 0.0%, vertical 8.2%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] Cannot verify root viewBox bounds for visible text with unsupported or unresolved geometry: <text> (x=64, y=160; text='DeepSeek Harness: Ev…'), <text> (x=64, y=286; text='A composable, observ…'); use supported explicit text positioning when page fit matters
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="title-block"> x=64.0, y=404.0..438.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [SUMMARY] Check Summary
+  Total files: 1
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 0 (0%)
+    [ERROR] With errors: 1 (100%)
+  Provenance categories:
+    blocking: 2          hard findings; gate also requires exit 0
+    introduced: 3        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 1 | text: 19 | images: 0 | icons: 9
+    Geometry: SVG elements 17 | native presets 0 | page-frame elements 3 | marker uses 0
+    Native objects: charts 0 | tables 0 | formulas 0
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_first_page_report.json
+=== 2026-08-18T12:52:03.100Z END run=933b12de2da0 elapsed_ms=2173 output_lines=40 retained=22 omitted=18 ===
+
+=== 2026-08-18T12:52:31.119Z PYTHON run=1c63afc55a93 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "first-page", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=64, y=286; text='A composable, observ…') exceeds <g id="title-block"> data-pptx-bounds on the horizontal axis: content (64.0, 258.8)-(610.0, 345.2), container (64.0, 70.0)-(604.0, 475.0), overflow horizontal 1.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [SUMMARY] Check Summary
+  Total files: 1
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 1 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 2        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 1 | text: 18 | images: 0 | icons: 9
+    Geometry: SVG elements 17 | native presets 0 | page-frame elements 3 | marker uses 0
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_first_page_report.json
+=== 2026-08-18T12:52:32.748Z END run=1c63afc55a93 elapsed_ms=1629 output_lines=35 retained=17 omitted=18 ===
+
+=== 2026-08-18T13:13:45.776Z PYTHON run=55383b802835 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=64, y=286; text='A composable, observ…') exceeds <g id="title-block"> data-pptx-bounds on the horizontal axis: content (64.0, 258.8)-(610.0, 345.2), container (64.0, 70.0)-(604.0, 475.0), overflow horizontal 1.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 02_safe-action.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <path> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [ERROR] <text> (x=64, y=226; text='The model proposes. …') exceeds <g id="causal-claim"> data-pptx-bounds on the horizontal axis: content (64.0, 198.8)-(550.8, 381.2), container (64.0, 172.0)-(454.0, 598.0), overflow horizontal 24.8%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=64, y=530; text='Side effects live in…') exceeds <g id="causal-claim"> data-pptx-bounds on the horizontal axis: content (64.0, 509.6)-(526.6, 576.4), container (64.0, 172.0)-(454.0, 598.0), overflow horizontal 18.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=1050, y=554; text='visible result → rec…') exceeds <g id="control-chain"> data-pptx-bounds on the horizontal axis: content (879.7, 538.7)-(1220.3, 560.3), container (500.0, 164.0)-(1216.0, 614.0), overflow horizontal 0.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 03_four-questions.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=112, y=626; text='How is one turn cont…') exceeds <g id="question-path"> data-pptx-bounds on the vertical axis: content (112.0, 610.7)-(366.4, 632.3), container (92.0, 168.0)-(1216.0, 610.0), overflow horizontal 0.0%, vertical 5.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 04_architecture-flows.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=338; text='Read flows—not packa…') exceeds <g id="chapter-title"> data-pptx-bounds on the horizontal axis: content (64.0, 310.8)-(585.2, 349.2), container (64.0, 78.0)-(552.0, 548.0), overflow horizontal 6.8%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=64, y=394; text='Control explains one…') exceeds <g id="chapter-title"> data-pptx-bounds on the horizontal axis: content (64.0, 373.6)-(576.1, 478.4), container (64.0, 78.0)-(552.0, 548.0), overflow horizontal 4.9%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 05_turn-loop.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <path> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [ERROR] <text> (x=946, y=390; text='Concurrency does not…') exceeds <g id="turn-control-loop"> data-pptx-bounds on the horizontal axis: content (946.0, 374.7)-(1297.7, 396.3), container (64.0, 166.0)-(1216.0, 632.0), overflow horizontal 7.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=126, y=320; text='Project context') exceeds <g id="turn-control-loop"> data-pptx-bounds on the horizontal axis: content (51.8, 304.7)-(200.2, 326.3), container (64.0, 166.0)-(1216.0, 632.0), overflow horizontal 1.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=1117, y=470; text='post-process → resul…') exceeds <g id="turn-control-loop"> data-pptx-bounds on the horizontal axis: content (1014.0, 454.7)-(1220.0, 476.3), container (64.0, 166.0)-(1216.0, 632.0), overflow horizontal 0.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 06_cordis-primitives.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='Five primitives turn…') exceeds the root viewBox on the horizontal axis: content (64.0, 86.3)-(1301.0, 136.7), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 1.6%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [ERROR] <text> (x=640, y=610; text='EFFECT ↔ SCOPE / LIF…') exceeds <g id="primitive-runtime-map"> data-pptx-bounds on the vertical axis: content (506.4, 594.7)-(773.6, 616.3), container (64.0, 160.0)-(1216.0, 584.0), overflow horizontal 0.0%, vertical 7.6%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 07_plugin-lifecycle.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=1018, y=594; text='one axis unifies fiv…') exceeds the root viewBox on the horizontal axis: content (1018.0, 578.7)-(1345.6, 600.3), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 5.1%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 08_preset-session.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='Presets are shared s…') exceeds the root viewBox on the horizontal axis: content (64.0, 86.3)-(1360.5, 136.7), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 6.3%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 09_profile-overlays.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=64, y=122; text='Four ordered layers—…') exceeds <g id="header"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1257.6, 136.7), container (64.0, 42.0)-(1216.0, 150.0), overflow horizontal 3.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 10_event-replay.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <line> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [ERROR] <path> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 11_capability-seam.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='Capability seams iso…') exceeds <g id="header"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1289.4, 136.7), container (64.0, 42.0)-(1216.0, 150.0), overflow horizontal 6.4%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=1012, y=370; text='not concrete impleme…') exceeds <g id="capability-chain"> data-pptx-bounds on the horizontal axis: content (1012.0, 354.7)-(1279.1, 376.3), container (64.0, 182.0)-(1216.0, 462.0), overflow horizontal 5.5%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id="capability-chain"> x=96.0, y=338.0..370.0, 2 lines; <g id="capability-chain"> x=384.0, y=338.0..370.0, 2 lines; <g id="capability-chain"> x=1012.0, y=338.0..370.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] 12_interfaces-section.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=336; text='Adapters do not dupl…') exceeds <g id="chapter-title"> data-pptx-bounds on the horizontal axis: content (64.0, 308.8)-(600.6, 347.2), container (64.0, 76.0)-(494.0, 542.0), overflow horizontal 24.8%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=64, y=392; text='Share Agent and Sess…') exceeds <g id="chapter-title"> data-pptx-bounds on the horizontal axis: content (64.0, 371.6)-(613.1, 476.4), container (64.0, 76.0)-(494.0, 542.0), overflow horizontal 27.7%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=64, y=188; text='One Core multiple in…') exceeds <g id="chapter-title"> data-pptx-bounds on the horizontal axis: content (64.0, 152.3)-(503.4, 256.7), container (64.0, 76.0)-(494.0, 542.0), overflow horizontal 2.2%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 13_interface-boundaries.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='Five entry points sh…') exceeds the root viewBox on the horizontal axis: content (64.0, 86.3)-(1320.9, 136.7), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 3.2%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [ERROR] <text> (x=1068, y=560; text='bundled subprocess b…') exceeds the root viewBox on the horizontal axis: content (1068.0, 544.7)-(1332.6, 566.3), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 4.1%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [ERROR] <text> (x=110, y=286; text='interactive product …') exceeds <g id="local-entry-points"> data-pptx-bounds on the horizontal axis: content (110.0, 270.7)-(497.3, 292.3), container (64.0, 176.0)-(404.0, 596.0), overflow horizontal 27.4%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=110, y=536; text='caller manages conne…') exceeds <g id="local-entry-points"> data-pptx-bounds on the horizontal axis: content (110.0, 520.7)-(475.4, 542.3), container (64.0, 176.0)-(404.0, 596.0), overflow horizontal 21.0%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=1068, y=522; text='caller supplies runt…') exceeds <g id="sdk-ownership"> data-pptx-bounds on the horizontal axis: content (1068.0, 506.7)-(1279.8, 528.3), container (876.0, 394.0)-(1216.0, 610.0), overflow horizontal 18.8%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=640, y=382; text='Agent · Session · To…') exceeds <g id="shared-core"> data-pptx-bounds on the horizontal axis: content (439.5, 354.8)-(840.5, 393.2), container (454.0, 238.0)-(826.0, 476.0), overflow horizontal 3.9%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id="local-entry-points"> x=110.0, y=506.0..536.0, 2 lines; <g id="web-transport"> x=900.0, y=278.0..344.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] 14_typert-contract.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <line> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=970, y=606; text='auth · TLS · authori…') exceeds <g id="build-order"> data-pptx-bounds on the horizontal axis: content (686.6, 590.7)-(1253.4, 612.3), container (64.0, 514.0)-(1216.0, 626.0), overflow horizontal 3.2%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="contract-pipeline"> x=814.0, y=346.0..382.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] 15_plugin-release.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=1016, y=590; text='version state belong…') exceeds the root viewBox on the horizontal axis: content (1016.0, 574.7)-(1305.8, 596.3), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 2.0%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=152, y=290; text='list → minimal query') exceeds <g id="plugin-state-machine"> data-pptx-bounds on the horizontal axis: content (62.3, 274.7)-(241.7, 296.3), container (64.0, 172.0)-(1216.0, 516.0), overflow horizontal 0.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [WARN] 16_enterprise-section.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+  [ERROR] 17_three-truth-layers.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=176, y=262; text='append-only ledger: …') exceeds <g id="truth-layer-stack"> data-pptx-bounds on the horizontal axis: content (176.0, 246.7)-(885.8, 268.3), container (64.0, 184.0)-(824.0, 594.0), overflow horizontal 8.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=64, y=122; text='Enterprise evidence …') exceeds <g id="header"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1257.5, 136.7), container (64.0, 42.0)-(1216.0, 150.0), overflow horizontal 3.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=176, y=428; text='cover protocol, Clie…') exceeds <g id="truth-layer-stack"> data-pptx-bounds on the horizontal axis: content (176.0, 412.7)-(836.5, 434.3), container (64.0, 184.0)-(824.0, 594.0), overflow horizontal 1.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id="truth-layer-stack"> x=176.0, y=398.0..428.0, 2 lines; <g id="truth-layer-stack"> x=176.0, y=534.0..564.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] 18_security-boundaries.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='Six boundaries each …') exceeds the root viewBox on the horizontal axis: content (64.0, 86.3)-(1285.6, 136.7), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 0.4%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [ERROR] <text> (x=880, y=458; text='Immutable Package; e…') exceeds the root viewBox on the horizontal axis: content (880.0, 442.7)-(1282.3, 464.3), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 0.2%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=880, y=286; text='Typert generates sch…') exceeds <g id="security-boundary-grid"> data-pptx-bounds on the horizontal axis: content (880.0, 270.7)-(1222.2, 292.3), container (64.0, 184.0)-(1216.0, 526.0), overflow horizontal 0.5%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=880, y=488; text='Need: signed artifac…') exceeds <g id="security-boundary-grid"> data-pptx-bounds on the horizontal axis: content (880.0, 472.7)-(1272.8, 494.3), container (64.0, 184.0)-(1216.0, 526.0), overflow horizontal 4.9%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 19_enterprise-gap-matrix.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 13 (52 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] data-pptx-replace-with marker enterprise-gap-matrix: Native PPTX table fallback text is missing from metadata columns/rows and will disappear with --native-charts-and-tables: 'event stream +Session identity', 'durable ledger +reconciliation', 'add audit data planebefore scale', 'protocol / Client /Plugin tests', 'golden corpus onreal tasks', and 14 more
+  [WARN] 20_market-section.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+  [ERROR] 21_market-layers.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='Product category fol…') exceeds <g id="header"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1292.7, 136.7), container (64.0, 42.0)-(1216.0, 150.0), overflow horizontal 6.7%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=88, y=338; text='execution semantics …') exceeds <g id="agent-runtime-layer"> data-pptx-bounds on the horizontal axis: content (88.0, 322.7)-(454.0, 344.3), container (64.0, 184.0)-(424.0, 544.0), overflow horizontal 8.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=88, y=512; text='agent platform; prov…') exceeds <g id="agent-runtime-layer"> data-pptx-bounds on the horizontal axis: content (88.0, 496.7)-(541.2, 518.3), container (64.0, 184.0)-(424.0, 544.0), overflow horizontal 32.5%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=484, y=440; text='embed agent capabili…') exceeds <g id="engineering-toolchain-layer"> data-pptx-bounds on the horizontal axis: content (484.0, 424.7)-(911.4, 446.3), container (460.0, 184.0)-(820.0, 544.0), overflow horizontal 25.4%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=484, y=512; text='SDK / orchestrator; …') exceeds <g id="engineering-toolchain-layer"> data-pptx-bounds on the horizontal axis: content (484.0, 496.7)-(893.3, 518.3), container (460.0, 184.0)-(820.0, 544.0), overflow horizontal 20.4%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=880, y=366; text='domestic / global de…') exceeds <g id="model-ecosystem-layer"> data-pptx-bounds on the horizontal axis: content (880.0, 350.7)-(1248.2, 372.3), container (856.0, 184.0)-(1216.0, 544.0), overflow horizontal 9.0%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=880, y=440; text='retain one control m…') exceeds <g id="model-ecosystem-layer"> data-pptx-bounds on the horizontal axis: content (880.0, 424.7)-(1271.1, 446.3), container (856.0, 184.0)-(1216.0, 544.0), overflow horizontal 15.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=880, y=512; text='provider-native stac…') exceeds <g id="model-ecosystem-layer"> data-pptx-bounds on the horizontal axis: content (880.0, 496.7)-(1261.6, 518.3), container (856.0, 184.0)-(1216.0, 544.0), overflow horizontal 12.7%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=548, y=226; text='Engineering toolchai…') exceeds <g id="engineering-toolchain-layer"> data-pptx-bounds on the horizontal axis: content (548.0, 205.6)-(823.9, 234.4), container (460.0, 184.0)-(820.0, 544.0), overflow horizontal 1.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id="agent-runtime-layer"> x=88.0, y=338.0..366.0, 2 lines; <g id="engineering-toolchain-layer"> x=484.0, y=338.0..366.0, 2 lines; <g id="model-ecosystem-layer"> x=880.0, y=338.0..366.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] 22_china-competition-matrix.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 13 (52 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] data-pptx-replace-with marker china-competition-matrix: Native PPTX table fallback text is missing from metadata columns/rows and will disappear with --native-charts-and-tables: 'PRIMARY ADOPTIONCHANNEL', 'CHINA-LOCALCONSTRAINT', 'IMPLICATION FORHARNESS', 'Cloud / provider-nativestack', 'cloud account +managed service', and 12 more
+  [ERROR] 23_reproducible-experiment.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='Replace “it feels go…') exceeds <g id="header"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1309.0, 136.7), container (64.0, 42.0)-(1216.0, 150.0), overflow horizontal 8.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=164, y=264; text='versions + env + tas…') exceeds <g id="experiment-pipeline"> data-pptx-bounds on the horizontal axis: content (60.5, 248.7)-(267.5, 270.3), container (64.0, 176.0)-(1216.0, 300.0), overflow horizontal 0.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=414, y=585; text='Never silently chang…') exceeds <g id="experiment-record"> data-pptx-bounds on the horizontal axis: content (59.8, 569.7)-(768.2, 591.3), container (64.0, 326.0)-(764.0, 610.0), overflow horizontal 0.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=858, y=428; text='task completion + ou…') exceeds <g id="outcome-scorecard"> data-pptx-bounds on the horizontal axis: content (858.0, 412.7)-(1225.3, 434.3), container (792.0, 326.0)-(1216.0, 610.0), overflow horizontal 2.2%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 5 (20%)
+    [ERROR] With errors: 19 (79%)
+  Provenance categories:
+    blocking: 38         hard findings; gate also requires exit 0
+    introduced: 55       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 506 | images: 0 | icons: 70
+    Geometry: SVG elements 301 | native presets 0 | page-frame elements 50 | marker uses 36
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T13:13:48.602Z END run=55383b802835 elapsed_ms=2825 output_lines=197 retained=143 omitted=54 ===
+
+=== 2026-08-18T13:19:31.384Z PYTHON run=955c1be1e4c0 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 02_safe-action.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=226; text='The model proposes. …') exceeds <g id="causal-claim"> data-pptx-bounds on the horizontal axis: content (64.0, 198.8)-(490.8, 381.2), container (64.0, 172.0)-(454.0, 598.0), overflow horizontal 9.4%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=64, y=500; text='Side effects live in…') exceeds <g id="causal-claim"> data-pptx-bounds on the horizontal axis: content (64.0, 479.6)-(484.7, 576.4), container (64.0, 172.0)-(454.0, 598.0), overflow horizontal 7.9%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 03_four-questions.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 04_architecture-flows.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 11_capability-seam.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='Capability seams dec…') exceeds <g id="header"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1326.8, 136.7), container (64.0, 42.0)-(1216.0, 150.0), overflow horizontal 9.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id="capability-chain"> x=96.0, y=338.0..370.0, 2 lines; <g id="capability-chain"> x=384.0, y=338.0..370.0, 2 lines; <g id="capability-chain"> x=1012.0, y=338.0..370.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [WARN] 12_interfaces-section.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+  [ERROR] 15_plugin-release.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=1016, y=590; text='Package owns version…') exceeds <g id="package-version-rules"> data-pptx-bounds on the horizontal axis: content (1016.0, 574.7)-(1274.2, 596.3), container (64.0, 538.0)-(1216.0, 624.0), overflow horizontal 5.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 16_enterprise-section.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 21 (87%)
+    [ERROR] With errors: 3 (12%)
+  Provenance categories:
+    blocking: 4          hard findings; gate also requires exit 0
+    introduced: 36       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 504 | images: 0 | icons: 70
+    Geometry: SVG elements 301 | native presets 0 | page-frame elements 50 | marker uses 36
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T13:19:33.908Z END run=955c1be1e4c0 elapsed_ms=2524 output_lines=141 retained=40 omitted=101 ===
+
+=== 2026-08-18T13:20:20.430Z PYTHON run=a92d8675bdaf ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 02_safe-action.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=488; text='Side effects live in…') exceeds <g id="causal-claim"> data-pptx-bounds on the horizontal axis: content (64.0, 469.3)-(482.2, 563.7), container (64.0, 172.0)-(454.0, 598.0), overflow horizontal 7.2%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 03_four-questions.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 04_architecture-flows.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 23 (95%)
+    [ERROR] With errors: 1 (4%)
+  Provenance categories:
+    blocking: 1          hard findings; gate also requires exit 0
+    introduced: 32       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 504 | images: 0 | icons: 70
+    Geometry: SVG elements 301 | native presets 0 | page-frame elements 50 | marker uses 36
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T13:20:22.899Z END run=a92d8675bdaf elapsed_ms=2468 output_lines=134 retained=25 omitted=109 ===
+
+=== 2026-08-18T13:20:45.396Z PYTHON run=67864c980696 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 32       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 504 | images: 0 | icons: 70
+    Geometry: SVG elements 301 | native presets 0 | page-frame elements 50 | marker uses 36
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T13:20:47.715Z END run=67864c980696 elapsed_ms=2319 output_lines=131 retained=18 omitted=113 ===
+
+=== 2026-08-18T13:24:16.045Z PYTHON run=11e07f3a2982 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\total_md_split.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818"]
+stdout:
+  [OK] SVG files and notes have one-to-one correspondence
+  [Done] Successfully generated 24/24 file(s)
+  [Done] Notes splitting complete
+=== 2026-08-18T13:24:16.088Z END run=11e07f3a2982 elapsed_ms=43 output_lines=33 retained=3 omitted=30 ===
+
+=== 2026-08-18T13:24:47.710Z PYTHON run=28f11b54930f ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\finalize_svg.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818"]
+stdout:
+  [OK] 01_cover.svg (9 icons)
+  [OK] Done!
+=== 2026-08-18T13:24:49.291Z END run=28f11b54930f elapsed_ms=1580 output_lines=30 retained=2 omitted=28 ===
+
+=== 2026-08-18T13:25:58.431Z PYTHON run=ee3acb5c1df0 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-en.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--conversion-trace"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+stdout:
+  [Done] Saved: presentations\deepseek-harness-system-learning-en.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=24 warning_categories=2
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=32
+    [POSTFLIGHT][WARNING] unsafe_exported_font_faces=3
+    [PPTX] presentations\deepseek-harness-system-learning-en.pptx
+    [REPORT] presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\deepseek-harness-system-learning-en.report.json
+=== 2026-08-18T13:26:03.328Z END run=ee3acb5c1df0 elapsed_ms=4897 output_lines=101 retained=7 omitted=94 ===
+
+=== 2026-08-18T13:34:42.771Z PYTHON run=a6ce29842b08 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 31       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 504 | images: 0 | icons: 70
+    Geometry: SVG elements 301 | native presets 0 | page-frame elements 50 | marker uses 36
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T13:34:45.184Z END run=a6ce29842b08 elapsed_ms=2413 output_lines=131 retained=18 omitted=113 ===
+
+=== 2026-08-18T13:35:19.089Z PYTHON run=c95cdad6d41e ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\finalize_svg.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818"]
+stdout:
+  [OK] 01_cover.svg (9 icons)
+  [OK] Done!
+=== 2026-08-18T13:35:20.253Z END run=c95cdad6d41e elapsed_ms=1164 output_lines=30 retained=2 omitted=28 ===
+
+=== 2026-08-18T13:36:00.095Z PYTHON run=2af03b0d3586 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-en.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--conversion-trace"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+stdout:
+  [Done] Saved: presentations\deepseek-harness-system-learning-en.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=24 warning_categories=2
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=31
+    [POSTFLIGHT][WARNING] unsafe_exported_font_faces=3
+    [PPTX] presentations\deepseek-harness-system-learning-en.pptx
+    [REPORT] presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\deepseek-harness-system-learning-en.report.json
+=== 2026-08-18T13:36:04.794Z END run=2af03b0d3586 elapsed_ms=4699 output_lines=101 retained=7 omitted=94 ===
+
+=== 2026-08-18T13:56:00.789Z PYTHON run=c2da78f1cd1d ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json", "--json-output", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\validation\\svg-quality-final.json"]
+
+=== 2026-08-18T13:56:00.804Z PYTHON run=df517231cf8e ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\total_md_split.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "-q"]
+=== 2026-08-18T13:56:00.848Z END run=df517231cf8e elapsed_ms=44 output_lines=0 retained=0 omitted=0 ===
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 13_interface-boundaries.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 28 (5 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=64, y=122; text='Five interfaces shar…') exceeds <g id="header"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1231.1, 136.7), container (64.0, 42.0)-(1216.0, 154.0), overflow horizontal 1.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="web-transport"> x=900.0, y=278.0..344.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [WARN] 14_typert-contract.svg - Passed (with warnings)
+  [ERROR] 18_security-boundaries.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=986, y=386; text='ON may include promp…') exceeds the root viewBox on the horizontal axis: content (986.0, 372.4)-(1330.0, 391.6), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 3.9%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=1046, y=250; text='fetch + Session FTS …') exceeds <g id="boundary-map"> data-pptx-bounds on the horizontal axis: content (1046.0, 236.4)-(1247.1, 255.6), container (64.0, 166.0)-(1216.0, 598.0), overflow horizontal 2.7%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 19_enterprise-gap-matrix.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] Invalid data-pptx-replace-with marker enterprise-gap-matrix: PPTX table replacement marker requires JSON metadata; add <metadata type="application/json"> for a real data-backed object, or remove data-pptx-replace-with from SVG-only KPI/diagram groups
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 38 (4 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 20_market-section.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=960, y=270; text='Enterprise platform') exceeds <g id="market-staircase"> data-pptx-bounds on the horizontal axis: content (960.0, 249.6)-(1225.3, 278.4), container (110.0, 192.0)-(1170.0, 582.0), overflow horizontal 5.2%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 21_market-layers.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=126; text='Three layers compete…') exceeds the root viewBox on the horizontal axis: content (64.0, 90.3)-(1345.1, 140.7), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 5.1%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [ERROR] <text> (x=640, y=264; text='BUYER · Enterprise |…') exceeds <g id="market-layer-staircase"> data-pptx-bounds on the horizontal axis: content (640.0, 250.4)-(1274.9, 269.6), container (64.0, 170.0)-(1216.0, 620.0), overflow horizontal 5.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [ERROR] 22_china-competition-matrix.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] Invalid data-pptx-replace-with marker china-competition-matrix: PPTX table replacement marker requires JSON metadata; add <metadata type="application/json"> for a real data-backed object, or remove data-pptx-replace-with from SVG-only KPI/diagram groups
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 28 (5 occurrences), 38 (4 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=906, y=286; text='open plugin runtime …') exceeds <g id="china-competition-matrix"> data-pptx-bounds on the horizontal axis: content (906.0, 272.4)-(1235.0, 291.6), container (64.0, 174.0)-(1216.0, 524.0), overflow horizontal 1.7%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=906, y=382; text='developer entry · wo…') exceeds <g id="china-competition-matrix"> data-pptx-bounds on the horizontal axis: content (906.0, 368.4)-(1267.2, 387.6), container (64.0, 174.0)-(1216.0, 524.0), overflow horizontal 4.4%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 23_reproducible-experiment.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 15 (20 occurrences), 28 (5 occurrences), 38 (4 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] <text> (x=956, y=258; text='judge the same outco…') exceeds <g id="trial-pipeline"> data-pptx-bounds on the horizontal axis: content (956.0, 239.3)-(1251.1, 265.7), container (64.0, 184.0)-(1216.0, 372.0), overflow horizontal 3.0%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id="trial-pipeline"> x=84.0, y=288.0..340.0, 3 lines; <g id="trial-pipeline"> x=738.0, y=290.0..342.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] 24_roadmap.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=88, y=618; text='Decision rule: proce…') exceeds <g id="decision-rule"> data-pptx-bounds on the horizontal axis: content (88.0, 601.9)-(1303.5, 624.6), container (64.0, 584.0)-(1216.0, 638.0), overflow horizontal 7.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 15 (20 occurrences), 38 (4 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+     [WARN] Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id="roadmap-staircase"> x=476.0, y=496.0..544.0, 3 lines; <g id="roadmap-staircase"> x=718.0, y=398.0..476.0, 4 lines; <g id="roadmap-staircase"> x=960.0, y=300.0..378.0, 4 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+     [WARN] unknown data-pptx-page-role='closing'
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 16 (66%)
+    [ERROR] With errors: 8 (33%)
+  Provenance categories:
+    blocking: 12         hard findings; gate also requires exit 0
+    introduced: 36       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+    Native objects: charts 0 | tables 2 | formulas 0
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg-quality-final.json
+=== 2026-08-18T13:56:03.238Z END run=c2da78f1cd1d elapsed_ms=2449 output_lines=167 retained=65 omitted=102 ===
+
+=== 2026-08-18T13:59:08.072Z PYTHON run=bc17c948ef47 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json", "--json-output", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\validation\\svg-quality-final.json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 36       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg-quality-final.json
+=== 2026-08-18T13:59:10.643Z END run=bc17c948ef47 elapsed_ms=2571 output_lines=148 retained=18 omitted=130 ===
+
+=== 2026-08-18T14:00:54.644Z PYTHON run=63be36bbdcd3 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json", "--json-output", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818\\validation\\svg-quality-final.json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 30       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg-quality-final.json
+=== 2026-08-18T14:00:57.152Z END run=63be36bbdcd3 elapsed_ms=2508 output_lines=142 retained=18 omitted=124 ===
+
+=== 2026-08-18T14:01:52.275Z PYTHON run=b19cf4fa20c5 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\finalize_svg.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "-q"]
+stdout:
+  [OK] 01_cover.svg (9 icons)
+=== 2026-08-18T14:01:53.627Z END run=b19cf4fa20c5 elapsed_ms=1351 output_lines=19 retained=1 omitted=18 ===
+
+=== 2026-08-18T14:02:11.987Z PYTHON run=076a5a61cf7c ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-en.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--with-notes", "-t", "fade", "--conversion-trace", "validation\\deepseek-harness-system-learning-en.trace.json"]
+stderr:
+  Error: default release export requires a passing final SVG quality report for the current svg_output/; found stale.
+  Run: python3 skills/ppt-master/scripts/svg_quality_checker.py "presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818" --stage final --json
+=== 2026-08-18T14:02:14.321Z END run=076a5a61cf7c elapsed_ms=2334 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-08-18T14:02:36.397Z PYTHON run=1ad34fa22a86 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 30       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T14:02:38.812Z END run=1ad34fa22a86 elapsed_ms=2414 output_lines=142 retained=18 omitted=124 ===
+
+=== 2026-08-18T14:02:55.105Z PYTHON run=c77517f3ff2b ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-en.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--with-notes", "-t", "fade", "--conversion-trace", "validation\\deepseek-harness-system-learning-en.trace.json"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+stdout:
+  [Done] Saved: presentations\deepseek-harness-system-learning-en.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=24 warning_categories=2
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=30
+    [POSTFLIGHT][WARNING] unsafe_exported_font_faces=3
+    [PPTX] presentations\deepseek-harness-system-learning-en.pptx
+    [REPORT] presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\deepseek-harness-system-learning-en.report.json
+=== 2026-08-18T14:02:59.945Z END run=c77517f3ff2b elapsed_ms=4840 output_lines=104 retained=7 omitted=97 ===
+
+=== 2026-08-18T23:53:49.730Z PYTHON run=cd85eeb32ca5 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Aptos): Aptos, Arial, sans-serif
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 30       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-en_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T23:53:52.385Z END run=cd85eeb32ca5 elapsed_ms=2654 output_lines=142 retained=18 omitted=124 ===
+
+=== 2026-08-18T23:54:05.350Z PYTHON run=7e991753ca3b ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\finalize_svg.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "-q"]
+stdout:
+  [OK] 01_cover.svg (9 icons)
+=== 2026-08-18T23:54:07.273Z END run=7e991753ca3b elapsed_ms=1923 output_lines=19 retained=1 omitted=18 ===
+
+=== 2026-08-18T23:54:07.872Z PYTHON run=790560329424 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-en_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-en.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--with-notes", "-t", "fade", "--conversion-trace", "validation\\deepseek-harness-system-learning-en.trace.json", "-q"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+=== 2026-08-18T23:54:16.184Z END run=790560329424 elapsed_ms=8311 output_lines=1 retained=1 omitted=0 ===

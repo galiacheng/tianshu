@@ -1,0 +1,517 @@
+
+=== 2026-08-18T12:23:14.630Z NOTE id=f97389305b91 ===
+Project initialized: profile=default; canvas=ppt169; path=presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818
+
+=== 2026-08-18T12:23:23.374Z PYTHON run=c72f2e898dbb ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\project_manager.py", "import-sources", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "docs\\deepseek-harness", "presentations\\deepseek-harness-system-learning-zh.artifacts"]
+stdout:
+  [OK] Imported sources into: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818
+=== 2026-08-18T12:23:24.629Z END run=c72f2e898dbb elapsed_ms=1255 output_lines=20 retained=1 omitted=19 ===
+
+=== 2026-08-18T12:23:35.533Z PYTHON run=d98d78de9e49 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\project_manager.py", "import-sources", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\quick\\01-agent-harness-mental-model.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\quick\\02-everything-is-a-plugin.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\quick\\03-session-driven-runtime.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\quick\\04-market-lens.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\01-agent-runtime-foundations.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\02-cordis-plugin-model.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\03-profiles-bundles-presets.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\04-agent-loop-and-session-events.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\05-capability-seams.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\06-interfaces-and-typert.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\07-plugin-development-workflow.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\08-security-and-enterprise-readiness.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\09-global-and-china-competition.md", "C:\\Users\\haiche\\.copilot\\repos\\copilot-worktrees\\tianshu\\haiche-microsoft-ubiquitous-meme\\docs\\deepseek-harness\\deep\\10-hands-on-comparative-study.md"]
+stdout:
+  [OK] Imported sources into: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818
+=== 2026-08-18T12:23:37.277Z END run=d98d78de9e49 elapsed_ms=1743 output_lines=31 retained=1 omitted=30 ===
+
+=== 2026-08-18T12:25:03.243Z PYTHON run=e910d5cff6f1 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--reset-template-selection"]
+stderr:
+  [20:25:03] [INFO] confirm_ui: template selection artifacts already absent
+=== 2026-08-18T12:25:03.248Z END run=e910d5cff6f1 elapsed_ms=4 output_lines=1 retained=1 omitted=0 ===
+
+=== 2026-08-18T12:25:31.284Z PYTHON run=0d01b0b83af1 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--daemon"]
+stderr:
+  [20:25:31] [INFO] confirm_ui: log: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme\presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\confirm_ui\server.log
+  [20:25:32] [INFO] confirm_ui: started confirm UI in background: http://127.0.0.1:5050 (pid=28440)
+=== 2026-08-18T12:25:33.090Z END run=0d01b0b83af1 elapsed_ms=1806 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-08-18T12:25:59.443Z PYTHON run=411736acbbfd ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--wait-only", "--timeout", "590"]
+stderr:
+  [20:25:59] [ERROR] confirm_ui: confirmation stage=final is not ready: template_selection.json not found after Stage 1 confirmation
+=== 2026-08-18T12:25:59.448Z END run=411736acbbfd elapsed_ms=4 output_lines=1 retained=1 omitted=0 ===
+
+=== 2026-08-18T12:26:16.208Z PYTHON run=e39f075014d7 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--wait-only", "--wait-stage", "stage1", "--wait-timeout", "590"]
+stderr:
+  [20:26:16] [INFO] confirm_ui: waiting for browser confirmation stage=stage1...
+  [20:26:36] [INFO] confirm_ui: confirmation stage=stage1 received: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme\presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\confirm_ui\result.json
+  [20:26:36] [INFO] confirm_ui: [NEXT] Stage 1 is intermediate: complete the template handoff, author fresh Stage 2, then wait for final confirmation.
+=== 2026-08-18T12:26:36.480Z END run=e39f075014d7 elapsed_ms=20271 output_lines=3 retained=3 omitted=0 ===
+
+=== 2026-08-18T12:26:44.628Z PYTHON run=178c479fe2ac ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--complete-template-selection"]
+stderr:
+  [20:26:44] [INFO] confirm_ui: template selection handoff written to C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme\presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\confirm_ui\template_handoff.json
+=== 2026-08-18T12:26:44.701Z END run=178c479fe2ac elapsed_ms=73 output_lines=1 retained=1 omitted=0 ===
+
+=== 2026-08-18T12:30:52.541Z PYTHON run=988f7e49d94d ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--wait-only", "--wait-stage", "final", "--wait-timeout", "590"]
+stderr:
+  [20:30:52] [INFO] confirm_ui: waiting for browser confirmation stage=final...
+  [20:40:43] [ERROR] confirm_ui: timed out waiting for confirmation stage=final — the page may still be open; re-check C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme\presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\confirm_ui\result.json before falling back to chat
+=== 2026-08-18T12:40:43.235Z END run=988f7e49d94d elapsed_ms=590693 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-08-18T12:41:31.967Z PYTHON run=03525c18396c ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--shutdown"]
+stderr:
+  [20:41:32] [INFO] confirm_ui: confirm server stopped (pid=28440)
+=== 2026-08-18T12:41:32.663Z END run=03525c18396c elapsed_ms=696 output_lines=1 retained=1 omitted=0 ===
+
+=== 2026-08-18T12:44:11.719Z PYTHON run=a1924fe64e3f ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\icon_sync.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "tabler-outline/cpu", "tabler-outline/tool", "tabler-outline/database", "tabler-outline/shield-lock", "tabler-outline/network", "tabler-outline/terminal-2", "tabler-outline/world", "tabler-outline/plug", "tabler-outline/code", "tabler-outline/timeline", "tabler-outline/server", "tabler-outline/key", "tabler-outline/file-code", "tabler-outline/git-branch", "tabler-outline/chart-bar", "tabler-outline/activity", "tabler-outline/alert-triangle", "tabler-outline/arrow-right", "tabler-outline/check", "tabler-outline/cloud", "tabler-outline/lock", "tabler-outline/settings", "tabler-outline/x"]
+stderr:
+  [OK] 23 icon(s) in presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\icons:
+       + tabler-outline/cpu
+       + tabler-outline/tool
+       + tabler-outline/database
+       + tabler-outline/shield-lock
+       + tabler-outline/network
+       + tabler-outline/terminal-2
+       + tabler-outline/world
+       + tabler-outline/plug
+stderr-tail:
+       + tabler-outline/cloud
+       + tabler-outline/lock
+       + tabler-outline/settings
+       + tabler-outline/x
+=== 2026-08-18T12:44:11.774Z END run=a1924fe64e3f elapsed_ms=55 output_lines=24 retained=13 omitted=11 ===
+
+=== 2026-08-18T12:48:01.186Z PYTHON run=2c26982a0890 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\project_manager.py", "validate", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818"]
+stdout:
+  [WARN]
+  [OK] Project structure is valid, with warnings.
+=== 2026-08-18T12:48:02.697Z END run=2c26982a0890 elapsed_ms=1510 output_lines=5 retained=2 omitted=3 ===
+
+=== 2026-08-18T12:49:47.643Z PYTHON run=15c7059e2291 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_editor\\server.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--live", "--daemon"]
+stderr:
+  [20:49:49] [INFO] svg_editor: started live preview in background: http://127.0.0.1:6060 (pid=18888)
+  [20:49:49] [INFO] svg_editor: log: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme\presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\live_preview\server.log
+=== 2026-08-18T12:49:49.246Z END run=15c7059e2291 elapsed_ms=1603 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-08-18T12:52:00.909Z PYTHON run=604aed1f1ca7 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "first-page", "--json"]
+stdout:
+  [ERROR] 01_cover.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=676; text='ARCHITECTURE · ENTER…') exceeds <g id="footer"> data-pptx-bounds on the vertical axis: content (64.0, 660.7)-(565.0, 682.3), container (64.0, 652.0)-(1216.0, 680.0), overflow horizontal 0.0%, vertical 8.2%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=1216, y=676; text='P01 / 24') exceeds <g id="footer"> data-pptx-bounds on the vertical axis: content (1137.4, 660.7)-(1216.0, 682.3), container (64.0, 652.0)-(1216.0, 680.0), overflow horizontal 0.0%, vertical 8.2%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] Cannot verify root viewBox bounds for visible text with unsupported or unresolved geometry: <text> (x=64, y=160; text='DeepSeek Harness： Ev…'), <text> (x=64, y=286; text='把 Agent 运行时变成 可组合、可观…'); use supported explicit text positioning when page fit matters
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="title-block"> x=64.0, y=404.0..438.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [SUMMARY] Check Summary
+  Total files: 1
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 0 (0%)
+    [ERROR] With errors: 1 (100%)
+  Provenance categories:
+    blocking: 2          hard findings; gate also requires exit 0
+    introduced: 3        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 1 | text: 19 | images: 0 | icons: 9
+    Geometry: SVG elements 17 | native presets 0 | page-frame elements 3 | marker uses 0
+    Native objects: charts 0 | tables 0 | formulas 0
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg_quality_first_page_report.json
+=== 2026-08-18T12:52:03.098Z END run=604aed1f1ca7 elapsed_ms=2188 output_lines=40 retained=22 omitted=18 ===
+
+=== 2026-08-18T12:52:31.100Z PYTHON run=3819ecfed8f5 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "first-page", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [SUMMARY] Check Summary
+  Total files: 1
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 1 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 1        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 1 | text: 18 | images: 0 | icons: 9
+    Geometry: SVG elements 17 | native presets 0 | page-frame elements 3 | marker uses 0
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg_quality_first_page_report.json
+=== 2026-08-18T12:52:32.738Z END run=3819ecfed8f5 elapsed_ms=1637 output_lines=34 retained=16 omitted=18 ===
+
+=== 2026-08-18T13:13:45.777Z PYTHON run=08960f4e34a9 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 02_safe-action.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <path> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 03_four-questions.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=112, y=626; text='一次 Turn 如何被控制？') exceeds <g id="question-path"> data-pptx-bounds on the vertical axis: content (112.0, 610.7)-(321.0, 632.3), container (92.0, 168.0)-(1216.0, 610.0), overflow horizontal 0.0%, vertical 5.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 04_architecture-flows.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 05_turn-loop.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <path> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] <text> (x=126, y=320; text='Project context') exceeds <g id="turn-control-loop"> data-pptx-bounds on the horizontal axis: content (51.8, 304.7)-(200.2, 326.3), container (64.0, 166.0)-(1216.0, 632.0), overflow horizontal 1.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=1117, y=470; text='post-process → resul…') exceeds <g id="turn-control-loop"> data-pptx-bounds on the horizontal axis: content (1014.0, 454.7)-(1220.0, 476.3), container (64.0, 166.0)-(1216.0, 632.0), overflow horizontal 0.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 06_cordis-primitives.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=640, y=610; text='EFFECT ↔ SCOPE / LIF…') exceeds <g id="primitive-runtime-map"> data-pptx-bounds on the vertical axis: content (506.4, 594.7)-(773.6, 616.3), container (64.0, 160.0)-(1216.0, 584.0), overflow horizontal 0.0%, vertical 7.6%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 07_plugin-lifecycle.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=1018, y=594; text='一条贯穿轴统一五层能力') exceeds <g id="lifecycle-axis"> data-pptx-bounds on the horizontal axis: content (1018.0, 578.7)-(1227.9, 600.3), container (1018.0, 166.0)-(1216.0, 620.0), overflow horizontal 6.0%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 08_preset-session.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] <text> (x=64, y=122; text='Preset 是共享 standing …') exceeds <g id="header"> data-pptx-bounds on the horizontal axis: content (64.0, 86.3)-(1237.7, 136.7), container (64.0, 42.0)-(1216.0, 150.0), overflow horizontal 1.9%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [WARN] 09_profile-overlays.svg - Passed (with warnings)
+  [ERROR] 10_event-replay.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <line> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [ERROR] <path> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 11_capability-seam.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 13_interface-boundaries.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=122; text='五个入口共享 Core，但 Transp…') exceeds the root viewBox on the horizontal axis: content (64.0, 86.3)-(1336.3, 136.7), canvas (0.0, 0.0)-(1280.0, 720.0), overflow horizontal 4.4%, vertical 0.0%; move or reflow the text until its estimated bounds stay on-page
+     [ERROR] <text> (x=1068, y=522; text='调用方提供 runtime') exceeds <g id="sdk-ownership"> data-pptx-bounds on the horizontal axis: content (1068.0, 506.7)-(1241.6, 528.3), container (876.0, 394.0)-(1216.0, 610.0), overflow horizontal 7.5%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=1068, y=560; text='默认 bundled subproces…') exceeds <g id="sdk-ownership"> data-pptx-bounds on the horizontal axis: content (1068.0, 544.7)-(1291.2, 566.3), container (876.0, 394.0)-(1216.0, 610.0), overflow horizontal 22.1%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] <text> (x=640, y=382; text='Agent · Session · To…') exceeds <g id="shared-core"> data-pptx-bounds on the horizontal axis: content (439.5, 354.8)-(840.5, 393.2), container (454.0, 238.0)-(826.0, 476.0), overflow horizontal 3.9%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id="local-entry-points"> x=110.0, y=506.0..536.0, 2 lines; <g id="web-transport"> x=900.0, y=278.0..344.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] 14_typert-contract.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <line> marker-end=url(#arrow-cyan) marker fill '#00C2D7' does not match effective line stroke '#3448A8'
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="contract-pipeline"> x=814.0, y=346.0..382.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [WARN] 15_plugin-release.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+  [ERROR] 19_enterprise-gap-matrix.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 13 (44 occurrences), 14 (8 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] data-pptx-replace-with marker enterprise-gap-matrix: Native PPTX table fallback text is missing from metadata columns/rows and will disappear with --native-charts-and-tables: 'event stream +Session identity', 'protocol / Client /Plugin tests', 'metadata +lifecycle gates', 'runtime enforcement +audit export', 'remote faces +generated schemas', and 5 more
+  [WARN] 20_market-section.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+  [ERROR] 22_china-competition-matrix.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 13 (44 occurrences), 14 (8 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] data-pptx-replace-with marker china-competition-matrix: Native PPTX table fallback text is missing from metadata columns/rows and will disappear with --native-charts-and-tables: '云 / Provider-nativestack', '开发者采用 +repo / CI 集成', '开源 orchestrationframework', '采购 + SI +私有部署', '本地模型 + 云 +开发者社区'
+  [WARN] 23_reproducible-experiment.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 14 (58%)
+    [ERROR] With errors: 10 (41%)
+  Provenance categories:
+    blocking: 13         hard findings; gate also requires exit 0
+    introduced: 42       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 506 | images: 0 | icons: 70
+    Geometry: SVG elements 301 | native presets 0 | page-frame elements 50 | marker uses 36
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T13:13:48.446Z END run=08960f4e34a9 elapsed_ms=2669 output_lines=160 retained=83 omitted=77 ===
+
+=== 2026-08-18T13:19:31.385Z PYTHON run=9b8fe91975b9 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 31       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 506 | images: 0 | icons: 70
+    Geometry: SVG elements 301 | native presets 0 | page-frame elements 50 | marker uses 36
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T13:19:33.757Z END run=9b8fe91975b9 elapsed_ms=2372 output_lines=130 retained=18 omitted=112 ===
+
+=== 2026-08-18T13:24:05.639Z PYTHON run=04873c909c3d ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\total_md_split.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818"]
+stdout:
+  [OK] SVG files and notes have one-to-one correspondence
+  [Done] Successfully generated 24/24 file(s)
+  [Done] Notes splitting complete
+=== 2026-08-18T13:24:05.684Z END run=04873c909c3d elapsed_ms=44 output_lines=33 retained=3 omitted=30 ===
+
+=== 2026-08-18T13:24:36.480Z PYTHON run=d9e2837b8d86 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\finalize_svg.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818"]
+stdout:
+  [OK] 01_cover.svg (9 icons)
+  [OK] Done!
+=== 2026-08-18T13:24:38.094Z END run=d9e2837b8d86 elapsed_ms=1614 output_lines=30 retained=2 omitted=28 ===
+
+=== 2026-08-18T13:25:42.264Z PYTHON run=dec4c0e1e09a ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-zh.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--conversion-trace"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+stdout:
+  [Done] Saved: presentations\deepseek-harness-system-learning-zh.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=24 warning_categories=2
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=31
+    [POSTFLIGHT][WARNING] unsafe_exported_font_faces=1
+    [PPTX] presentations\deepseek-harness-system-learning-zh.pptx
+    [REPORT] presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\deepseek-harness-system-learning-zh.report.json
+=== 2026-08-18T13:25:47.912Z END run=dec4c0e1e09a elapsed_ms=5647 output_lines=98 retained=7 omitted=91 ===
+
+=== 2026-08-18T13:34:23.894Z PYTHON run=d78cc77c922a ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 30       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 506 | images: 0 | icons: 70
+    Geometry: SVG elements 301 | native presets 0 | page-frame elements 50 | marker uses 36
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T13:34:26.339Z END run=d78cc77c922a elapsed_ms=2445 output_lines=130 retained=18 omitted=112 ===
+
+=== 2026-08-18T13:34:58.490Z PYTHON run=c87c78fa766e ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\finalize_svg.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818"]
+stdout:
+  [OK] 01_cover.svg (9 icons)
+  [OK] Done!
+=== 2026-08-18T13:34:59.607Z END run=c87c78fa766e elapsed_ms=1116 output_lines=30 retained=2 omitted=28 ===
+
+=== 2026-08-18T13:35:39.507Z PYTHON run=981edd696b05 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-zh.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--conversion-trace"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+stdout:
+  [Done] Saved: presentations\deepseek-harness-system-learning-zh.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=24 warning_categories=2
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=30
+    [POSTFLIGHT][WARNING] unsafe_exported_font_faces=1
+    [PPTX] presentations\deepseek-harness-system-learning-zh.pptx
+    [REPORT] presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\deepseek-harness-system-learning-zh.report.json
+=== 2026-08-18T13:35:44.247Z END run=981edd696b05 elapsed_ms=4740 output_lines=99 retained=7 omitted=92 ===
+
+=== 2026-08-18T13:56:00.801Z PYTHON run=81472ad0161b ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\total_md_split.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "-q"]
+=== 2026-08-18T13:56:00.845Z END run=81472ad0161b elapsed_ms=43 output_lines=0 retained=0 omitted=0 ===
+
+=== 2026-08-18T13:56:00.885Z PYTHON run=7c24b6aa305d ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "final", "--json", "--json-output", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818\\validation\\svg-quality-final.json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 13_interface-boundaries.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 28 (5 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id="local-entry-points"> x=110.0, y=506.0..536.0, 2 lines; <g id="web-transport"> x=900.0, y=278.0..344.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [WARN] 14_typert-contract.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+  [ERROR] 18_security-boundaries.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=986, y=386; text='开启后可含 prompt、Tool、文件…') exceeds <g id="boundary-map"> data-pptx-bounds on the horizontal axis: content (986.0, 372.4)-(1290.9, 391.6), container (64.0, 166.0)-(1216.0, 598.0), overflow horizontal 6.5%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] <text> (x=1046, y=250; text='fetch + Session FTS …') exceeds <g id="boundary-map"> data-pptx-bounds on the horizontal axis: content (1046.0, 236.4)-(1247.1, 255.6), container (64.0, 166.0)-(1216.0, 598.0), overflow horizontal 2.7%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] 19_enterprise-gap-matrix.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] Invalid data-pptx-replace-with marker enterprise-gap-matrix: PPTX table replacement marker requires JSON metadata; add <metadata type="application/json"> for a real data-backed object, or remove data-pptx-replace-with from SVG-only KPI/diagram groups
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 38 (4 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 20_market-section.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=960, y=270; text='Enterprise platform') exceeds <g id="market-staircase"> data-pptx-bounds on the horizontal axis: content (960.0, 249.6)-(1225.3, 278.4), container (110.0, 192.0)-(1170.0, 582.0), overflow horizontal 5.2%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 21_market-layers.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 22_china-competition-matrix.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] Invalid data-pptx-replace-with marker china-competition-matrix: PPTX table replacement marker requires JSON metadata; add <metadata type="application/json"> for a real data-backed object, or remove data-pptx-replace-with from SVG-only KPI/diagram groups
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 28 (5 occurrences), 38 (4 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [ERROR] 23_reproducible-experiment.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 15 (20 occurrences), 28 (5 occurrences), 38 (4 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="trial-pipeline"> x=84.0, y=288.0..340.0, 3 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] 24_roadmap.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 15 (20 occurrences), 38 (4 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+     [WARN] Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id="roadmap-staircase"> x=476.0, y=496.0..544.0, 3 lines; <g id="roadmap-staircase"> x=718.0, y=398.0..476.0, 4 lines; <g id="roadmap-staircase"> x=960.0, y=300.0..378.0, 4 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+     [WARN] unknown data-pptx-page-role='closing'
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 17 (70%)
+    [ERROR] With errors: 7 (29%)
+  Provenance categories:
+    blocking: 9          hard findings; gate also requires exit 0
+    introduced: 32       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+    Native objects: charts 0 | tables 2 | formulas 0
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg-quality-final.json
+=== 2026-08-18T13:56:03.178Z END run=7c24b6aa305d elapsed_ms=2293 output_lines=159 retained=59 omitted=100 ===
+
+=== 2026-08-18T13:59:08.071Z PYTHON run=f9840cd5c552 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "final", "--json", "--json-output", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818\\validation\\svg-quality-final.json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 31       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg-quality-final.json
+=== 2026-08-18T13:59:10.546Z END run=f9840cd5c552 elapsed_ms=2474 output_lines=143 retained=18 omitted=125 ===
+
+=== 2026-08-18T14:00:54.642Z PYTHON run=3a45dbcfd214 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "final", "--json", "--json-output", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818\\validation\\svg-quality-final.json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 29       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg-quality-final.json
+=== 2026-08-18T14:00:57.037Z END run=3a45dbcfd214 elapsed_ms=2394 output_lines=141 retained=18 omitted=123 ===
+
+=== 2026-08-18T14:01:52.317Z PYTHON run=678146477958 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\finalize_svg.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "-q"]
+stdout:
+  [OK] 01_cover.svg (9 icons)
+=== 2026-08-18T14:01:53.692Z END run=678146477958 elapsed_ms=1375 output_lines=19 retained=1 omitted=18 ===
+
+=== 2026-08-18T14:02:12.005Z PYTHON run=02f47b7af5b3 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-zh.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--with-notes", "-t", "fade", "--conversion-trace", "validation\\deepseek-harness-system-learning-zh.trace.json"]
+stderr:
+  Error: default release export requires a passing final SVG quality report for the current svg_output/; found stale.
+  Run: python3 skills/ppt-master/scripts/svg_quality_checker.py "presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818" --stage final --json
+=== 2026-08-18T14:02:14.332Z END run=02f47b7af5b3 elapsed_ms=2327 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-08-18T14:02:36.374Z PYTHON run=66b6285d5c0f ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "--stage", "final", "--json"]
+stdout:
+  [WARN] 01_cover.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [WARN] 02_safe-action.svg - Passed (with warnings)
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono, Consolas, monospace
+  [SUMMARY] Check Summary
+  Total files: 24
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 24 (100%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 29       advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 24 | text: 509 | images: 0 | icons: 72
+    Geometry: SVG elements 341 | native presets 0 | page-frame elements 49 | marker uses 29
+  [REPORT] JSON quality report exported: presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\svg_quality_report.json
+=== 2026-08-18T14:02:38.677Z END run=66b6285d5c0f elapsed_ms=2302 output_lines=141 retained=18 omitted=123 ===
+
+=== 2026-08-18T14:02:55.105Z PYTHON run=1ab1edfa6c82 ===
+cwd: C:\Users\haiche\.copilot\repos\copilot-worktrees\tianshu\haiche-microsoft-ubiquitous-meme
+argv: ["C:\\Python313\\python.exe", ".agents\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "presentations\\ppt-master-projects\\deepseek-harness-system-learning-zh_ppt169_20260818", "-o", "presentations\\deepseek-harness-system-learning-zh.pptx", "--native-charts-and-tables", "--pptx-structure", "flat", "--with-notes", "-t", "fade", "--conversion-trace", "validation\\deepseek-harness-system-learning-zh.trace.json"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+stdout:
+  [Done] Saved: presentations\deepseek-harness-system-learning-zh.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=24 warning_categories=2
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=29
+    [POSTFLIGHT][WARNING] unsafe_exported_font_faces=1
+    [PPTX] presentations\deepseek-harness-system-learning-zh.pptx
+    [REPORT] presentations\ppt-master-projects\deepseek-harness-system-learning-zh_ppt169_20260818\validation\deepseek-harness-system-learning-zh.report.json
+=== 2026-08-18T14:02:59.926Z END run=1ab1edfa6c82 elapsed_ms=4821 output_lines=102 retained=7 omitted=95 ===
